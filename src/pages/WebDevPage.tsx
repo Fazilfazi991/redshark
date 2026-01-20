@@ -133,7 +133,7 @@ const WebDevPage = () => {
                                 <h3 style={{ fontSize: '1.5rem', marginBottom: '20px' }}>The Speed Factor</h3>
                                 <div style={{ display: 'flex', alignItems: 'end', gap: '10px', marginBottom: '10px' }}>
                                     <span style={{ fontSize: '3.5rem', fontWeight: '800', color: '#3b82f6' }}>53%</span>
-                                    <span style={{ fontSize: '1rem', color: '#94a3b8', paddingBottom: '10px' }}>users leave if >3s load</span>
+                                    <span style={{ fontSize: '1rem', color: '#94a3b8', paddingBottom: '10px' }}>users leave if &gt;3s load</span>
                                 </div>
                                 <p style={{ color: '#94a3b8' }}>We optimize every line of code to ensure instant load times. Speed isn't just a feature; it's a requirement for ranking and conversion.</p>
                             </div>
