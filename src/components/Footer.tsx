@@ -9,7 +9,7 @@ const Footer = () => {
                 <div className="footer-grid">
                     {/* Col 1 */}
                     <div className="footer-col">
-                        <img src="/logo.png" alt="REDSHARK" style={{ height: '32px', width: 'auto', marginBottom: '16px' }} />
+                        <img src="/logo.png" alt="REDSHARK" style={{ height: '64px', width: 'auto', marginBottom: '16px' }} />
                         <p className="footer-desc">
                             Access the world's top digital marketing talent without the agency markup.
                         </p>
