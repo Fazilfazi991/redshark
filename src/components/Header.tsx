@@ -1,10 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, ChevronDown } from 'lucide-react';
+import { Link, useLocation } from 'react-router-dom';
 import './Header.css';
 
 const Header = () => {
     const [isScrolled, setIsScrolled] = useState(false);
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+    const [dropdownOpen, setDropdownOpen] = useState(false);
+    const location = useLocation();
 
     useEffect(() => {
         const handleScroll = () => {
@@ -14,19 +17,39 @@ const Header = () => {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
+    // Close mobile menu when route changes
+    useEffect(() => {
+        setMobileMenuOpen(false);
+        setDropdownOpen(false);
+    }, [location]);
+
     return (
         <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
             <div className="container header-container">
-                <div className="logo">
+                <Link to="/" className="logo">
                     <span className="logo-text">REDSHARK</span>
-                </div>
+                </Link>
 
                 <nav className={`desktop-nav ${mobileMenuOpen ? 'open' : ''}`}>
-                    <a href="#services" onClick={() => setMobileMenuOpen(false)}>Services</a>
-                    <a href="#about" onClick={() => setMobileMenuOpen(false)}>About</a>
-                    <a href="#portfolio" onClick={() => setMobileMenuOpen(false)}>Work</a>
-                    <a href="#pricing" onClick={() => setMobileMenuOpen(false)}>Pricing</a>
-                    <a href="#contact" onClick={() => setMobileMenuOpen(false)}>Contact</a>
+                    <Link to="/" onClick={() => setMobileMenuOpen(false)}>Home</Link>
+
+                    <div className="nav-item-dropdown"
+                        onMouseEnter={() => setDropdownOpen(true)}
+                        onMouseLeave={() => setDropdownOpen(false)}>
+                        <Link to="/services" className="dropdown-trigger" onClick={(e) => { if (window.innerWidth > 768) e.preventDefault(); }}>
+                            Services <ChevronDown size={14} className={`chevron ${dropdownOpen ? 'rotate' : ''}`} />
+                        </Link>
+                        <div className={`dropdown-menu ${dropdownOpen ? 'show' : ''}`}>
+                            <Link to="/services/seo">SEO & Organic Growth</Link>
+                            <Link to="/services/sem">Paid Advertising (SEM)</Link>
+                            <Link to="/services/smm">Social Media (SMM)</Link>
+                            <Link to="/services/web-development">Web Development</Link>
+                        </div>
+                    </div>
+
+                    <Link to="/about">About</Link>
+                    <Link to="/#portfolio" onClick={() => setMobileMenuOpen(false)}>Work</Link>
+                    <Link to="/#contact" onClick={() => setMobileMenuOpen(false)}>Contact</Link>
                     <button className="btn btn-primary mobile-only" onClick={() => setMobileMenuOpen(false)}>Get Started</button>
                 </nav>
 
