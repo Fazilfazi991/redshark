@@ -1,6 +1,5 @@
 import React from 'react';
 import { Facebook, Twitter, Instagram, Linkedin, Mail, MapPin } from 'lucide-react';
-import logo from '../assets/logo.jpg';
 import './Footer.css';
 
 const Footer = () => {
@@ -10,7 +9,7 @@ const Footer = () => {
                 <div className="footer-grid">
                     {/* Col 1 */}
                     <div className="footer-col">
-                        <img src={logo} alt="REDSHARK" style={{ height: '32px', width: 'auto', marginBottom: '16px' }} />
+                        <img src="/logo.jpg" alt="REDSHARK" style={{ height: '32px', width: 'auto', marginBottom: '16px' }} />
                         <p className="footer-desc">
                             Access the world's top digital marketing talent without the agency markup.
                         </p>

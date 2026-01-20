@@ -27,7 +27,7 @@ const Header = () => {
         <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
             <div className="container header-container">
                 <Link to="/" className="logo">
-                    <img src="/src/assets/logo.jpg" alt="REDSHARK" style={{ height: '40px', width: 'auto' }} />
+                    <img src="/logo.jpg" alt="REDSHARK" style={{ height: '40px', width: 'auto' }} />
                 </Link>
 
                 <nav className={`desktop-nav ${mobileMenuOpen ? 'open' : ''}`}>
