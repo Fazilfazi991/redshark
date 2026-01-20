@@ -1,0 +1,110 @@
+.guarantee-section {
+    padding: 6rem 0;
+    background-color: var(--bg-dark);
+    /* White */
+}
+
+.guarantee-main-box {
+    background: var(--bg-card);
+    /* White */
+    border: 2px solid var(--secondary);
+    /* Black border */
+    border-radius: 1.5rem;
+    padding: 3rem 2rem;
+    text-align: center;
+    margin: 3rem auto 4rem;
+    max-width: 900px;
+    position: relative;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+}
+
+.promise-badge {
+    position: absolute;
+    top: -1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--primary);
+    /* Red */
+    color: white;
+    padding: 0.5rem 2rem;
+    border-radius: 2rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 0.9rem;
+    box-shadow: 0 4px 10px rgba(220, 38, 38, 0.3);
+}
+
+.primary-guarantee {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--secondary);
+    /* Black */
+    line-height: 1.4;
+}
+
+.guarantee-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.guarantee-card {
+    background: var(--bg-darker);
+    /* Slate 50/Light Gray */
+    padding: 2rem;
+    border-radius: 1rem;
+    border: 1px solid var(--border);
+    transition: transform 0.2s;
+}
+
+.guarantee-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary);
+}
+
+.guarantee-icon {
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+.guarantee-card h4 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--text-main);
+}
+
+.guarantee-card ul {
+    list-style: disc;
+    padding-left: 1.25rem;
+}
+
+.guarantee-card li {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+}
+
+.trust-seal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    color: var(--text-muted);
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.trust-seal svg {
+    color: var(--primary);
+    /* Red check */
+}
+
+@media (max-width: 768px) {
+    .primary-guarantee {
+        font-size: 1.2rem;
+    }
+}
