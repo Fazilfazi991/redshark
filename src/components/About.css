@@ -2,3 +2,22 @@
     padding: 80px 0;
     background-color: var(--bg-darker);
 }
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    color: var(--text-muted);
+}
+
+.about-content p {
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+}
+
+.about-content .lead-text {
+    font-size: 1.25rem;
+    color: white;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
