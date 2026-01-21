@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, CheckCircle, Play } from 'lucide-react';
+import { ArrowRight, CheckCircle, Play, Code, Palette, BarChart, Megaphone, Monitor, PenTool } from 'lucide-react';
 import './Hero.css';
 
 const Hero = () => {
@@ -47,30 +47,26 @@ const Hero = () => {
                 </div>
 
                 <div className="hero-visual">
-                    <div className="visual-card-stack">
-                        {/* Abstract visual representation of "Team" or "Results" */}
-                        <div className="card card-1">
-                            <div className="card-header">
-                                <div className="dot red"></div>
-                                <div className="dot yellow"></div>
-                                <div className="dot green"></div>
+                    <div className="visual-orbit-container">
+                        <div className="orbit-system">
+                            <div className="orbit-center">
+                                <span className="orbit-number">150+</span>
+                                <span className="orbit-label">Specialists</span>
                             </div>
-                            <div className="card-body">
-                                <div className="graph-line"></div>
-                                <div className="stat-row">
-                                    <div className="stat-label">ROI</div>
-                                    <div className="stat-value">+340%</div>
-                                </div>
+
+                            <div className="orbit-ring ring-1">
+                                <div className="orbit-item item-1"><Code size={20} /></div>
+                                <div className="orbit-item item-2"><Palette size={20} /></div>
+                                <div className="orbit-item item-3"><BarChart size={20} /></div>
                             </div>
-                        </div>
-                        <div className="card card-2">
-                            <div className="profile-row">
-                                <div className="avatar"></div>
-                                <div className="text-lines">
-                                    <div className="line long"></div>
-                                    <div className="line short"></div>
-                                </div>
+
+                            <div className="orbit-ring ring-2">
+                                <div className="orbit-item item-4"><Megaphone size={24} /></div>
+                                <div className="orbit-item item-5"><Monitor size={24} /></div>
+                                <div className="orbit-item item-6"><PenTool size={24} /></div>
                             </div>
+
+                            <div className="orbit-ring ring-3"></div>
                         </div>
                     </div>
                 </div>
