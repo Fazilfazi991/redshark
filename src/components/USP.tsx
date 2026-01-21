@@ -1,4 +1,5 @@
 import React from 'react';
+import { Users, Target, Zap } from 'lucide-react';
 import './USP.css';
 
 const USP = () => {
@@ -8,14 +9,23 @@ const USP = () => {
                 <h2 className="section-title text-center mb-5">What makes us different from the rest.</h2>
                 <div className="usp-grid">
                     <div className="usp-card">
+                        <div className="icon-wrapper">
+                            <Users className="usp-icon" />
+                        </div>
                         <h3>Direct Access to Experts</h3>
                         <p>No layers of management. You speak directly to the specialists working on your account.</p>
                     </div>
                     <div className="usp-card">
+                        <div className="icon-wrapper">
+                            <Target className="usp-icon" />
+                        </div>
                         <h3>Focus on ROI</h3>
                         <p>We obsess over your bottom line. Every strategy is crafted to maximize your return on investment.</p>
                     </div>
                     <div className="usp-card">
+                        <div className="icon-wrapper">
+                            <Zap className="usp-icon" />
+                        </div>
                         <h3>Agile & Adaptive</h3>
                         <p>The digital landscape changes fast. We pivot quickly to keep you ahead of the curve.</p>
                     </div>
