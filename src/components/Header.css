@@ -40,8 +40,8 @@
 
 .desktop-nav a {
     font-weight: 500;
-    font-size: 0.95rem;
-    color: var(--text-muted);
+    font-size: 1.1rem;
+    color: white;
     text-decoration: none;
 }
 
