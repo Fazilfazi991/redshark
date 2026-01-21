@@ -1,5 +1,4 @@
 .usp-section {
     padding: 80px 0;
-    background-color: #ce1111;
-    color: white;
+    background-color: var(--bg-dark);
 }
