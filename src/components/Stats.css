@@ -2,8 +2,8 @@
     padding: 4rem 0;
     background-color: var(--primary);
     /* Highlight section */
-    background: linear-gradient(135deg, #000000, #7f1d1d);
-    /* Black to Dark Red */
+    background: linear-gradient(135deg, #000000 0%, #450a0a 100%);
+    /* Pure Black to Dark Red */
     border-top: 1px solid var(--border);
     border-bottom: 1px solid var(--border);
 }

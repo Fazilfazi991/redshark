@@ -5,17 +5,17 @@
 }
 
 .guarantee-main-box {
-    background: var(--bg-card);
-    /* White */
-    border: 2px solid var(--secondary);
-    /* Black border */
+    background: linear-gradient(145deg, #0a0a0a, #000000);
+    /* Dark Gradient */
+    border: 2px solid var(--primary);
+    /* Red border for emphasis */
     border-radius: 1.5rem;
     padding: 3rem 2rem;
     text-align: center;
     margin: 3rem auto 4rem;
     max-width: 900px;
     position: relative;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
 }
 
 .promise-badge {
@@ -24,7 +24,6 @@
     left: 50%;
     transform: translateX(-50%);
     background: var(--primary);
-    /* Red */
     color: white;
     padding: 0.5rem 2rem;
     border-radius: 2rem;
@@ -32,14 +31,15 @@
     text-transform: uppercase;
     letter-spacing: 0.05em;
     font-size: 0.9rem;
-    box-shadow: 0 4px 10px rgba(220, 38, 38, 0.3);
+    box-shadow: 0 4px 15px rgba(220, 38, 38, 0.5);
+    /* Glow */
 }
 
 .primary-guarantee {
     font-size: 1.5rem;
     font-weight: 700;
-    color: var(--secondary);
-    /* Black */
+    color: white;
+    /* White text */
     line-height: 1.4;
 }
 
@@ -51,11 +51,11 @@
 }
 
 .guarantee-card {
-    background: var(--bg-darker);
-    /* Slate 50/Light Gray */
+    background: linear-gradient(145deg, #111111, #050505);
+    /* Dark card */
     padding: 2rem;
     border-radius: 1rem;
-    border: 1px solid var(--border);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     transition: transform 0.2s;
 }
 
@@ -73,7 +73,8 @@
     font-size: 1.1rem;
     font-weight: 700;
     margin-bottom: 1rem;
-    color: var(--text-main);
+    color: white;
+    /* White title */
 }
 
 .guarantee-card ul {
