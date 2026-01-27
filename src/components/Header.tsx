@@ -34,20 +34,26 @@ const Header = () => {
                     <Link to="/" onClick={() => setMobileMenuOpen(false)}>Home</Link>
 
                     <div className="nav-item-dropdown"
-                        onMouseEnter={() => setDropdownOpen(true)}
-                        onMouseLeave={() => setDropdownOpen(false)}>
-                        <Link to="/services" className="dropdown-trigger" onClick={(e) => { if (window.innerWidth > 768) e.preventDefault(); }}>
+                        onMouseEnter={() => window.innerWidth > 768 && setDropdownOpen(true)}
+                        onMouseLeave={() => window.innerWidth > 768 && setDropdownOpen(false)}
+                    >
+                        <Link to="/services" className="dropdown-trigger" onClick={(e) => {
+                            if (window.innerWidth <= 768) {
+                                e.preventDefault();
+                                setDropdownOpen(!dropdownOpen);
+                            }
+                        }}>
                             Services <ChevronDown size={14} className={`chevron ${dropdownOpen ? 'rotate' : ''}`} />
                         </Link>
                         <div className={`dropdown-menu ${dropdownOpen ? 'show' : ''}`}>
-                            <Link to="/services/seo">SEO & Organic Growth</Link>
-                            <Link to="/services/sem">Paid Advertising (SEM)</Link>
-                            <Link to="/services/smm">Social Media (SMM)</Link>
-                            <Link to="/services/web-development">Web Development</Link>
+                            <Link to="/services/seo" onClick={() => setMobileMenuOpen(false)}>SEO & Organic Growth</Link>
+                            <Link to="/services/sem" onClick={() => setMobileMenuOpen(false)}>Paid Advertising (SEM)</Link>
+                            <Link to="/services/smm" onClick={() => setMobileMenuOpen(false)}>Social Media (SMM)</Link>
+                            <Link to="/services/web-development" onClick={() => setMobileMenuOpen(false)}>Web Development</Link>
                         </div>
                     </div>
 
-                    <Link to="/about">About</Link>
+                    <Link to="/about" onClick={() => setMobileMenuOpen(false)}>About</Link>
                     <Link to="/#portfolio" onClick={() => setMobileMenuOpen(false)}>Work</Link>
                     <Link to="/#contact" onClick={() => setMobileMenuOpen(false)}>Contact</Link>
                     <button className="btn btn-primary mobile-only" onClick={() => setMobileMenuOpen(false)}>Get Started</button>

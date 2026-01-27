@@ -41,78 +41,58 @@ const SMMPage = () => {
     ];
 
     return (
-        <div className="page-wrapper" style={{ backgroundColor: '#fff', color: '#0f172a', overflowX: 'hidden' }}>
+        <div className="page-wrapper" style={{ backgroundColor: '#fff', color: '#0f172a' }}>
             <Header />
 
             <main style={{ paddingTop: '80px' }}>
                 {/* 1. HERO SECTION */}
-                <section style={{
-                    padding: '120px 20px 80px',
-                    textAlign: 'center',
-                    maxWidth: '1200px',
-                    margin: '0 auto',
-                    position: 'relative'
-                }}>
-                    <ScrollReveal animation="fade-up">
-                        <div style={{
-                            display: 'inline-block',
-                            padding: '8px 16px',
-                            background: '#fdf2f8',
-                            borderRadius: '50px',
-                            color: '#db2777',
-                            fontSize: '0.9rem',
-                            fontWeight: '600',
-                            marginBottom: '24px'
-                        }}>
-                            Social Media Marketing Services
-                        </div>
-                        <h1 style={{
-                            fontSize: 'clamp(2.5rem, 5vw, 4.5rem)',
-                            fontWeight: '800',
-                            lineHeight: '1.1',
-                            marginBottom: '24px',
-                            color: '#0f172a',
-                            letterSpacing: '-1px'
-                        }}>
-                            We Prove Conversions Through <span style={{ color: '#db2777' }}>Strategic Marketing</span>
-                        </h1>
-                        <p style={{
-                            fontSize: '1.25rem',
-                            color: '#64748b',
-                            maxWidth: '800px',
-                            margin: '0 auto 40px',
-                            lineHeight: '1.6'
-                        }}>
-                            Red Shark delivers professional social media marketing services built on clear strategy, data intelligence, and performance insights. We don’t just claim results; we prove them.
-                        </p>
-                        <div style={{ display: 'flex', gap: '20px', justifyContent: 'center', flexWrap: 'wrap' }}>
-                            <button className="btn btn-primary" style={{ padding: '16px 32px', fontSize: '1.1rem', borderRadius: '12px', background: '#db2777', borderColor: '#db2777' }}>
-                                Get a Free Strategy Call
-                            </button>
-                            <Link to="/case-studies" className="btn btn-secondary" style={{
-                                padding: '16px 32px',
-                                fontSize: '1.1rem',
-                                borderRadius: '12px',
-                                background: '#fff',
-                                color: '#0f172a',
-                                border: '1px solid #e2e8f0'
+                <section className="section-responsive text-center" style={{ position: 'relative' }}>
+                    <div className="container-responsive">
+                        <ScrollReveal animation="fade-up">
+                            <div style={{
+                                display: 'inline-block',
+                                padding: '8px 16px',
+                                background: '#fdf2f8',
+                                borderRadius: '50px',
+                                color: '#db2777',
+                                fontSize: '0.9rem',
+                                fontWeight: '600',
+                                marginBottom: '24px'
                             }}>
-                                View Our Work
-                            </Link>
-                        </div>
-                    </ScrollReveal>
+                                Social Media Marketing Services
+                            </div>
+                            <h1 className="heading-xl" style={{ marginBottom: '24px', color: '#0f172a' }}>
+                                We Prove Conversions Through <span style={{ color: '#db2777' }}>Strategic Marketing</span>
+                            </h1>
+                            <p className="text-body-lg" style={{ color: '#64748b', maxWidth: '800px', margin: '0 auto 40px' }}>
+                                Red Shark delivers professional social media marketing services built on clear strategy, data intelligence, and performance insights. We don’t just claim results; we prove them.
+                            </p>
+                            <div className="flex-mobile-col" style={{ display: 'flex', gap: '20px', justifyContent: 'center', flexWrap: 'wrap' }}>
+                                <button className="btn btn-primary btn-responsive" style={{ background: '#db2777', borderColor: '#db2777' }}>
+                                    Get a Free Strategy Call
+                                </button>
+                                <Link to="/case-studies" className="btn btn-secondary btn-responsive" style={{
+                                    background: '#fff',
+                                    color: '#0f172a',
+                                    border: '1px solid #e2e8f0'
+                                }}>
+                                    View Our Work
+                                </Link>
+                            </div>
+                        </ScrollReveal>
+                    </div>
                 </section>
 
                 {/* 2. INTRO: WHAT IS SMM */}
-                <section style={{ background: '#fff', padding: '80px 20px' }}>
-                    <div className="container" style={{ maxWidth: '1000px', margin: '0 auto', textAlign: 'center' }}>
+                <section className="section-responsive" style={{ background: '#fff' }}>
+                    <div className="container-responsive text-center" style={{ maxWidth: '1000px' }}>
                         <ScrollReveal animation="zoom-in">
-                            <h2 style={{ fontSize: '2.5rem', fontWeight: 'bold', color: '#0f172a', marginBottom: '24px' }}>What Is Social Media Marketing?</h2>
-                            <p style={{ fontSize: '1.1rem', color: '#64748b', lineHeight: '1.8', marginBottom: '30px' }}>
+                            <h2 className="heading-lg" style={{ marginBottom: '24px', color: '#0f172a' }}>What Is Social Media Marketing?</h2>
+                            <p className="text-body" style={{ color: '#64748b', marginBottom: '30px' }}>
                                 Social Media Marketing (SMM) is the strategic use of social platforms to build brand awareness, connect with audiences, and support measurable business growth. When executed with the right strategy, SMM goes beyond posting content — it aligns messaging, audience behavior, and analytics to create meaningful engagement that supports long-term digital success.
                             </p>
                             <div style={{ background: '#f8fafc', padding: '24px', borderRadius: '16px', display: 'inline-block' }}>
-                                <h3 style={{ fontSize: '1.25rem', fontWeight: 'bold', marginBottom: '8px' }}>Why It Matters Today</h3>
+                                <h3 className="heading-md" style={{ marginBottom: '8px' }}>Why It Matters Today</h3>
                                 <p style={{ color: '#64748b' }}>
                                     In today’s competitive digital environment, social media is no longer optional. Customers discover brands, evaluate credibility, and make decisions based on social presence.
                                 </p>
@@ -122,15 +102,15 @@ const SMMPage = () => {
                 </section>
 
                 {/* 3. CHALLENGES & STRATEGY */}
-                <section style={{ background: '#0f172a', color: '#fff', padding: '100px 20px' }}>
-                    <div className="container" style={{ maxWidth: '1200px', margin: '0 auto' }}>
-                        <div className="grid-2-col" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '60px', alignItems: 'center' }}>
+                <section className="section-responsive" style={{ background: '#0f172a', color: '#fff' }}>
+                    <div className="container-responsive">
+                        <div className="grid-2">
                             <ScrollReveal animation="slide-right">
                                 <div>
-                                    <h2 style={{ fontSize: '2.5rem', fontWeight: 'bold', marginBottom: '24px', lineHeight: '1.2' }}>
+                                    <h2 className="heading-lg" style={{ marginBottom: '24px' }}>
                                         Challenges Businesses Face
                                     </h2>
-                                    <p style={{ fontSize: '1.1rem', color: '#94a3b8', lineHeight: '1.7', marginBottom: '20px' }}>
+                                    <p className="text-body" style={{ color: '#94a3b8', marginBottom: '20px' }}>
                                         Many businesses struggle with social media due to inconsistent posting, unclear messaging, and strict management without results.
                                     </p>
                                     <ul style={{ listStyle: 'none', padding: 0 }}>
@@ -151,7 +131,7 @@ const SMMPage = () => {
                             </ScrollReveal>
                             <ScrollReveal animation="slide-left" delay={200}>
                                 <div style={{ background: 'rgba(255,255,255,0.05)', padding: '40px', borderRadius: '24px', border: '1px solid rgba(255,255,255,0.1)' }}>
-                                    <h3 style={{ fontSize: '2rem', marginBottom: '20px', fontWeight: 'bold', color: '#fbcfe8' }}>Our Strategy-First Approach</h3>
+                                    <h3 className="heading-md" style={{ marginBottom: '20px', color: '#fbcfe8' }}>Our Strategy-First Approach</h3>
                                     <p style={{ color: '#cbd5e1', lineHeight: '1.7', marginBottom: '20px' }}>
                                         At Red Shark, every campaign begins with understanding business goals, audience intent, and platform relevance.
                                     </p>
@@ -165,19 +145,19 @@ const SMMPage = () => {
                 </section>
 
                 {/* 4. PLATFORMS WE MANAGE */}
-                <section style={{ padding: '100px 20px', background: '#fff' }}>
-                    <div className="container" style={{ maxWidth: '1200px', margin: '0 auto' }}>
+                <section className="section-responsive" style={{ background: '#fff' }}>
+                    <div className="container-responsive">
                         <ScrollReveal>
-                            <h2 style={{ fontSize: '2.5rem', fontWeight: 'bold', color: '#0f172a', marginBottom: '60px', textAlign: 'center' }}>Platforms We Manage</h2>
+                            <h2 className="heading-lg text-center" style={{ marginBottom: '60px', color: '#0f172a' }}>Platforms We Manage</h2>
                         </ScrollReveal>
-                        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '30px' }}>
+                        <div className="grid-auto-fit">
                             {platforms.map((platform, i) => (
                                 <ScrollReveal key={i} animation="fade-up" delay={i * 100}>
-                                    <div style={{ padding: '30px', borderRadius: '16px', background: '#f8fafc', border: '1px solid #e2e8f0', height: '100%' }}>
+                                    <div className="card-base" style={{ background: '#f8fafc', border: '1px solid #e2e8f0' }}>
                                         <div style={{ background: '#fce7f3', width: 'fit-content', padding: '10px', borderRadius: '10px', marginBottom: '16px' }}>
                                             <platform.icon size={24} color="#db2777" />
                                         </div>
-                                        <h3 style={{ fontSize: '1.25rem', fontWeight: 'bold', marginBottom: '12px', color: '#0f172a' }}>{platform.name}</h3>
+                                        <h3 className="heading-md" style={{ marginBottom: '12px', color: '#0f172a' }}>{platform.name}</h3>
                                         <p style={{ color: '#64748b', lineHeight: '1.6' }}>{platform.desc}</p>
                                     </div>
                                 </ScrollReveal>
@@ -187,13 +167,13 @@ const SMMPage = () => {
                 </section>
 
                 {/* 5. SERVICES & PROCESS */}
-                <section style={{ padding: '100px 20px', background: '#f8fafc' }}>
-                    <div className="container" style={{ maxWidth: '1200px', margin: '0 auto' }}>
+                <section className="section-responsive" style={{ background: '#f8fafc' }}>
+                    <div className="container-responsive">
                         <ScrollReveal>
-                            <h2 style={{ fontSize: '2.5rem', fontWeight: 'bold', color: '#0f172a', marginBottom: '60px', textAlign: 'center' }}>Our Services Breakdown</h2>
+                            <h2 className="heading-lg text-center" style={{ marginBottom: '60px', color: '#0f172a' }}>Our Services Breakdown</h2>
                         </ScrollReveal>
 
-                        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '30px', marginBottom: '100px' }}>
+                        <div className="grid-3" style={{ marginBottom: '100px' }}>
                             {[
                                 "Social Media Strategy & Planning",
                                 "Content Creation & Calendar Management",
@@ -211,7 +191,7 @@ const SMMPage = () => {
                         </div>
 
                         <ScrollReveal>
-                            <h2 style={{ fontSize: '2.5rem', fontWeight: 'bold', color: '#0f172a', marginBottom: '40px', textAlign: 'center' }}>How We Work</h2>
+                            <h2 className="heading-lg text-center" style={{ marginBottom: '40px', color: '#0f172a' }}>How We Work</h2>
                         </ScrollReveal>
                         <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '20px' }}>
                             {[
@@ -239,12 +219,12 @@ const SMMPage = () => {
                 </section>
 
                 {/* 6. INDUSTRIES & TOOLS */}
-                <section style={{ padding: '100px 20px', background: '#fff' }}>
-                    <div className="container" style={{ maxWidth: '1200px', margin: '0 auto' }}>
-                        <div className="grid-2-col" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(400px, 1fr))', gap: '80px' }}>
+                <section className="section-responsive" style={{ background: '#fff' }}>
+                    <div className="container-responsive">
+                        <div className="grid-2">
                             <ScrollReveal animation="slide-right">
                                 <div>
-                                    <h2 style={{ fontSize: '2.5rem', fontWeight: 'bold', marginBottom: '40px', color: '#0f172a' }}>Industries We Serve</h2>
+                                    <h2 className="heading-lg" style={{ marginBottom: '40px', color: '#0f172a' }}>Industries We Serve</h2>
                                     <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '20px' }}>
                                         {[
                                             "Education & Overseas Consultancies",
@@ -255,7 +235,7 @@ const SMMPage = () => {
                                             "Healthcare & Wellness Businesses"
                                         ].map((ind, i) => (
                                             <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-                                                <div style={{ width: '8px', height: '8px', borderRadius: '50%', background: '#db2777' }}></div>
+                                                <div style={{ width: '8px', height: '8px', borderRadius: '50%', background: '#db2777', flexShrink: 0 }}></div>
                                                 <span style={{ fontSize: '1.1rem', color: '#475569' }}>{ind}</span>
                                             </div>
                                         ))}
@@ -265,7 +245,7 @@ const SMMPage = () => {
 
                             <ScrollReveal animation="slide-left">
                                 <div style={{ background: '#f0f9ff', padding: '40px', borderRadius: '24px' }}>
-                                    <h2 style={{ fontSize: '2rem', fontWeight: 'bold', marginBottom: '30px', color: '#0369a1' }}>Tools We Use</h2>
+                                    <h2 className="heading-md" style={{ marginBottom: '30px', color: '#0369a1' }}>Tools We Use</h2>
                                     <p style={{ marginBottom: '30px', color: '#334155' }}>
                                         We use industry-leading tools to ensure precision and performance:
                                     </p>
@@ -290,11 +270,11 @@ const SMMPage = () => {
                 </section>
 
                 {/* 7. RESULTS & CTA */}
-                <section style={{ padding: '100px 20px', background: '#0f172a', color: '#fff', textAlign: 'center' }}>
-                    <div className="container" style={{ maxWidth: '800px', margin: '0 auto' }}>
+                <section className="section-responsive" style={{ background: '#0f172a', color: '#fff', textAlign: 'center' }}>
+                    <div className="container-responsive" style={{ maxWidth: '800px' }}>
                         <ScrollReveal>
-                            <h2 style={{ fontSize: '2.5rem', fontWeight: 'bold', marginBottom: '24px' }}>Results That Matter</h2>
-                            <p style={{ fontSize: '1.1rem', color: '#94a3b8', lineHeight: '1.8', marginBottom: '40px' }}>
+                            <h2 className="heading-lg" style={{ marginBottom: '24px' }}>Results That Matter</h2>
+                            <p className="text-body" style={{ color: '#94a3b8', marginBottom: '40px' }}>
                                 Our focus is not on vanity metrics. We track reach quality, engagement behavior, audience growth, and campaign performance to support data-driven decisions and long-term brand growth.
                             </p>
                             <div style={{ fontStyle: 'italic', marginBottom: '60px', opacity: '0.8' }}>
@@ -304,7 +284,7 @@ const SMMPage = () => {
 
                         {/* FAQ SUB-SECTION */}
                         <div style={{ textAlign: 'left', marginBottom: '80px' }}>
-                            <h3 style={{ fontSize: '1.8rem', fontWeight: 'bold', marginBottom: '30px', textAlign: 'center' }}>Frequently Asked Questions</h3>
+                            <h3 className="heading-md text-center" style={{ marginBottom: '30px' }}>Frequently Asked Questions</h3>
                             <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
                                 {faqs.map((faq, index) => (
                                     <ScrollReveal key={index} animation="fade-up" delay={index * 50}>
@@ -316,7 +296,7 @@ const SMMPage = () => {
                                                     display: 'flex', justifyContent: 'space-between', alignItems: 'center', cursor: 'pointer', color: '#fff'
                                                 }}
                                             >
-                                                <span style={{ fontSize: '1.1rem', fontWeight: '600' }}>{faq.question}</span>
+                                                <span style={{ fontSize: '1rem', fontWeight: '600' }}>{faq.question}</span>
                                                 {openFaq === index ? <ChevronUp size={20} color="#94a3b8" /> : <ChevronDown size={20} color="#94a3b8" />}
                                             </button>
                                             {openFaq === index && (
@@ -332,20 +312,18 @@ const SMMPage = () => {
 
                         <ScrollReveal animation="zoom-in">
                             <div style={{ background: '#db2777', padding: '60px 40px', borderRadius: '32px' }}>
-                                <h2 style={{ fontSize: '2.5rem', fontWeight: '800', marginBottom: '24px' }}>
+                                <h2 className="heading-lg" style={{ marginBottom: '24px' }}>
                                     Ready to Strengthen Your Social Media Presence?
                                 </h2>
-                                <p style={{ fontSize: '1.2rem', marginBottom: '30px', opacity: '0.9' }}>
+                                <p className="text-body-lg" style={{ marginBottom: '30px', opacity: '0.9' }}>
                                     Let’s build a social media strategy that aligns with your brand and business objectives.
                                 </p>
-                                <button style={{
+                                <button className="btn-responsive" style={{
                                     background: '#fff',
                                     color: '#db2777',
                                     border: 'none',
                                     padding: '16px 40px',
-                                    fontSize: '1.2rem',
                                     fontWeight: 'bold',
-                                    borderRadius: '12px',
                                     cursor: 'pointer'
                                 }}>
                                     Get a Free Social Media Strategy Call

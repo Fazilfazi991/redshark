@@ -334,6 +334,24 @@
         text-align: center;
     }
 
+    .hero-headline {
+        font-size: 2.5rem;
+        /* Smaller for mobile */
+    }
+
+    .hero-subheadline {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-cta-group {
+        justify-content: center;
+    }
+
+    .hero-trust-elements {
+        justify-content: center;
+    }
+
     .visual-orbit-container {
         height: 350px;
         margin-top: 2rem;
