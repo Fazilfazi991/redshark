@@ -7,6 +7,7 @@ interface ScrollRevealProps {
     delay?: number;
     duration?: number;
     className?: string;
+    style?: React.CSSProperties;
 }
 
 const ScrollReveal: React.FC<ScrollRevealProps> = ({
@@ -14,7 +15,8 @@ const ScrollReveal: React.FC<ScrollRevealProps> = ({
     animation = 'fade-up',
     delay = 0,
     duration = 0.6,
-    className = ''
+    className = '',
+    style = {}
 }) => {
     const [isVisible, setIsVisible] = useState(false);
     const ref = useRef<HTMLDivElement>(null);
@@ -44,16 +46,17 @@ const ScrollReveal: React.FC<ScrollRevealProps> = ({
         };
     }, []);
 
-    const style = {
+    const combinedStyle: React.CSSProperties = {
         transitionDelay: `${delay}ms`,
-        transitionDuration: `${duration}s`
+        transitionDuration: `${duration}s`,
+        ...style
     };
 
     return (
         <div
             ref={ref}
             className={`reveal-item ${animation} ${isVisible ? 'visible' : ''} ${className}`}
-            style={style}
+            style={combinedStyle}
         >
             {children}
         </div>
