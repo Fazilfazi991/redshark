@@ -18,6 +18,8 @@ export const paidAdsPost: BlogPost = {
         { type: 'paragraph', text: 'What do you do? You leave. Immediately. You just paid $3 or $4 for that click, and you wasted it in 2 seconds. This is a failure of "Message Match." The headline of your landing page must match the promise of your ad *exactly*. The scent must be preserved.' },
         { type: 'paragraph', text: 'If your ad says "Best CRM for Dentists," your landing page cannot say "Powerful Software for Small Business." It must say "The #1 CRM Built for Dentists." Specificity converts. Generality kills. If you are sending paid search traffic to your Homepage, stop. Stop right now. Your homepage is a navigational hub; it is a terrible sales page. Build dedicated Landing Pages (LPs) for every offer.' },
 
+        { type: 'callout', text: '🛑 Stop sending paid search traffic to your Homepage. Your homepage is a navigational hub; it is a terrible sales page. Build dedicated Landing Pages (LPs) for every offer.' },
+
         { type: 'heading', text: '2. The Quality Score Death Spiral' },
         { type: 'paragraph', text: 'Google and Facebook are not charities; they are businesses. But they are businesses that sell *user attention*. They want users to be happy. So they reward relevance. Google assigns a "Quality Score" (1-10) to your keywords. This is based on your Expected CTR, Ad Relevance, and Landing Page Experience.' },
         { type: 'paragraph', text: 'This score is a multiplier for your cost. If your Quality Score is 10/10, you might pay $2.00 per click for a keyword. If your score is 3/10 (because your ad is vague and your landing page is slow), you might pay $8.00 for the *exact same keyword*. Your competitor with a better landing page is literally paying 75% less than you to acquire the same customer. If you aren\'t obsessed with improving Quality Score, you are simply paying a "stupidity tax" to Google.' },
@@ -34,6 +36,6 @@ export const paidAdsPost: BlogPost = {
 
         { type: 'heading', text: '5. Tracking the Wrong Conversions (The Vanity Trap)' },
         { type: 'paragraph', text: 'Are you optimizing your campaigns for "Clicks"? Or "Page Views"? Or "Video Views"? Algorithms are effectively genies; they give you exactly what you ask for. If you ask for Link Clicks, Meta will find the people most likely to click—usually bots, boomers with fat fingers, or click-happy users who never buy anything.' },
-        { type: 'paragraph', text: 'You must optimize for the deepest funnel metric possible. Optimize for "Purchase." Or "Booked Call." Or at least "Add to Cart." Feed the algorithm high-value data, and it will find high-value people. If you feed it junk data (vanity metrics), it will bring you junk traffic. It\'s garbage in, garbage out.' }
+        { type: 'callout', text: '💡 Pro Tip: Feed the algorithm high-value data, and it will find high-value people. If you feed it junk data (vanity metrics), it will bring you junk traffic. It is garbage in, garbage out.' },
     ]
 };

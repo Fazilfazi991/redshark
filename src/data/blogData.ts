@@ -13,7 +13,7 @@ export interface BlogPost {
     summary: string;
     image: string;
     content: {
-        type: 'paragraph' | 'heading' | 'list' | 'image';
+        type: 'paragraph' | 'heading' | 'list' | 'image' | 'callout';
         text?: string;
         items?: string[];
         src?: string;

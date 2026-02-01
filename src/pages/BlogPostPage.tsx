@@ -92,7 +92,13 @@ const BlogPostPage = () => {
                 </div>
 
                 {/* CONTENT AREA */}
-                <div className="container-responsive" style={{ maxWidth: '1200px', marginTop: '-60px' }}>
+                <div className="container-responsive" style={{ maxWidth: '1200px', marginTop: '-40px' }}>
+
+                    {/* Featured Image - Moved out of grid for better alignment */}
+                    <div className="post-image-container" style={{ marginBottom: '60px' }}>
+                        <img src={post.image} alt={post.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                    </div>
+
                     <div className="blog-layout">
 
                         {/* LEFT SIDEBAR (TOC) - Desktop Only */}
@@ -140,9 +146,6 @@ const BlogPostPage = () => {
 
                         {/* MAIN ARTICLE */}
                         <article className="blog-content-wrapper">
-                            <div className="post-image-container">
-                                <img src={post.image} alt={post.title} style={{ width: '100%', height: 'auto', borderRadius: '16px', boxShadow: '0 20px 25px -5px rgba(0,0,0,0.1)' }} />
-                            </div>
 
                             <div className="post-body">
                                 <p className="lead" style={{ fontSize: '1.25rem', lineHeight: '1.8', color: '#475569', marginBottom: '40px', fontWeight: '500' }}>
@@ -168,6 +171,12 @@ const BlogPostPage = () => {
                                         return (
                                             <div key={index} className="post-inline-image">
                                                 <img src={block.src} alt="" />
+                                            </div>
+                                        );
+                                    } else if (block.type === 'callout') {
+                                        return (
+                                            <div key={index} className="blog-callout">
+                                                {block.text}
                                             </div>
                                         );
                                     } else {
