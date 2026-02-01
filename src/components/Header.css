@@ -160,7 +160,10 @@
         position: fixed;
         top: var(--header-height);
         left: 0;
-        width: 100%;
+        width: 100vw;
+        /* Use viewport width */
+        max-width: 100%;
+        /* Ensure no overflow */
         height: calc(100vh - var(--header-height));
         /* Full height minus header */
         background-color: white;
@@ -175,6 +178,8 @@
         overflow-y: auto;
         /* Enable scrolling */
         box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        overflow-x: hidden;
+        /* Prevent internal horizontal scroll */
     }
 
     .desktop-nav.open {
