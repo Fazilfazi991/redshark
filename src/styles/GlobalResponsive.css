@@ -109,6 +109,18 @@
         padding: var(--section-padding-mobile);
     }
 
+    /* Small mobile adjustments */
+    @media (max-width: 380px) {
+        .section-responsive {
+            padding: 40px 12px;
+        }
+
+        .container-responsive {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+
     .grid-2,
     .grid-3,
     .grid-4 {

@@ -378,10 +378,9 @@
         justify-content: center;
     }
 
+    /* Hide 3D Animation on Mobile */
     .visual-orbit-container {
-        height: 350px;
-        order: 2;
-        /* Ensure order */
+        display: none !important;
     }
 
     .hero-text {

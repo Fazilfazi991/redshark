@@ -6,7 +6,8 @@ import ScrollReveal from '../components/UI/ScrollReveal';
 import {
     Search, BarChart2, Globe, TrendingUp, AlertTriangle, CheckCircle,
     ChevronDown, ChevronUp, ArrowRight, ShieldCheck, MapPin,
-    ShoppingCart, Layers, Smartphone, FileText, Zap, Target, Users, Settings
+    ShoppingCart, Layers, Smartphone, FileText, Zap, Target, Users, Settings,
+    Mic, Bot, Sparkles, MessageSquare
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 

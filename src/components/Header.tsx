@@ -65,7 +65,10 @@ const Header = () => {
 
                 <div className="header-actions">
                     <button className="btn btn-primary desktop-only">Get Started</button>
-                    <button className="mobile-toggle" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
+                    <button
+                        className={`mobile-toggle ${isHomePage && !isScrolled ? 'text-white' : 'text-dark'}`}
+                        onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                    >
                         {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
                     </button>
                 </div>
