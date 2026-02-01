@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowRight, CheckCircle, Play, Code, Palette, BarChart, Megaphone, Monitor, PenTool } from 'lucide-react';
+import LeadForm from './LeadForm';
 import './Hero.css';
 
 const Hero = () => {
@@ -24,9 +25,6 @@ const Hero = () => {
                     <div className="hero-cta-group">
                         <button className="btn btn-primary btn-lg">
                             Start Your Project <ArrowRight size={20} className="icon-right" />
-                        </button>
-                        <button className="btn btn-outline btn-lg">
-                            <Play size={20} className="icon-left" /> See Our Work
                         </button>
                     </div>
 
@@ -69,6 +67,10 @@ const Hero = () => {
                             <div className="orbit-ring ring-3"></div>
                         </div>
                     </div>
+                </div>
+
+                <div className="hero-form-col">
+                    <LeadForm />
                 </div>
             </div>
         </section>
