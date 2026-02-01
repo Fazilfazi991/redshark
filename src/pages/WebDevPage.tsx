@@ -33,7 +33,7 @@ const WebDevPage = () => {
     ];
 
     return (
-        <div className="page-wrapper" style={{ backgroundColor: '#fff', color: 'var(--text-main)', overflowX: 'hidden' }}>
+        <div className="page-wrapper" style={{ backgroundColor: '#fff', color: '#334155' }}>
             <Header />
 
             <main style={{ paddingTop: '80px' }}>
@@ -57,7 +57,7 @@ const WebDevPage = () => {
                                 Websites that Wow.<br />
                                 <span style={{ color: '#dc2626' }}>Engineered to Convert.</span>
                             </h1>
-                            <p className="text-body-lg" style={{ color: '#64748b', maxWidth: '700px', margin: '0 auto 40px' }}>
+                            <p className="text-body-lg" style={{ color: '#64748b', maxWidth: '800px', margin: '0 auto 40px' }}>
                                 Pretty isn't enough. We build lightning-fast, secure, and user-centric websites that turn visitors into loyal customers.
                             </p>
                             <div className="flex-mobile-col" style={{ display: 'flex', gap: '20px', justifyContent: 'center', flexWrap: 'wrap' }}>
@@ -72,91 +72,80 @@ const WebDevPage = () => {
                                     View Portfolio
                                 </Link>
                             </div>
-
-                            {/* Trust Indicators */}
-                            <div style={{ marginTop: '60px', color: '#94a3b8', fontSize: '0.9rem', fontWeight: '500' }}>
-                                POWERING DIGITAL EXPERIENCES FOR
-                                <div style={{ display: 'flex', gap: '40px', justifyContent: 'center', marginTop: '20px', opacity: '0.6', flexWrap: 'wrap' }}>
-                                    {/* Add logos later */}
-                                    <span>SAAS PLATFORMS</span>
-                                    <span>ECOMMERCE</span>
-                                    <span>CORPORATE</span>
-                                    <span>REAL ESTATE</span>
-                                </div>
-                            </div>
                         </ScrollReveal>
                     </div>
                 </section>
 
                 {/* 2. PROBLEM / AGITATION */}
-                <section className="section-responsive" style={{ background: '#0f172a', color: '#fff' }}>
+                <section className="section-responsive" style={{ background: '#f8fafc' }}>
                     <div className="container-responsive">
                         <div className="grid-2">
                             <ScrollReveal animation="slide-right">
                                 <div>
-                                    <h2 className="heading-lg" style={{ marginBottom: '24px' }}>
+                                    <h2 className="heading-lg" style={{ marginBottom: '24px', color: '#0f172a' }}>
                                         Is your website costing you business?
                                     </h2>
-                                    <p className="text-body" style={{ color: '#94a3b8', marginBottom: '20px' }}>
+                                    <p className="text-body" style={{ color: '#64748b', marginBottom: '20px' }}>
                                         Your website is your 24/7 salesperson. If it's slow, broken, or confusing, you're handing money to competitors.
                                     </p>
+                                    <p className="text-body" style={{ color: '#64748b', marginBottom: '20px' }}>
+                                        We optimize every line of code to ensure instant load times. Speed isn't just a feature; it's a requirement for ranking and conversion.
+                                    </p>
+                                </div>
+                            </ScrollReveal>
+                            <ScrollReveal animation="slide-left" delay={200}>
+                                <div style={{
+                                    background: '#fff',
+                                    padding: '40px',
+                                    borderRadius: '24px',
+                                    boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)'
+                                }}>
+                                    <h3 className="heading-md" style={{ marginBottom: '24px' }}>Common Pitfalls</h3>
                                     <ul style={{ listStyle: 'none', padding: 0 }}>
                                         {[
-                                            "Site takes more than 3 seconds to load.",
-                                            "Looks terrible on mobile devices.",
-                                            "Impossible for your team to update easily."
+                                            "Site takes more than 3 seconds to load",
+                                            "Looks terrible on mobile devices",
+                                            "Impossible for your team to update easily",
+                                            "Low security and frequent downtime",
+                                            "Poor SEO structure holding you back",
+                                            "Confusing navigation that kills sales"
                                         ].map((item, i) => (
-                                            <li key={i} style={{ display: 'flex', alignItems: 'start', gap: '12px', marginBottom: '16px', fontSize: '1.05rem' }}>
-                                                <AlertTriangle size={20} color="#f87171" style={{ marginTop: '4px', flexShrink: 0 }} />
+                                            <li key={i} style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '16px', fontSize: '1.05rem', color: '#475569' }}>
+                                                <AlertTriangle size={20} color="#ef4444" style={{ flexShrink: 0 }} />
                                                 <span>{item}</span>
                                             </li>
                                         ))}
                                     </ul>
                                 </div>
                             </ScrollReveal>
-                            <ScrollReveal animation="slide-left" delay={200}>
-                                <div style={{ background: 'rgba(255,255,255,0.05)', padding: '40px', borderRadius: '24px', border: '1px solid rgba(255,255,255,0.1)' }}>
-                                    <h3 className="heading-md" style={{ marginBottom: '20px' }}>The Speed Factor</h3>
-                                    <div style={{ display: 'flex', alignItems: 'end', gap: '10px', marginBottom: '10px' }}>
-                                        <span style={{ fontSize: '3.5rem', fontWeight: '800', color: '#3b82f6' }}>53%</span>
-                                        <span style={{ fontSize: '1rem', color: '#94a3b8', paddingBottom: '10px' }}>users leave if &gt;3s load</span>
-                                    </div>
-                                    <p style={{ color: '#94a3b8', lineHeight: '1.6' }}>We optimize every line of code to ensure instant load times. Speed isn't just a feature; it's a requirement for ranking and conversion.</p>
-                                </div>
-                            </ScrollReveal>
                         </div>
                     </div>
                 </section>
 
-                {/* 3. PROCESS / FRAMEWORK */}
+                {/* 3. WHY BUSINESSES CHOOSE US */}
                 <section className="section-responsive" style={{ background: '#fff' }}>
                     <div className="container-responsive">
-                        <ScrollReveal>
-                            <div className="text-center" style={{ marginBottom: '80px' }}>
-                                <h2 className="heading-lg" style={{ color: '#0f172a', marginBottom: '16px' }}>The RedShark Digital Stack</h2>
-                                <p style={{ color: '#64748b', maxWidth: '600px', margin: '0 auto' }}>From idea to launch, our process ensures excellence.</p>
+                        <ScrollReveal animation="fade-up">
+                            <div className="text-center" style={{ marginBottom: '60px' }}>
+                                <h2 className="heading-lg" style={{ color: '#0f172a', marginBottom: '16px' }}>Why Businesses Choose Red Shark</h2>
+                                <p style={{ color: '#64748b', maxWidth: '700px', margin: '0 auto' }}>
+                                    We don't just write code; we build digital assets that grow your business.
+                                </p>
                             </div>
                         </ScrollReveal>
 
                         <div className="grid-auto-fit">
                             {[
-                                { icon: Layout, title: "1. Discovery & Design", desc: "We map out user journeys and wireframe a high-fidelity design that aligns with your brand goals." },
-                                { icon: Code, title: "2. Development", desc: "Our engineers build using clean, modern code (React, Next.js, or WordPress) ensuring scalability." },
-                                { icon: ShieldCheck, title: "3. QA & Security", desc: "Rigorous testing across devices, speed optimization, and security hardening before launch." },
-                                { icon: Server, title: "4. Deploy & Scale", desc: "Seamless launch with zero downtime, followed by training and ongoing support." }
-                            ].map((step, i) => (
+                                { title: "Mobile-First Design", desc: "Built for the 70% of users who browse on their phones." },
+                                { title: "Blazing Speed", desc: "Sub-second load times using next-gen frameworks like Next.js." },
+                                { title: "SEO-Baked In", desc: "Perfect semantic HTML and schema markup from day one." },
+                                { title: "Easy Management", desc: "User-friendly CMS solutions so you can edit content without a developer." },
+                                { title: "Bank-Grade Security", desc: "Advanced protection against hacks, DDoS, and data breaches." }
+                            ].map((item, i) => (
                                 <ScrollReveal key={i} animation="fade-up" delay={i * 100}>
-                                    <div key={i} className="card-base" style={{ background: '#f8fafc', border: '1px solid #e2e8f0', position: 'relative' }}>
-                                        <div style={{
-                                            position: 'absolute', top: '-15px', left: '30px',
-                                            background: '#dc2626', color: '#fff', width: '30px', height: '30px',
-                                            borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 'bold'
-                                        }}>
-                                            {i + 1}
-                                        </div>
-                                        <step.icon size={32} color="#0f172a" style={{ marginBottom: '20px', marginTop: '10px' }} />
-                                        <h3 className="heading-md" style={{ marginBottom: '12px', color: '#0f172a' }}>{step.title}</h3>
-                                        <p style={{ color: '#64748b', fontSize: '0.95rem', lineHeight: '1.6' }}>{step.desc}</p>
+                                    <div className="card-base" style={{ background: '#f8fafc', border: '1px solid #e2e8f0' }}>
+                                        <h3 className="heading-md" style={{ marginBottom: '10px', color: '#0f172a' }}>{item.title}</h3>
+                                        <p style={{ color: '#64748b', fontSize: '0.95rem', lineHeight: '1.6' }}>{item.desc}</p>
                                     </div>
                                 </ScrollReveal>
                             ))}
@@ -164,112 +153,184 @@ const WebDevPage = () => {
                     </div>
                 </section>
 
-                {/* 4. CORE SERVICE PILLARS */}
-                <section className="section-responsive" style={{ background: '#f8fafc' }}>
+                {/* 4. INDUSTRIES WE SERVE */}
+                <section className="section-responsive" style={{ background: '#0f172a', color: '#fff' }}>
                     <div className="container-responsive">
                         <ScrollReveal>
-                            <h2 className="heading-lg text-center" style={{ color: '#0f172a', marginBottom: '60px' }}>Tech Capabilities</h2>
+                            <h2 className="heading-lg text-center" style={{ marginBottom: '60px' }}>Industries We Power</h2>
                         </ScrollReveal>
-
-                        <div className="grid-2">
-                            <ScrollReveal animation="fade-up">
-                                <div style={{ background: '#fff', padding: '40px', borderRadius: '24px', boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.05)', height: '100%' }}>
-                                    <div style={{ background: '#dbeafe', width: 'fit-content', padding: '12px', borderRadius: '12px', marginBottom: '24px' }}>
-                                        <Code size={28} color="#2563eb" />
+                        <div className="grid-auto-fit">
+                            {[
+                                { title: "SaaS & Tech", desc: "Scalable dashboards and customer portals." },
+                                { title: "E-Commerce", desc: "High-conversion shops on Shopify or WooCommerce." },
+                                { title: "Real Estate", desc: "Fast property listings with advanced filtering." },
+                                { title: "Corporate", desc: "Professional brand presence for enterprise clients." },
+                                { title: "Healthcare", desc: "HIPAA-compliant patient booking systems." },
+                                { title: "Education", desc: "LMS platforms and course enrollment sites." }
+                            ].map((industry, i) => (
+                                <ScrollReveal key={i} animation="fade-up" delay={i * 100}>
+                                    <div className="card-base" style={{ background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)' }}>
+                                        <h3 className="heading-md" style={{ marginBottom: '10px', color: '#38bdf8' }}>{industry.title}</h3>
+                                        <p style={{ color: '#94a3b8', lineHeight: '1.6' }}>{industry.desc}</p>
                                     </div>
-                                    <h3 className="heading-md" style={{ marginBottom: '16px', color: '#0f172a' }}>Custom Web Apps</h3>
-                                    <p style={{ color: '#64748b', marginBottom: '24px', lineHeight: '1.6' }}>
-                                        Need complexity? specific functionality? We build custom web applications using React, Node.js, and modern stacks.
-                                    </p>
-                                    <ul style={{ fontSize: '0.95rem', color: '#475569', padding: 0, listStyle: 'none' }}>
-                                        <li style={{ marginBottom: '10px', display: 'flex', gap: '10px' }}><CheckCircle size={18} color="#2563eb" /> SaaS Dashboards</li>
-                                        <li style={{ marginBottom: '10px', display: 'flex', gap: '10px' }}><CheckCircle size={18} color="#2563eb" /> Customer Portals</li>
-                                        <li style={{ display: 'flex', gap: '10px' }}><CheckCircle size={18} color="#2563eb" /> API Integrations</li>
-                                    </ul>
-                                </div>
-                            </ScrollReveal>
-
-                            <ScrollReveal animation="fade-up" delay={200}>
-                                <div style={{ background: '#fff', padding: '40px', borderRadius: '24px', boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.05)', height: '100%' }}>
-                                    <div style={{ background: '#fef3c7', width: 'fit-content', padding: '12px', borderRadius: '12px', marginBottom: '24px' }}>
-                                        <Lock size={28} color="#d97706" />
-                                    </div>
-                                    <h3 className="heading-md" style={{ marginBottom: '16px', color: '#0f172a' }}>E-Commerce & CMS</h3>
-                                    <p style={{ color: '#64748b', marginBottom: '24px', lineHeight: '1.6' }}>
-                                        Scalable online stores and content sites. Whether it's Shopify, WooCommerce, or a Headless global rollout.
-                                    </p>
-                                    <ul style={{ fontSize: '0.95rem', color: '#475569', padding: 0, listStyle: 'none' }}>
-                                        <li style={{ marginBottom: '10px', display: 'flex', gap: '10px' }}><CheckCircle size={18} color="#d97706" /> High-conversion Checkouts</li>
-                                        <li style={{ marginBottom: '10px', display: 'flex', gap: '10px' }}><CheckCircle size={18} color="#d97706" /> Inventory Sync</li>
-                                        <li style={{ display: 'flex', gap: '10px' }}><CheckCircle size={18} color="#d97706" /> Payment Gateway Setup</li>
-                                    </ul>
-                                </div>
-                            </ScrollReveal>
+                                </ScrollReveal>
+                            ))}
                         </div>
                     </div>
                 </section>
 
-                {/* 5. PROOF OF WORK */}
+                {/* 5. WHAT IS WEB DEV */}
+                <section className="section-responsive" style={{ background: '#fff' }}>
+                    <div className="container-responsive text-center" style={{ maxWidth: '1000px' }}>
+                        <ScrollReveal animation="zoom-in">
+                            <h2 className="heading-lg" style={{ color: '#0f172a', marginBottom: '24px' }}>Why Professional Development Matters</h2>
+                            <p className="text-body" style={{ color: '#64748b', marginBottom: '30px' }}>
+                                In the digital age, your website is often the first point of contact between you and your customers. DIY builders are limited, slow, and generic. Custom development offers the freedom to build exactly what your business needs.
+                            </p>
+                            <p className="text-body" style={{ color: '#64748b' }}>
+                                A professionally developed website establishes credibility, improves search engine rankings, and provides a seamless user experience that DIY tools simply cannot match.
+                            </p>
+                        </ScrollReveal>
+                    </div>
+                </section>
+
+                {/* 6. OUR SERVICES */}
+                <section className="section-responsive" style={{ background: '#f8fafc' }}>
+                    <div className="container-responsive">
+                        <ScrollReveal>
+                            <h2 className="heading-lg text-center" style={{ color: '#0f172a', marginBottom: '60px' }}>Our Development Services</h2>
+                        </ScrollReveal>
+                        <div className="grid-auto-fit">
+                            {[
+                                { title: "Custom Web Apps", items: ["React/Next.js Applications", "SaaS Platforms", "Customer Portals", "API Integrations"], icon: Code },
+                                { title: "E-Commerce", items: ["Shopify Development", "WooCommerce", "Headless Commerce", "Payment Gateway Setup"], icon: ShoppingCart },
+                                { title: "CMS Development", items: ["Custom WordPress Themes", "Headless CMS (Strapi/Sanity)", "Easy Content Management", "Blog Migration"], icon: Layout },
+                                { title: "UI/UX Design", items: ["Wireframing & Prototyping", "User Journey Mapping", "Mobile-First Design", "Brand Identity"], icon: Zap },
+                                { title: "Maintenance & Support", items: ["Security Updates", "Speed Optimization", "Daily Backups", "24/7 Monitoring"], icon: Server },
+                                { title: "API Microservices", items: ["Database Design", "Cloud Infrastructure", "Third-party Integrations", "Serverless Functions"], icon: Database }
+                            ].map((service, i) => (
+                                <ScrollReveal key={i} animation="fade-up" delay={i * 100}>
+                                    <div className="card-base" style={{ background: '#fff', boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.05)', border: '1px solid #f1f5f9' }}>
+                                        <div style={{ display: 'flex', alignItems: 'center', gap: '15px', marginBottom: '20px' }}>
+                                            <div style={{ background: '#eff6ff', padding: '10px', borderRadius: '8px' }}>
+                                                <service.icon size={24} color="#2563eb" />
+                                            </div>
+                                            <h3 className="heading-md" style={{ color: '#0f172a' }}>{service.title}</h3>
+                                        </div>
+                                        <ul style={{ paddingLeft: '20px', color: '#64748b', lineHeight: '1.8' }}>
+                                            {service.items.map((item, j) => (
+                                                <li key={j}>{item}</li>
+                                            ))}
+                                        </ul>
+                                    </div>
+                                </ScrollReveal>
+                            ))}
+                        </div>
+                    </div>
+                </section>
+
+                {/* 7. OUR PROCESS */}
                 <section className="section-responsive" style={{ background: '#fff' }}>
                     <div className="container-responsive">
-                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'end', marginBottom: '60px', flexWrap: 'wrap', gap: '20px' }}>
-                            <h2 className="heading-lg" style={{ color: '#0f172a', maxWidth: '500px' }}>We Build Assets.</h2>
-                            <Link to="/case-studies" style={{ display: 'flex', alignItems: 'center', gap: '8px', color: '#dc2626', fontWeight: '600' }}>
-                                View Full Case Study <ArrowRight size={20} />
-                            </Link>
-                        </div>
-
-                        <div style={{
-                            background: '#0f172a',
-                            borderRadius: '24px',
-                            padding: '60px',
-                            color: '#fff',
-                        }}>
-                            <div className="grid-2">
-                                <div>
-                                    <div style={{ fontSize: '0.9rem', fontWeight: '600', color: '#f87171', marginBottom: '16px', letterSpacing: '1px' }}>CASE STUDY: REAL ESTATE</div>
-                                    <h3 className="heading-lg" style={{ marginBottom: '20px' }}>Rebuilding a Luxury PropTech Platform</h3>
-                                    <p style={{ color: '#94a3b8', lineHeight: '1.7', marginBottom: '30px' }}>
-                                        A luxury real estate agency needed a high-speed, filterable property portal. We built a Next.js app with headless CMS that loads instantly.
-                                    </p>
-                                    <div style={{ display: 'flex', gap: '40px', flexWrap: 'wrap' }}>
-                                        <div>
-                                            <div style={{ fontSize: '2rem', fontWeight: 'bold', color: '#fff' }}>0.4s</div>
-                                            <div style={{ fontSize: '0.9rem', color: '#94a3b8' }}>Load Time</div>
-                                        </div>
-                                        <div>
-                                            <div style={{ fontSize: '2rem', fontWeight: 'bold', color: '#fff' }}>+150%</div>
-                                            <div style={{ fontSize: '0.9rem', color: '#94a3b8' }}>Lead Form Submits</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div style={{
-                                    height: '300px',
-                                    background: 'linear-gradient(135deg, #1e293b 0%, #0f172a 100%)',
-                                    borderRadius: '16px',
-                                    display: 'flex',
-                                    alignItems: 'center',
-                                    justifyContent: 'center',
-                                    border: '1px solid rgba(255,255,255,0.1)'
-                                }}>
-                                    <Zap size={80} color="#f87171" strokeWidth={1} />
-                                </div>
+                        <ScrollReveal>
+                            <div className="text-center" style={{ marginBottom: '60px' }}>
+                                <h2 className="heading-lg" style={{ color: '#0f172a', marginBottom: '16px' }}>The RedShark Digital Stack</h2>
+                                <p style={{ color: '#64748b' }}>From idea to launch, our process ensures excellence.</p>
                             </div>
+                        </ScrollReveal>
+                        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '20px', justifyContent: 'center' }}>
+                            {[
+                                { step: "1. Discovery", desc: "Mapping out user journeys and technical requirements." },
+                                { step: "2. Design", desc: "Creating high-fidelity wireframes that align with your brand." },
+                                { step: "3. Build", desc: "Clean, modular code using modern frameworks." },
+                                { step: "4. Test", desc: "Rigorous QA for speed, mobile, and security." },
+                                { step: "5. Launch", desc: "Seamless deployment with zero downtime." }
+                            ].map((item, i) => (
+                                <ScrollReveal key={i} animation="fade-in" delay={i * 150} style={{ flex: '1 1 200px' }}>
+                                    <div style={{
+                                        padding: '24px',
+                                        background: '#f8fafc',
+                                        borderRadius: '12px',
+                                        border: '1px solid #e2e8f0',
+                                        textAlign: 'center',
+                                        height: '100%'
+                                    }}>
+                                        <div style={{ fontWeight: 'bold', fontSize: '1.2rem', color: '#0f172a', marginBottom: '8px' }}>{item.step}</div>
+                                        <p style={{ fontSize: '0.9rem', color: '#64748b' }}>{item.desc}</p>
+                                    </div>
+                                </ScrollReveal>
+                            ))}
                         </div>
                     </div>
                 </section>
 
-                {/* 6. FAQ */}
-                <section className="section-responsive" style={{ background: '#f8fafc' }}>
+                {/* 8. TOOLS & TECH */}
+                <section className="section-responsive text-center" style={{ background: '#f8fafc' }}>
+                    <div className="container-responsive">
+                        <ScrollReveal>
+                            <h2 className="heading-md" style={{ color: '#0f172a', marginBottom: '40px' }}>Our Technology Stack</h2>
+                        </ScrollReveal>
+                        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '20px', justifyContent: 'center', opacity: '0.7' }}>
+                            {['React', 'Next.js', 'Node.js', 'Express', 'TypeScript', 'PostgreSQL', 'MongoDB', 'WordPress', 'Shopify', 'AWS', 'Vercel'].map((tool, i) => (
+                                <ScrollReveal key={i} animation="zoom-in" delay={i * 50}>
+                                    <span style={{
+                                        padding: '10px 20px',
+                                        background: '#fff',
+                                        borderRadius: '30px',
+                                        fontSize: '0.95rem',
+                                        fontWeight: '600',
+                                        boxShadow: '0 2px 4px rgba(0,0,0,0.05)',
+                                        color: '#475569',
+                                        display: 'inline-block'
+                                    }}>
+                                        {tool}
+                                    </span>
+                                </ScrollReveal>
+                            ))}
+                        </div>
+                    </div>
+                </section>
+
+                {/* 9. CASE STUDY */}
+                <section className="section-responsive" style={{ background: '#0f172a', color: '#fff' }}>
+                    <div className="container-responsive" style={{ maxWidth: '1000px' }}>
+                        <ScrollReveal>
+                            <div className="text-center" style={{ marginBottom: '40px' }}>
+                                <span style={{ color: '#f87171', fontWeight: 'bold', fontSize: '0.9rem', letterSpacing: '1px' }}>SUCCESS STORY</span>
+                                <h2 className="heading-lg" style={{ margin: '16px 0' }}>Rebuilding a Luxury PropTech Platform</h2>
+                            </div>
+                        </ScrollReveal>
+                        <ScrollReveal animation="fade-up">
+                            <div style={{ background: 'rgba(255,255,255,0.05)', padding: '40px', borderRadius: '24px', display: 'flex', flexDirection: 'column', gap: '30px', border: '1px solid rgba(255,255,255,0.1)' }}>
+                                <div className="grid-auto-fit">
+                                    <div>
+                                        <h4 style={{ color: '#94a3b8', fontSize: '0.9rem', marginBottom: '8px' }}>CHALLENGE</h4>
+                                        <p style={{ fontSize: '1.1rem' }}>Legacy site was slow (6s load) and impossible to filter properties.</p>
+                                    </div>
+                                    <div>
+                                        <h4 style={{ color: '#94a3b8', fontSize: '0.9rem', marginBottom: '8px' }}>SOLUTION</h4>
+                                        <p style={{ fontSize: '1.1rem' }}>Headless Next.js app with advanced filtering.</p>
+                                    </div>
+                                    <div>
+                                        <h4 style={{ color: '#94a3b8', fontSize: '0.9rem', marginBottom: '8px' }}>RESULT</h4>
+                                        <p style={{ fontSize: '1.1rem', color: '#4ade80', fontWeight: 'bold' }}>0.4s load time and +150% in lead submissions.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </ScrollReveal>
+                    </div>
+                </section>
+
+                {/* 10. FAQ */}
+                <section className="section-responsive" style={{ background: '#fff' }}>
                     <div className="container-responsive" style={{ maxWidth: '800px' }}>
                         <ScrollReveal>
-                            <h2 className="heading-lg text-center" style={{ color: '#0f172a', marginBottom: '60px' }}>Common Questions</h2>
+                            <h2 className="heading-lg text-center" style={{ color: '#0f172a', marginBottom: '60px' }}>Frequently Asked Questions</h2>
                         </ScrollReveal>
-
                         <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
                             {faqs.map((faq, index) => (
                                 <ScrollReveal key={index} animation="fade-up" delay={index * 50}>
-                                    <div style={{ background: '#fff', borderRadius: '16px', border: '1px solid #e2e8f0', overflow: 'hidden' }}>
+                                    <div style={{ background: '#f8fafc', borderRadius: '16px', border: '1px solid #e2e8f0', overflow: 'hidden' }}>
                                         <button
                                             onClick={() => toggleFaq(index)}
                                             style={{
@@ -292,7 +353,7 @@ const WebDevPage = () => {
                     </div>
                 </section>
 
-                {/* 7. FINAL CTA */}
+                {/* 11. CTA */}
                 <section style={{ padding: '80px 20px', background: '#fff' }}>
                     <ScrollReveal animation="zoom-in">
                         <div style={{
@@ -328,6 +389,15 @@ const WebDevPage = () => {
                             </div>
                         </div>
                     </ScrollReveal>
+                </section>
+
+                {/* 12. FOOTER BLURB */}
+                <section style={{ padding: '60px 20px', background: '#f1f5f9', fontSize: '0.9rem', color: '#64748b', textAlign: 'center' }}>
+                    <div className="container-responsive" style={{ maxWidth: '800px' }}>
+                        <p>
+                            Red Shark builds high-performance websites and applications. From custom React apps to scalable e-commerce stores, we engineer digital experiences that convert.
+                        </p>
+                    </div>
                 </section>
             </main>
             <Footer />
