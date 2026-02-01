@@ -6,6 +6,7 @@ import SEOPage from './pages/SEOPage';
 import SEMPage from './pages/SEMPage';
 import SMMPage from './pages/SMMPage';
 import WebDevPage from './pages/WebDevPage';
+import BlogPostPage from './pages/BlogPostPage';
 import './components/UI/ScrollReveal'; // Import global styles if needed or ensuring context
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Route path="/services/sem" element={<SEMPage />} />
         <Route path="/services/smm" element={<SMMPage />} />
         <Route path="/services/web-development" element={<WebDevPage />} />
+        <Route path="/blog/:slug" element={<BlogPostPage />} />
       </Routes>
     </Router>
   )
