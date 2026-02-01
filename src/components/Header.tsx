@@ -56,7 +56,7 @@ const Header = () => {
                         </div>
                     </div>
 
-                    <Link to="/#blog" onClick={() => setMobileMenuOpen(false)}>Blog</Link>
+                    <Link to="/blog" onClick={() => setMobileMenuOpen(false)}>Blog</Link>
                     <Link to="/about" onClick={() => setMobileMenuOpen(false)}>About</Link>
                     <Link to="/#portfolio" onClick={() => setMobileMenuOpen(false)}>Work</Link>
                     <Link to="/#contact" onClick={() => setMobileMenuOpen(false)}>Contact</Link>
