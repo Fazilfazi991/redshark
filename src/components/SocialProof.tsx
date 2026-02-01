@@ -4,7 +4,6 @@ import './SocialProof.css';
 const SocialProof = () => {
     const brands = [
         { name: "BridgeWater", file: "BRIDGEWATER-LAST-400x150.png" },
-        { name: "RedShark", file: "../logo-red.jpg" }, // Access from root public
         { name: "NeoNights", file: "neonights-Logo__a-scaled-300x192.png" },
         { name: "ZapMart", file: "zapmart_logo_600x@2x.webp" }
     ];

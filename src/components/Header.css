@@ -240,10 +240,17 @@
         visibility: visible;
         opacity: 1;
         display: none;
-        /* Hidden by default toggled by React state via styled display or class? Actually handled by .show class */
         text-align: center;
         width: 100%;
+        min-width: 0;
+        /* Reset desktop min-width */
         border-radius: 0;
+        left: 0;
+        /* Reset desktop left */
+        margin: 0;
+        /* Reset any margins */
+        box-sizing: border-box;
+        /* Ensure padding doesn't overflow width */
     }
 
     /* Override standard dropdown behavior for mobile */
@@ -256,14 +263,16 @@
     .dropdown-menu a {
         font-size: 1rem;
         color: #64748b;
-        padding: 12px 20px;
-        /* Added horizontal padding */
+        padding: 12px 10px;
+        /* Reduced horizontal padding slightly */
         margin-bottom: 0;
         font-weight: 500;
         white-space: normal;
-        /* Allow text to wrap */
         line-height: 1.4;
-        /* Improve readability for wrapped text */
+        width: 100%;
+        /* Ensure full width */
+        display: block;
+        box-sizing: border-box;
     }
 
     .dropdown-trigger {
