@@ -258,6 +258,8 @@
         display: block;
         visibility: visible;
         opacity: 1;
+        transform: none !important;
+        /* CRITICAL FIX: Prevent desktop translate(-50%) from applying */
     }
 
     .dropdown-menu a {
