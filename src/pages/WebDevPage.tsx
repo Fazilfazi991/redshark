@@ -3,7 +3,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import WhatsAppButton from '../components/WhatsAppButton';
 import ScrollReveal from '../components/UI/ScrollReveal';
-import { Code, Smartphone, Zap, Lock, AlertTriangle, CheckCircle, ChevronDown, ChevronUp, ArrowRight, ShieldCheck, Layout, Database, Server } from 'lucide-react';
+import { Code, Smartphone, Zap, Lock, AlertTriangle, CheckCircle, ChevronDown, ChevronUp, ArrowRight, ShieldCheck, Layout, Database, Server, ShoppingCart } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const WebDevPage = () => {
