@@ -251,9 +251,14 @@
     .dropdown-menu a {
         font-size: 1rem;
         color: #64748b;
-        padding: 12px 0;
+        padding: 12px 20px;
+        /* Added horizontal padding */
         margin-bottom: 0;
         font-weight: 500;
+        white-space: normal;
+        /* Allow text to wrap */
+        line-height: 1.4;
+        /* Improve readability for wrapped text */
     }
 
     .dropdown-trigger {
