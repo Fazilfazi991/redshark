@@ -23,8 +23,11 @@ const Header = () => {
         setDropdownOpen(false);
     }, [location]);
 
+    // Check if we are on the home page
+    const isHomePage = location.pathname === '/';
+
     return (
-        <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
+        <header className={`header ${isScrolled || !isHomePage ? 'scrolled' : ''}`}>
             <div className="container header-container">
                 <Link to="/" className="logo">
                     <img src="/logo.png" alt="REDSHARK" style={{ height: '80px', width: 'auto' }} />

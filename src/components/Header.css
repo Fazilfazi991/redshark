@@ -39,13 +39,22 @@
 }
 
 .desktop-nav a {
-    font-weight: 500;
-    font-size: 1.1rem;
+    font-weight: 600;
+    font-size: 1rem;
     color: white;
     text-decoration: none;
+    transition: color 0.3s;
+}
+
+.header.scrolled .desktop-nav a {
+    color: var(--text-main, #334155);
 }
 
 .desktop-nav a:hover {
+    color: var(--primary);
+}
+
+.header.scrolled .desktop-nav a:hover {
     color: var(--primary);
 }
 
