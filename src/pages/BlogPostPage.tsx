@@ -92,7 +92,7 @@ const BlogPostPage = () => {
                 </div>
 
                 {/* CONTENT AREA */}
-                <div className="container-responsive" style={{ maxWidth: '1200px', marginTop: '-40px' }}>
+                <div className="container-responsive" style={{ maxWidth: '1200px', marginTop: '40px' }}>
 
                     {/* Featured Image - Moved out of grid for better alignment */}
                     <div className="post-image-container" style={{ marginBottom: '60px' }}>

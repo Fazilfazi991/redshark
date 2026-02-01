@@ -20,16 +20,19 @@
     margin-bottom: 60px;
     border-radius: 16px;
     overflow: hidden;
-    /* Constrain height */
-    max-height: 500px;
     width: 100%;
+    max-width: 1000px;
+    /* Constrain width so it's not huge */
+    margin-left: auto;
+    margin-right: auto;
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
 }
 
 .post-image-container img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto;
+    /* Maintain aspect ratio - no cropping */
+    display: block;
 }
 
 .blog-callout {
