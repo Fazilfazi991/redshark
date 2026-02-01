@@ -8,6 +8,7 @@ import SMMPage from './pages/SMMPage';
 import WebDevPage from './pages/WebDevPage';
 import BlogPostPage from './pages/BlogPostPage';
 import BlogPage from './pages/BlogPage';
+import ThankYouPage from './pages/ThankYouPage';
 import ScrollToHash from './utils/ScrollToHash';
 import './components/UI/ScrollReveal'; // Import global styles if needed or ensuring context
 
@@ -25,6 +26,7 @@ function App() {
         <Route path="/services/web-development" element={<WebDevPage />} />
         <Route path="/blog" element={<BlogPage />} />
         <Route path="/blog/:slug" element={<BlogPostPage />} />
+        <Route path="/thank-you" element={<ThankYouPage />} />
       </Routes>
     </Router>
   )

@@ -25,8 +25,15 @@ const AboutPage = () => {
                             <p style={{ color: 'var(--text-muted)', lineHeight: '1.8', fontSize: '1.1rem', marginBottom: '20px' }}>
                                 To empower ambitious businesses with the digital tools and strategies they need to dominate their market. We believe in transparency, speed, and results that you can measure.
                             </p>
-                            <p style={{ color: 'var(--text-muted)', lineHeight: '1.8', fontSize: '1.1rem' }}>
-                                Founded in 2024, RedShark was born out of frustration with traditional agencies that over-promise and under-deliver. We set out to change that with a lean, performance-driven approach.
+
+                            <h2 style={{ fontSize: '2.5rem', marginBottom: '20px', color: '#000', marginTop: '40px' }}>Our Vision</h2>
+                            <p style={{ color: 'var(--text-muted)', lineHeight: '1.8', fontSize: '1.1rem', marginBottom: '20px' }}>
+                                To be the leading force in digital transformation, redefining how businesses interact with their audience through innovative technology and creative excellence.
+                            </p>
+
+                            <h2 style={{ fontSize: '2.5rem', marginBottom: '20px', color: '#000', marginTop: '40px' }}>Our Story</h2>
+                            <p style={{ color: 'var(--text-muted)', lineHeight: '1.8', fontSize: '1.1rem', marginBottom: '20px' }}>
+                                RedShark began in 2024 with a clear purpose: to disrupt the traditional agency model. We saw a gap between technical execution and creative strategy, and we set out to bridge it. What started as a small team of passionate experts has grown into a full-service digital powerhouse, driven by the success of our partners.
                             </p>
                         </div>
                         <div style={{ background: '#f8fafc', padding: '40px', borderRadius: '20px', border: '1px solid var(--border)' }}>
