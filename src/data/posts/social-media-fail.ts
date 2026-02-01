@@ -1,4 +1,4 @@
-import { BlogPost } from '../blogData';
+import type { BlogPost } from '../blogData';
 
 export const socialMediaFailPost: BlogPost = {
     id: '3',

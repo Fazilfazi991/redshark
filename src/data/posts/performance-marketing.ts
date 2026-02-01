@@ -1,4 +1,4 @@
-import { BlogPost } from '../blogData';
+import type { BlogPost } from '../blogData';
 
 export const performanceVsBrandPost: BlogPost = {
     id: '5',
