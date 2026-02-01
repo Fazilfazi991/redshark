@@ -18,6 +18,8 @@ export const socialMediaFailPost: BlogPost = {
         { type: 'paragraph', text: 'But algorithms today (especially TikTok, LinkedIn, and Instagram Reels) prioritize *retention* and *engagement*, not just recency or frequency. If you post garbage daily, you are simply training the algorithm that your content is boring. You are actively harming your account health. The algorithm learns: "When Brand X posts, nobody stops scrolling." So it stops showing your posts even to your own followers.' },
         { type: 'paragraph', text: 'The Shift: One incredible, detailed, thought-provoking post a week that sparks a 50-comment debate and gets shared 20 times is worth infinitely more than 20 throwaway posts that get zero traction. Stop feeding the content monster. Start creating Value Assets.' },
 
+        { type: 'callout', text: '🛑 Stop checking the box. One incredible, thought-provoking post a week is worth more than 20 throwaway posts. Start creating Value Assets.' },
+
         { type: 'heading', text: 'The "Megaphone" vs. The Telephone' },
         { type: 'paragraph', text: 'Most brands treat social media as a broadcast channel—a megaphone. "Buy our product!" "Read our new blog!" "We won an award!" "Look at us!" It is entirely self-centered. It is ego-centric content.' },
         { type: 'paragraph', text: 'But think about how *you* use social media. You don\'t log on to be sold to. You log on to be entertained, educated, or to connect with peers. You log on to feel something.' },
@@ -32,6 +34,8 @@ export const socialMediaFailPost: BlogPost = {
         { type: 'paragraph', text: 'Brands waste fortunes on high-production video shoots. They hire a crew, script everything, perfect the lighting, and edit it for weeks. It looks like a TV commercial.' },
         { type: 'paragraph', text: 'But scroll through your TikTok or Reels feed. What goes viral? A guy sitting in his car talking passionately into an iPhone. A grainy video of a failed experiment. A simple text-on-screen joke.' },
         { type: 'paragraph', text: 'Authenticity beats polish every time. In fact, the "corporate sheen" is often a turn-off for Gen Z and Millennials. It screams "This is an Ad." It raises their defenses. "Rough around the edges" screams "Real." It lowers defenses. Don\'t be afraid to show the mess. Show the failures. Show the behind-the-scenes chaos. People connect with humans, not logos.' },
+
+        { type: 'callout', text: '💡 Strategy Shift: Authenticity beats polish. A grainy video of a failed experiment often outperforms a $10k TV-style commercial.' },
 
         { type: 'heading', text: 'The "Link in Bio" Fallacy' },
         { type: 'paragraph', text: 'Social platforms are businesses. Their goal is to sell ads. To sell ads, they need users to stay on the app. If your entire content strategy is "Click the link in our bio to read more," or "Link below," the platform will effectively shadowban you. They do not want you siphoning their users away to your website.' },

@@ -19,6 +19,8 @@ export const performanceVsBrandPost: BlogPost = {
         { type: 'paragraph', text: 'But here is the catch: there is a finite number of people in the market for running shoes *right now*. Let\'s say it\'s 5% of the total addressable market. The other 95% are not looking to buy shoes today.' },
         { type: 'paragraph', text: 'Once you have optimized your ads to capture that 5%, you hit a wall. You can\'t scale. To get more sales, you have to bid higher, widening your targeting to people who are slightly less interested. Your Conversion Rate drops. Your CPA (Cost Per Acquisition) starts to skyrocket. This is the "Performance Plateau." You cannot ad-spend your way out of it. We see companies burn millions trying to force this efficiency curve.' },
 
+        { type: 'callout', text: '📉 The Reality: You cannot ad-spend your way out of the Performance Plateau. Once you exhaust the 5% of "in-market" buyers, your CPA will always rise.' },
+
         { type: 'heading', text: 'Brand is the Demand Generator' },
         { type: 'paragraph', text: 'This is where Brand Marketing enters the equation. Brand marketing doesn\'t harvest existing demand; it *creates new demand*. It talks to the 95% of people who *aren\'t* ready to buy yet. It tells them a story. It aligns with their identity. It makes them feel something.' },
         { type: 'paragraph', text: 'When those people eventually enter the market 6 months later, they don\'t search for "best running shoes." They search for "Nike." They skip the generic comparison phase entirely. They are price-insensitive. This is the ultimate competitive moat. Performance marketing is paying rent for traffic; Brand marketing is building equity in a house.' },
@@ -32,6 +34,8 @@ export const performanceVsBrandPost: BlogPost = {
         { type: 'heading', text: 'The 60/40 Rule' },
         { type: 'paragraph', text: 'Les Binet and Peter Field, the godfathers of marketing effectiveness, analyzed thousands of campaigns over decades. Their research (The Long and the Short of It) is the bible of effectiveness. Their conclusion? The optimal split for maximizing long-term growth is roughly 60% Brand Building / 40% Sales Activation (Performance).' },
         { type: 'paragraph', text: 'Most startups have this flip-flopped. They are 95% performance, 5% brand. This strategy works for the first $1M to $5M in revenue. You can hustle your way there. But to go from $10M to $100M, you have to shift. You have to become a brand that people know, not just a product they saw an ad for on a Tuesday.' },
+
+        { type: 'callout', text: '💡 The Golden Rule: 60% Brand Building / 40% Sales Activation. This is the split that maximizes long-term growth.' },
 
         { type: 'heading', text: 'How to Build Brand in 2026 (Without a Super Bowl Budget)' },
         { type: 'paragraph', text: 'You don\'t need millions to build a brand. Brand building in 2026 means:' },
