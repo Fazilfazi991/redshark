@@ -7,11 +7,13 @@ import SEMPage from './pages/SEMPage';
 import SMMPage from './pages/SMMPage';
 import WebDevPage from './pages/WebDevPage';
 import BlogPostPage from './pages/BlogPostPage';
+import ScrollToHash from './utils/ScrollToHash';
 import './components/UI/ScrollReveal'; // Import global styles if needed or ensuring context
 
 function App() {
   return (
     <Router>
+      <ScrollToHash />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<AboutPage />} />
