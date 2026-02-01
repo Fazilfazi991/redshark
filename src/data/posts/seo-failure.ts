@@ -3,7 +3,7 @@ import type { BlogPost } from '../blogData';
 export const seoFailurePost: BlogPost = {
     id: '1',
     slug: 'why-90-percent-websites-never-rank',
-    title: 'Why 90% of Websites Never Rank on Google — And What\'s Actually Going Wrong',
+    title: 'Why 90% of Websites Never Rank on Google - And What\'s Actually Going Wrong',
     category: 'SEO',
     summary: 'A deep dive into the hidden reasons why most SEO campaigns fail. We analyze technical debt, intent mismatch, the vanity metric trap, and the new rules of engagement for grading in the AI era.',
     image: '/blog-images/seo_failure_blog.png',
@@ -11,8 +11,9 @@ export const seoFailurePost: BlogPost = {
     readTime: '15 min read',
     content: [
         { type: 'paragraph', text: 'You built a beautiful website. You paid a consultant thousands of dollars for "SEO optimization." You waited months, maybe even a year, faithfully checking your Google Search Console. And yet, the traffic line is flatter than a EKG on a corpse. You are not alone. In fact, a sweeping study by Ahrefs analyzed over one billion web pages and found that a staggering 90.63% of content gets absolutely no traffic from Google. None. Zero.' },
-        { type: 'paragraph', text: 'It is a sobering statistic for business owners who view their website as their primary sales channel. But why is this happening? Is SEO dead? No. SEO isn\'t dead, but the "old school" SEO playbook—keyword stuffing, buying cheap backlinks, and churning out generic 500-word blog posts—is buried six feet under. The simplistic tactics that worked in 2015 are now active liabilities in 2026.' },
-        { type: 'paragraph', text: 'The search landscape has shifted fundamentally. Google\'s algorithms are no longer just matching keywords; they are modeling user intent, analyzing interaction signals, and ruthlessly culling content that doesn\'t demonstrate real-world experience. If you are part of the falling 90%, it is likely due to one of the critical failures we outline below. This isn\'t just theory; these are the patterns we see in dozens of audits every month.' },
+        { type: 'paragraph', text: 'It is a sobering statistic for business owners who view their website as their primary sales channel. But why is this happening? Is SEO dead? No. SEO isn\'t dead, but the "old school" SEO playbook - keyword stuffing, buying cheap backlinks, and churning out generic 500-word blog posts - is buried six feet under. The simplistic tactics that worked in 2015 are now active liabilities in 2026.' },
+        { type: 'paragraph', text: 'We have all heard the pitch: "We will get you to #1 on Google in 30 days!" It is the most common lie in digital marketing. Every day, business owners pour thousands of dollars into [SEO campaigns](/services/seo) that yield absolutely zero return on investment. They get monthly reports showing "rankings improved," but their phone isn\'t ringing, and their sales aren\'t growing.' },
+        { type: 'paragraph', text: 'Why? Because ranking is vanity. Revenue is sanity. The landscape of Search Engine Optimization has shifted tectonically in the last 18 months, especially with the introduction of Google\'s Andromeda update and AI Overviews. If you are still using 2021 tactics (keyword stuffing, buying cheap backlinks, churning out generic blog posts), you aren\'t just wasting money - you are actively damaging your domain authority. Here is why most SEO fails.' },
 
         { type: 'heading', text: '1. The Vanity Metric Trap: Ranking vs. Revenue' },
         { type: 'paragraph', text: 'One of the most common pitfalls we see is a misalignment of goals between the business owner and the SEO strategy. Business owners often come to us obsessed with ranking for a specific, high-volume "trophy keyword." For example, a boutique luxury interior designer in London might want to rank #1 for "interior design." It sounds logical: high search volume equals high traffic, and traffic equals sales, right?' },
@@ -26,7 +27,7 @@ export const seoFailurePost: BlogPost = {
                 'Competitors looking for ideas'
             ]
         },
-        { type: 'paragraph', text: 'Only a tiny fraction—perhaps 0.01%—are looking to hire a high-end consultant in London right now. As a result, even if you rank (which takes massive resources), you will see a massive bounce rate. Google sees users landing on your page, realizing it isn\'t what they wanted (they wanted photos, you gave them a service page), and immediately leaving. This high bounce rate creates a negative feedback loop: Google assumes your page is low quality and eventually drags your rankings down across the board.' },
+        { type: 'paragraph', text: 'Only a tiny fraction - perhaps 0.01% - are looking to hire a high-end consultant in London right now. As a result, even if you rank (which takes massive resources), you will see a massive bounce rate. Google sees users landing on your page, realizing it isn\'t what they wanted (they wanted photos, you gave them a service page), and immediately leaving. This high bounce rate creates a negative feedback loop: Google assumes your page is low quality and eventually drags your rankings down across the board.' },
         { type: 'paragraph', text: 'The Solution: Focus on long-tail, high-intent keywords. "Luxury residential interior architect Kensington" might only get 50 searches a month. But those 50 people are holding their credit cards. They know exactly what they want. A strategy that converts 10% of 50 visitors is infinitely more valuable than one that converts 0.01% of 10,000 visitors. Chase revenue, not rankings.' },
 
         { type: 'callout', text: '💡 Pro Tip: A strategy that converts 10% of 50 visitors is infinitely more valuable than one that converts 0.01% of 10,000 visitors. Chase revenue, not rankings.' },

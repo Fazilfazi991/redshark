@@ -3,7 +3,7 @@ import type { BlogPost } from '../blogData';
 export const performanceVsBrandPost: BlogPost = {
     id: '5',
     slug: 'performance-vs-brand-marketing',
-    title: 'Performance Marketing vs. Brand Marketing — Which One Actually Grows a Business?',
+    title: 'Performance Marketing vs. Brand Marketing - Which One Actually Grows a Business?',
     category: 'Performance Marketing',
     summary: 'The battle between ROAS and LTV. Why purely performance-driven brands hit a ceiling, and how Brand Marketing acts as the efficiency multiplier for your ad spend.',
     image: '/blog-images/performance_vs_brand_blog.png',

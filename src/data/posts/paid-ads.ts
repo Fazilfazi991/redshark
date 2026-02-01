@@ -3,7 +3,7 @@ import type { BlogPost } from '../blogData';
 export const paidAdsPost: BlogPost = {
     id: '4',
     slug: 'paid-ads-wasting-money',
-    title: 'The Real Reason Your Paid Ads Are Wasting Money — And It\'s Not What You Think',
+    title: 'The Real Reason Your Paid Ads Are Wasting Money - And It\'s Not What You Think',
     category: 'Paid Ads',
     summary: 'High CTR but low conversions? We diagnose the "Ad-to-Page mismatch," the dangers of Broad Match, and why your Quality Score is costing you a fortune.',
     image: '/blog-images/paid_ads_wasting_money_blog.png',
@@ -11,7 +11,7 @@ export const paidAdsPost: BlogPost = {
     readTime: '15 min read',
     content: [
         { type: 'paragraph', text: 'You are spending $5,000, maybe $10,000 a month on Google or Meta Ads. You look at the dashboard: Clicks are coming in. Impressions are high. The agency reports say "CTR is up!" But when you look at your Stripe account or your bank balance? Crickets. You aren\'t profitable. You might be breaking even, or worse, burning cash on every acquire customer.' },
-        { type: 'paragraph', text: 'The immediate reaction is to blame the platform. "Google Ads got too expensive." "Facebook targeting doesn\'t work since iOS14." Or you blame the agency. But having audited over $50M in ad spend, I can tell you: 9 times out of 10, the problem isn\'t the ad platform. It isn\'t the button color. It is the fundamental strategy. Here is exactly where your budget is leaking.' },
+        { type: 'paragraph', text: 'The immediate reaction is to blame the platform. "Google Ads got too expensive." "Facebook targeting doesn\'t work since iOS14." Or you blame the agency. But having audited over $50M in ad spend here at [Redshark](/contact), I can tell you: 9 times out of 10, the problem isn\'t the ad platform. It isn\'t the button color. It is the fundamental strategy. Here is exactly where your budget is leaking.' },
 
         { type: 'heading', text: '1. The Ad-to-Landing Page Mismatch (Message Match)' },
         { type: 'paragraph', text: 'This is the single biggest conversion killer. Imagine you see an ad on Instagram for "50% Off Men\'s Waterproof Hiking Boots." You are interested. You click it. You land on a generic homepage for "Joe\'s Shoe Store." You see sandals, high heels, kids\' running shoes. You have to scroll to find boots. There is no mention of "50% Off" anywhere.' },
@@ -26,7 +26,7 @@ export const paidAdsPost: BlogPost = {
 
         { type: 'heading', text: '3. Frequency Fatigue (Banner Blindness)' },
         { type: 'paragraph', text: 'Retargeting (showing ads to people who visited your site but didn\'t buy) is powerful. It usually has the highest ROI. But there is a fine line between "reminding" and "stalking." showing the same static banner ad to the same person 45 times in a week doesn\'t build brand awareness; it builds brand resentment.' },
-        { type: 'paragraph', text: 'It causes "Banner Blindness"—the human brain literally learns to ignore that part of the screen. We see this in Meta ads all the time. A campaign starts great, then costs creep up after 2 weeks. Why? Because you saturated your audience. Everyone has seen it.' },
+        { type: 'paragraph', text: 'It causes "Banner Blindness" - the human brain literally learns to ignore that part of the screen. We see this in Meta ads all the time. A campaign starts great, then costs creep up after 2 weeks. Why? Because you saturated your audience. Everyone has seen it.' },
         { type: 'paragraph', text: 'You need a "Creative Rotation" strategy. Show a video testimonial first. Then, if they don\'t buy, show a carousel of benefits. Then, show a static image with an offer code. Change the angle. Keep the story moving. If your Frequency metric on Facebook goes above 4.0 for a cold audience, you are burning money.' },
 
         { type: 'heading', text: '4. The "Broad Match" Trap' },

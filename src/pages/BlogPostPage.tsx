@@ -153,6 +153,23 @@ const BlogPostPage = () => {
                                 </p>
 
                                 {post.content.map((block, index) => {
+                                    // Helper to parse [text](url) into links
+                                    const parseTextWithLinks = (text: string) => {
+                                        const parts = text.split(/(\[.*?\]\(.*?\))/g);
+                                        return parts.map((part, i) => {
+                                            const match = part.match(/\[(.*?)\]\((.*?)\)/);
+                                            if (match) {
+                                                const [_, label, url] = match;
+                                                // Internal links use <Link>, external use <a>
+                                                if (url.startsWith('/') || url.startsWith('#')) {
+                                                    return <Link key={i} to={url} style={{ color: '#dc2626', textDecoration: 'underline', fontWeight: 500 }}>{label}</Link>;
+                                                }
+                                                return <a key={i} href={url} target="_blank" rel="noopener noreferrer" style={{ color: '#dc2626', textDecoration: 'underline', fontWeight: 500 }}>{label}</a>;
+                                            }
+                                            return part;
+                                        });
+                                    };
+
                                     if (block.type === 'heading') {
                                         return (
                                             <h2 key={index} id={block.text} className="post-heading">
@@ -163,7 +180,7 @@ const BlogPostPage = () => {
                                         return (
                                             <ul key={index} className="post-list">
                                                 {block.items?.map((item, i) => (
-                                                    <li key={i}>{item}</li>
+                                                    <li key={i}>{parseTextWithLinks(item)}</li>
                                                 ))}
                                             </ul>
                                         );
@@ -176,13 +193,13 @@ const BlogPostPage = () => {
                                     } else if (block.type === 'callout') {
                                         return (
                                             <div key={index} className="blog-callout">
-                                                {block.text}
+                                                {block.text && parseTextWithLinks(block.text)}
                                             </div>
                                         );
                                     } else {
                                         return (
                                             <p key={index} className="post-text">
-                                                {block.text}
+                                                {block.text && parseTextWithLinks(block.text)}
                                             </p>
                                         );
                                     }

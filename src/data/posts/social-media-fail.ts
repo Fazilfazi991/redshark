@@ -3,7 +3,7 @@ import type { BlogPost } from '../blogData';
 export const socialMediaFailPost: BlogPost = {
     id: '3',
     slug: 'social-media-strategy-failing',
-    title: 'Why Your Social Media Strategy Is Failing — The Truth Nobody Talks About',
+    title: 'Why Your Social Media Strategy Is Failing - The Truth Nobody Talks About',
     category: 'Social Media',
     summary: 'Stop posting into the void. We break down why the "post and pray" method is dead, the myth of frequency, and why community management is the only growth hack that matters.',
     image: '/blog-images/social_media_fail_blog.png',
@@ -21,7 +21,7 @@ export const socialMediaFailPost: BlogPost = {
         { type: 'callout', text: '🛑 Stop checking the box. One incredible, thought-provoking post a week is worth more than 20 throwaway posts. Start creating Value Assets.' },
 
         { type: 'heading', text: 'The "Megaphone" vs. The Telephone' },
-        { type: 'paragraph', text: 'Most brands treat social media as a broadcast channel—a megaphone. "Buy our product!" "Read our new blog!" "We won an award!" "Look at us!" It is entirely self-centered. It is ego-centric content.' },
+        { type: 'paragraph', text: 'Most brands treat social media as a broadcast channel - a megaphone. "Buy our product!" "Read our new blog!" "We won an award!" "Look at us!" It is entirely self-centered. It is ego-centric content.' },
         { type: 'paragraph', text: 'But think about how *you* use social media. You don\'t log on to be sold to. You log on to be entertained, educated, or to connect with peers. You log on to feel something.' },
         { type: 'paragraph', text: 'Social media is a telephone. It is a two-way communication device. The real magic happens in the comments, in the DMs, in the stitches and duets. If you aren\'t replying to every single comment with a thoughtful follow-up question, you are leaving money on the table. Community management is not an intern\'s job; it is a strategic growth lever. It turns passive viewers into active advocates. If you want engagement, you have to be engaging.' },
 
