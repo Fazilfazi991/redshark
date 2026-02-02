@@ -1,6 +1,6 @@
 import React from 'react';
 import { Linkedin, Mail, ArrowRight } from 'lucide-react';
-import founderImage from '../assets/founder.png';
+import founderImage from '../assets/founder.jpg';
 import './Founder.css';
 
 const Founder = () => {
