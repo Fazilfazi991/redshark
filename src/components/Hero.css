@@ -54,6 +54,23 @@
 }
 
 /* Text Visibility Fixes */
+.hero-text {
+    position: relative;
+    z-index: 10;
+    /* Ensure text is above animation */
+}
+
+.hero-visual {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-form-col {
+    position: relative;
+    z-index: 10;
+    /* Ensure form is above animation */
+}
+
 .hero-headline {
     font-size: 3.5rem;
     line-height: 1.1;
