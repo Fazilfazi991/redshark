@@ -12,30 +12,43 @@ const Founder = () => {
                         <h2 className="section-title text-left">Hi, I'm Sreyas, founder of RedShark.</h2>
 
                         <p className="founder-story">
-                            Five years ago, I wasted <strong>$40,000</strong> and six months on agencies that delivered generic templates and freelancers who disappeared mid-project.
-                        </p>
-                        <p className="founder-story">
-                            I thought: There has to be a better way. <br />
-                            So I built one.
+                            I started RedShark after watching the same problem repeat again and again.
                         </p>
 
                         <p className="founder-text">
-                            I handpicked <strong>150+ designers, developers, and marketers</strong> I've worked with over 12 years. People who actually deliver. People I'd trust with my own business.
+                            Good business owners couldn’t find the right people to work with.<br />
+                            Good freelancers couldn’t find the right businesses to work for.
                         </p>
 
-                        <div className="founder-diff">
-                            <h4>Here's how we're different:</h4>
-                            <ul>
-                                <li>Agency-level talent without the overhead</li>
-                                <li>Every project reviewed by our senior team</li>
-                                <li>You get my personal phone number</li>
-                                <li>We only take projects we can nail</li>
-                            </ul>
-                        </div>
+                        <p className="founder-text">
+                            <strong>So both sides struggled.</strong>
+                        </p>
 
+                        <p className="founder-text">
+                            Business owners ended up with agencies they didn’t fully trust.<br />
+                            Freelancers ended up doing work that didn’t help them grow.<br />
+                            That gap bothered me.
+                        </p>
+
+                        <h4 className="font-bold text-xl mb-3 text-white">What I noticed</h4>
+                        <p className="founder-text">
+                            There are experienced freelancers out there. Really good ones.<br />
+                            But they’re hard to find.<br />
+                            And harder to manage.<br />
+                            And when the work gets serious, reliability becomes the real issue.
+                        </p>
+                        <p className="founder-text">
+                            On the other side, agencies charge a lot. Not always because the work is better, but because the system is heavy.<br />
+                            I didn’t want either option.
+                        </p>
+
+                        <h4 className="font-bold text-xl mb-3 text-white">Why I built RedShark</h4>
+                        <p className="founder-text">
+                            RedShark is my attempt to fix this.
+                        </p>
                         <p className="founder-closing">
-                            Your success is how we measure ours.<br />
-                            Let's talk.
+                            I bring serious business owners and reputed freelancers under one roof.<br />
+                            No noise. No guessing. No shortcuts.
                         </p>
 
                         <div className="founder-sig">
