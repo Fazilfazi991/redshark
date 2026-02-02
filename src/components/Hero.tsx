@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, CheckCircle, Play, Code, Palette, BarChart, Megaphone, Monitor, PenTool } from 'lucide-react';
+import { ArrowRight, CheckCircle, Mail, FileEdit, Gem, Video, Search, MapPin, Megaphone, BarChart, Image } from 'lucide-react';
 import LeadForm from './LeadForm';
 import './Hero.css';
 
@@ -47,24 +47,26 @@ const Hero = () => {
                 <div className="hero-visual">
                     <div className="visual-orbit-container">
                         <div className="orbit-system">
-                            <div className="orbit-center">
-                                <span className="orbit-number">150+</span>
-                                <span className="orbit-label">Specialists</span>
+                            <div className="orbit-center-circle">
+                                <span className="brand-text">REDSHARK</span>
                             </div>
 
+                            {/* Inner Ring */}
                             <div className="orbit-ring ring-1">
-                                <div className="orbit-item item-1"><Code size={20} /></div>
-                                <div className="orbit-item item-2"><Palette size={20} /></div>
-                                <div className="orbit-item item-3"><BarChart size={20} /></div>
+                                <div className="orbit-item item-mail"><Mail size={18} /></div>
+                                <div className="orbit-item item-edit"><FileEdit size={18} /></div>
+                                <div className="orbit-item item-gem"><Gem size={18} /></div>
                             </div>
 
+                            {/* Outer Ring */}
                             <div className="orbit-ring ring-2">
-                                <div className="orbit-item item-4"><Megaphone size={24} /></div>
-                                <div className="orbit-item item-5"><Monitor size={24} /></div>
-                                <div className="orbit-item item-6"><PenTool size={24} /></div>
+                                <div className="orbit-item item-video"><Video size={20} /></div>
+                                <div className="orbit-item item-search"><Search size={20} /></div>
+                                <div className="orbit-item item-map"><MapPin size={20} /></div>
+                                <div className="orbit-item item-mega"><Megaphone size={20} /></div>
+                                <div className="orbit-item item-chart"><BarChart size={20} /></div>
+                                <div className="orbit-item item-image"><Image size={20} /></div>
                             </div>
-
-                            <div className="orbit-ring ring-3"></div>
                         </div>
                     </div>
                 </div>

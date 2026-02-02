@@ -178,8 +178,7 @@
 .visual-orbit-container {
     position: relative;
     width: 100%;
-    height: 400px;
-    /* Reduced height */
+    height: 450px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -188,41 +187,38 @@
 
 .orbit-system {
     position: relative;
-    width: 300px;
-    /* Reduced width */
-    height: 300px;
-    /* Reduced height */
-    transform: scale(1.25);
+    width: 400px;
+    height: 400px;
+    transform: scale(1);
 }
 
-.orbit-center {
+.orbit-center-circle {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 140px;
+    height: 140px;
+    background-color: #020617;
+    /* Very dark navy/black */
+    border-radius: 50%;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     z-index: 10;
+    box-shadow: 0 0 30px rgba(2, 6, 23, 0.5);
+    border: 4px solid var(--bg-dark);
+    /* White border to separate from rings? Or just dark */
 }
 
-.orbit-number {
-    font-size: 3.5rem;
-    font-weight: 900;
+.brand-text {
     color: white;
-    line-height: 1;
-    background: linear-gradient(to bottom, #ffffff, #cfcfcf);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.orbit-label {
-    font-size: 1rem;
-    color: #94a3b8;
+    font-weight: 900;
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 1.2;
     text-transform: uppercase;
-    letter-spacing: 0.1em;
-    font-weight: 600;
+    letter-spacing: 0.05em;
 }
 
 .orbit-ring {
@@ -230,80 +226,134 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border: 1px solid rgba(255, 255, 255, 0.4);
-    /* Much more visible */
     border-radius: 50%;
+    border: 1px dashed rgba(255, 255, 255, 0.2);
+    box-shadow: none;
 }
 
 .ring-1 {
-    width: 150px;
-    height: 150px;
-    animation: spin 20s linear infinite;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
-    /* Subtle glow */
+    width: 220px;
+    height: 220px;
+    animation: spin 25s linear infinite;
 }
 
 .ring-2 {
-    width: 240px;
-    height: 240px;
-    border: 1px solid rgba(255, 255, 255, 0.25);
-    /* Slightly less visible than inner */
-    animation: spin 30s linear infinite reverse;
-}
-
-.ring-3 {
-    width: 340px;
-    height: 340px;
-    border: 1px dashed rgba(255, 255, 255, 0.15);
-    /* Dashed outer */
-    animation: spin 60s linear infinite;
+    width: 360px;
+    height: 360px;
+    animation: spin 40s linear infinite reverse;
 }
 
 .orbit-item {
     position: absolute;
-    background: #000;
-    border: 1px solid rgba(220, 38, 38, 0.5);
-    /* Red border */
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
-    padding: 0.75rem;
-    color: white;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 0 15px rgba(220, 38, 38, 0.3);
-    /* Red glow */
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border: 2px solid white;
 }
 
-/* Positioning items on rings */
-.item-1 {
-    top: -20px;
+/* Inner Ring Items */
+.item-mail {
+    top: -25px;
     left: 50%;
     transform: translateX(-50%);
+    background: #60a5fa;
 }
 
-.item-2 {
-    bottom: 20%;
-    left: 0;
+/* Blue */
+.item-edit {
+    bottom: 15%;
+    left: 10%;
+    background: #8b5cf6;
 }
 
-.item-3 {
-    bottom: 20%;
-    right: 0;
-}
-
-.item-4 {
-    top: 10%;
+/* Purple */
+.item-gem {
+    bottom: 15%;
     right: 10%;
+    background: #2563eb;
 }
 
-.item-5 {
-    bottom: 10%;
-    left: 15%;
+/* Dark Blue */
+
+/* Outer Ring Items */
+.item-video {
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -180px);
+    background: #f43f5e;
 }
 
-.item-6 {
-    top: 40%;
-    left: -20px;
+/* Pink/Red */
+.item-search {
+    top: 25%;
+    right: 5%;
+    background: #0f172a;
+    border-color: #3b82f6;
+}
+
+/* Google-ish dark */
+.item-map {
+    bottom: 25%;
+    right: 5%;
+    background: #ef4444;
+}
+
+/* Red */
+.item-mega {
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 180px);
+    background: #f97316;
+}
+
+/* Orange */
+.item-chart {
+    bottom: 25%;
+    left: 5%;
+    background: #1e3a8a;
+}
+
+/* Navy */
+.item-image {
+    top: 25%;
+    left: 5%;
+    background: #f59e0b;
+}
+
+/* Yellow/Orange */
+
+@keyframes spin {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+/* Counter rotate icons so they stay upright */
+.orbit-item svg {
+    animation: counter-spin 25s linear infinite;
+}
+
+.ring-2 .orbit-item svg {
+    animation: counter-spin 40s linear infinite reverse;
+}
+
+@keyframes counter-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(-360deg);
+    }
 }
 
 @keyframes spin {
