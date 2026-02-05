@@ -3,9 +3,10 @@ import './SocialProof.css';
 
 const SocialProof = () => {
     const brands = [
-        { name: "BridgeWater", file: "BRIDGEWATER-LAST-400x150.png" },
-        { name: "NeoNights", file: "neonights-Logo__a-scaled-300x192.png" },
-        { name: "ZapMart", file: "zapmart_logo_600x@2x.webp" }
+        { name: "Vihara", file: "vihara.png" },
+        { name: "Cap", file: "cap.png" },
+        { name: "Simble", file: "simble.png" },
+        { name: "99 Studioz", file: "99studioz.png" }
     ];
 
     return (
