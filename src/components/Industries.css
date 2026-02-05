@@ -17,31 +17,38 @@
 }
 
 .industry-card {
-    background: rgba(255, 255, 255, 0.03);
-    padding: 2.5rem;
+    background: #ffffff;
+    padding: 1.5rem;
     border-radius: 1rem;
     text-align: center;
     transition: all 0.3s ease;
-    border: 1px solid transparent;
+    border: 1px solid var(--border);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .industry-card:hover {
-    background: rgba(255, 255, 255, 0.05);
     transform: translateY(-5px);
-    border-color: rgba(239, 68, 68, 0.3);
+    border-color: var(--primary);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
 .industry-icon {
     width: 48px;
     height: 48px;
     color: var(--primary);
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .industry-card h3 {
-    color: white;
-    margin-bottom: 1rem;
-    font-size: 1.25rem;
+    color: var(--secondary);
+    margin-bottom: 0;
+    font-size: 1.1rem;
+    font-weight: 600;
 }
 
 .industry-card p {
