@@ -20,16 +20,17 @@ const WhyChooseUs = () => {
                     <h2 className="section-title">Why Top Companies Choose Our Collective</h2>
                     <p className="mb-4 text-muted">We bridge the gap between expensive agencies and unreliable freelancers.</p>
 
-                    <ul className="benefits-list">
-                        {benefits.map((benefit, index) => (
-                            <li key={index} className="benefit-item">
-                                <div className="check-icon">
-                                    <Check size={20} />
-                                </div>
-                                <span>{benefit}</span>
-                            </li>
-                        ))}
-                    </ul>
+                    <div className="benefits-list-text">
+                        <div className="benefit-item-text mb-4">
+                            <strong>1. What sets us apart?</strong> While many agencies just plan, we execute. Our expert team doesn't just create strategies for SEO, Meta Ads, and Google Ads—we implement them, monitor results, and drive real growth for your business. With us, your success isn't just a promise—it's our priority.
+                        </div>
+                        <div className="benefit-item-text mb-4">
+                            <strong>2. With the RACE framework,</strong> we maximize ROI by focusing only on the strategies your business truly needs. We identify gaps in Reach, Act, Convert, and Engage, and optimize them to drive measurable growth—no unnecessary tactics, just results.
+                        </div>
+                        <div className="benefit-item-text mb-4">
+                            <strong>3. Every strategy we implement</strong> is backed by real data. We continuously analyze performance, optimize campaigns, and make informed decisions to ensure your business gets the highest impact from every marketing effort.
+                        </div>
+                    </div>
                 </div>
 
                 <div className="why-visual">

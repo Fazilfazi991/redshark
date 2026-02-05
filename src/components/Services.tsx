@@ -18,8 +18,8 @@ const Services = () => {
         <section className="services-section" id="services">
             <div className="container">
                 <div className="text-center mb-4">
-                    <h2 className="section-title">Complete Digital Solutions Under One Roof</h2>
-                    <p className="section-subtitle">Everything you need to grow your business, handled by experts.</p>
+                    <h2 className="section-title">Best Digital Marketing Agency In Kerala</h2>
+                    <p className="section-subtitle">Complete digital marketing solutions under one roof . Everything you need to grow your business ,handled by experts .</p>
                 </div>
 
                 <div className="services-grid">

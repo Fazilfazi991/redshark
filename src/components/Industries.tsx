@@ -12,36 +12,17 @@ const Industries = () => {
                 </div>
 
                 <div className="industries-grid">
-                    <div className="industry-card">
-                        <ShoppingBag className="industry-icon" />
-                        <h3>E-Commerce</h3>
-                        <p>Scaling DTC brands with high-converting funnels.</p>
-                    </div>
-                    <div className="industry-card">
-                        <Server className="industry-icon" />
-                        <h3>SaaS</h3>
-                        <p>Driving qualified leads and reducing churn.</p>
-                    </div>
-                    <div className="industry-card">
-                        <Activity className="industry-icon" />
-                        <h3>Healthcare</h3>
-                        <p>Patient acquisition with HIPAA-compliant strategies.</p>
-                    </div>
-                    <div className="industry-card">
-                        <Home className="industry-icon" />
-                        <h3>Real Estate</h3>
-                        <p>Generating high-quality leads for agents and developers.</p>
-                    </div>
-                    <div className="industry-card">
-                        <BadgeDollarSign className="industry-icon" />
-                        <h3>FinTech</h3>
-                        <p>Building trust and authority in financial services.</p>
-                    </div>
-                    <div className="industry-card">
-                        <GraduationCap className="industry-icon" />
-                        <h3>Education</h3>
-                        <p>Attracting students for courses and institutions.</p>
-                    </div>
+                    <div className="industry-card"><h3>Dental</h3></div>
+                    <div className="industry-card"><h3>Construction</h3></div>
+                    <div className="industry-card"><h3>Interior Designing</h3></div>
+                    <div className="industry-card"><h3>Travel and Tourism</h3></div>
+                    <div className="industry-card"><h3>Ayurvedic Hospital</h3></div>
+                    <div className="industry-card"><h3>Health Sector</h3></div>
+                    <div className="industry-card"><h3>Clothing Brand</h3></div>
+                    <div className="industry-card"><h3>Local Business</h3></div>
+                    <div className="industry-card"><h3>Clinics</h3></div>
+                    <div className="industry-card"><h3>Study Abroad</h3></div>
+                    <div className="industry-card"><h3>Nursing Migration</h3></div>
                 </div>
             </div>
         </section>

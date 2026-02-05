@@ -4,10 +4,10 @@ import './Testimonials.css';
 
 const testimonials = [
     {
-        name: "Sarah Jenkins",
-        role: "CMO, TechGlobal",
-        text: "We scaled our content output by 400% in just two months. The quality is consistently excellent, and having a single PM makes it feel like an in-house team.",
-        image: "" // Placeholder
+        name: "Loomlee Craft",
+        role: "Client",
+        text: "Loomlee Craft struggled with lead generation in the initial stage. After partnering with Sreyas and the team, we saw a clear improvement in business growth. Finding a reliable digital marketing agency in Kerala is tough, but this team truly delivers results.",
+        image: ""
     },
     {
         name: "Michael Chen",

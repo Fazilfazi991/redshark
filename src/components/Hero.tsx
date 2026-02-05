@@ -19,12 +19,12 @@ const Hero = () => {
                     </h1>
 
                     <p className="hero-subheadline">
-                        Access 150+ vetted specialists for design, development, SEO, ads, and automation without the agency markup.
+                        Want to grow your business? You're in the right place. We don't make big promises — we deliver real results. Through strategic SEO, Google Ads, and Meta Ads, we help businesses generate more leads, sales, and long-term growth.
                     </p>
 
                     <div className="hero-cta-group">
                         <button className="btn btn-primary btn-lg">
-                            Start Your Project <ArrowRight size={20} className="icon-right" />
+                            Talk to a Marketing Expert <ArrowRight size={20} className="icon-right" />
                         </button>
                     </div>
 
