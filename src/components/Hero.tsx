@@ -15,7 +15,7 @@ const Hero = () => {
                     </div>
 
                     <h1 className="hero-headline">
-                        World-Class Digital Marketing Teams at <span className="text-gradient">Freelance Prices</span>
+                        Want to grow your business? <span className="text-gradient">You're in the right place.</span>
                     </h1>
 
                     <p className="hero-subheadline">
