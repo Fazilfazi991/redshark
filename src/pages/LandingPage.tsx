@@ -7,6 +7,9 @@ import SocialProof from '../components/SocialProof';
 import FAQ from '../components/FAQ';
 import ScrollReveal from '../components/UI/ScrollReveal';
 import './LandingPage.css';
+import element1 from '../assets/element-1.png';
+import element2 from '../assets/element-2.png';
+import founder from '../assets/founder.jpg';
 
 const LandingPage = () => {
     return (
