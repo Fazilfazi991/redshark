@@ -34,7 +34,6 @@ function Home() {
                 <ScrollReveal animation="fade-in" delay={200}><Founder /></ScrollReveal>
                 <ScrollReveal animation="fade-up"><Tools /></ScrollReveal>
                 <ScrollReveal animation="fade-up"><Industries /></ScrollReveal>
-                <ScrollReveal animation="fade-up"><Portfolio /></ScrollReveal>
                 <ScrollReveal animation="fade-up"><Blog /></ScrollReveal>
                 <ScrollReveal animation="slide-right"><Testimonials /></ScrollReveal>
                 <ScrollReveal animation="fade-up"><FAQ /></ScrollReveal>
