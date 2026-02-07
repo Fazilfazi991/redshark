@@ -12,22 +12,22 @@ const USP = () => {
                         <div className="icon-wrapper">
                             <Users className="usp-icon" />
                         </div>
-                        <h3>Direct Access to Experts</h3>
-                        <p>No layers of management. You speak directly to the specialists working on your account.</p>
+                        <h3>What sets us apart?</h3>
+                        <p>While many agencies just plan, we execute. Our expert team doesn’t just create strategies for SEO, Meta Ads, and Google Ads—we implement them, monitor results, and drive real growth for your business. With us, your success isn’t just a promise—it’s our priority.</p>
                     </div>
                     <div className="usp-card">
                         <div className="icon-wrapper">
                             <Target className="usp-icon" />
                         </div>
-                        <h3>Focus on ROI</h3>
-                        <p>We obsess over your bottom line. Every strategy is crafted to maximize your return on investment.</p>
+                        <h3>The RACE Framework</h3>
+                        <p>With the RACE framework, we maximize ROI by focusing only on the strategies your business truly needs. We identify gaps in Reach, Act, Convert, and Engage, and optimize them to drive measurable growth—no unnecessary tactics, just results.</p>
                     </div>
                     <div className="usp-card">
                         <div className="icon-wrapper">
                             <Zap className="usp-icon" />
                         </div>
-                        <h3>Agile & Adaptive</h3>
-                        <p>The digital landscape changes fast. We pivot quickly to keep you ahead of the curve.</p>
+                        <h3>Data-Backed Strategy</h3>
+                        <p>Every strategy we implement is backed by real data. We continuously analyze performance, optimize campaigns, and make informed decisions to ensure your business gets the highest impact from every marketing effort.</p>
                     </div>
                 </div>
             </div>
