@@ -18,15 +18,49 @@ const LandingPage = () => {
 
             {/* Hero Section */}
             <section className="landing-hero">
+                {/* Floating Elements */}
+                <div className="floating-element float-1">
+                    <div style={{ background: 'white', padding: '12px', borderRadius: '16px', boxShadow: '0 10px 25px rgba(0,0,0,0.1)', border: '1px solid #e2e8f0' }}>
+                        <img src={element2} alt="Element" style={{ width: '48px', height: 'auto' }} />
+                    </div>
+                </div>
+                <div className="floating-element float-2">
+                    <div style={{ background: 'white', padding: '12px', borderRadius: '50%', boxShadow: '0 10px 25px rgba(0,0,0,0.1)', border: '1px solid #e2e8f0' }}>
+                        <img src={element1} alt="Element" style={{ width: '48px', height: 'auto' }} />
+                    </div>
+                </div>
+                <div className="floating-element float-3">
+                    <div style={{ width: '64px', height: '64px', borderRadius: '50%', overflow: 'hidden', border: '3px solid #3b82f6', boxShadow: '0 4px 15px rgba(59, 130, 246, 0.4)' }}>
+                        <img src={founder} alt="Reviewer" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                    </div>
+                </div>
+                <div className="floating-element float-4">
+                    <div style={{ width: '64px', height: '64px', borderRadius: '50%', overflow: 'hidden', border: '3px solid #ff4d6d', boxShadow: '0 4px 15px rgba(255, 77, 109, 0.4)' }}>
+                        <img src={founder} alt="Reviewer" style={{ width: '100%', height: '100%', objectFit: 'cover', filter: 'hue-rotate(45deg) brightness(1.1)' }} />
+                    </div>
+                </div>
+
                 <div className="container">
                     <div className="landing-hero-content">
-                        <h1>More Customers For Your Business.</h1>
-                        <h2>This is Growth as a Service.</h2>
-                        <p>We generate you more profit from online advertising. A customer generating approach so good, even our trophies have trophies.</p>
+                        <h1>
+                            <span className="highlight-red-box">More Customers</span> For Your Business.
+                        </h1>
+                        <p>
+                            Plug into our digital marketing agency and watch your sales pipeline fill. It’s the growth fuel you’ve been looking for.
+                        </p>
 
                         <div className="landing-cta-group">
                             <a href="#contact" className="btn-landing-primary">Get Free Growth Plan</a>
                             <a href="#results" className="btn-landing-secondary">See Client Results</a>
+                        </div>
+
+                        <div className="hero-rating">
+                            <span>Rated 4.8 stars from 100+ reviews 🎉</span>
+                            <div className="stars" style={{ display: 'flex', gap: '4px', marginTop: '8px' }}>
+                                {[1, 2, 3, 4, 5].map((i) => (
+                                    <Star key={i} size={24} fill="#f59e0b" stroke="#f59e0b" />
+                                ))}
+                            </div>
                         </div>
                     </div>
                 </div>
