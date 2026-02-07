@@ -31,15 +31,23 @@ const Hero = () => {
                     <div className="hero-trust-elements">
                         <div className="trust-item">
                             <CheckCircle size={16} className="text-primary" />
-                            <span>500+ Projects</span>
+                            <span>RACE Framework</span>
                         </div>
                         <div className="trust-item">
                             <CheckCircle size={16} className="text-primary" />
-                            <span>Top 3% Talent</span>
+                            <span>150+ Clients</span>
                         </div>
                         <div className="trust-item">
                             <CheckCircle size={16} className="text-primary" />
-                            <span>98% Satisfaction</span>
+                            <span>Research-Based Strategy</span>
+                        </div>
+                        <div className="trust-item">
+                            <CheckCircle size={16} className="text-primary" />
+                            <span>Business-Focused Growth</span>
+                        </div>
+                        <div className="trust-item">
+                            <CheckCircle size={16} className="text-primary" />
+                            <span>Expert Team</span>
                         </div>
                     </div>
                 </div>
