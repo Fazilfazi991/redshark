@@ -9,7 +9,6 @@ import HowItWorks from '../components/HowItWorks';
 import Founder from '../components/Founder';
 import Tools from '../components/Tools';
 import Industries from '../components/Industries';
-import Portfolio from '../components/Portfolio';
 import Blog from '../components/Blog';
 import Testimonials from '../components/Testimonials';
 import FAQ from '../components/FAQ';

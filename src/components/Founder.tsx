@@ -67,7 +67,7 @@ const Founder = () => {
 
                     <div className="founder-image-col">
                         <div className="founder-image-box">
-                            <img src={founderImage} alt="Sreyas, Founder of RedShark" className="founder-image" />
+                            <img src={founderImage} alt="Sreyas, Founder of RedShark" className="founder-image" loading="lazy" />
                         </div>
                     </div>
                 </div>

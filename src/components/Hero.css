@@ -251,12 +251,14 @@
 .ring-1 {
     width: 220px;
     height: 220px;
+    will-change: transform;
     animation: spin 25s linear infinite;
 }
 
 .ring-2 {
     width: 360px;
     height: 360px;
+    will-change: transform;
     animation: spin 40s linear infinite reverse;
 }
 
