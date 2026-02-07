@@ -3,10 +3,10 @@ import './SocialProof.css';
 
 const SocialProof = () => {
     const brands = [
-        { name: "Vihara", file: "vihara.webp" },
-        { name: "Cap", file: "cap.webp" },
-        { name: "Simble", file: "simble.webp" },
-        { name: "99 Studioz", file: "99studioz.webp" }
+        { name: "Vihara", file: "vihara.png" },
+        { name: "Cap", file: "cap.png" },
+        { name: "Simble", file: "simble.png" },
+        { name: "99 Studioz", file: "99studioz.png" }
     ];
 
     return (
