@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, Search, BarChart, Mail, Globe, Award, TrendingUp, DollarSign } from 'lucide-react';
+import { ArrowRight, Search, BarChart, Mail, Globe, Award, TrendingUp, DollarSign, Star, AppWindow, Lightbulb } from 'lucide-react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import USP from '../components/USP';
