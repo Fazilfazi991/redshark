@@ -15,12 +15,12 @@ const benefits = [
 const WhyChooseUs = () => {
     return (
         <section className="why-choose-us">
-            <div className="container why-content">
-                <div className="why-text">
-                    <h2 className="section-title">Why Top Companies Choose Our Collective</h2>
-                    <p className="mb-4 text-muted">We bridge the gap between expensive agencies and unreliable freelancers.</p>
+            <div className="container why-content centered-layout">
+                <div className="why-text-full">
+                    <h2 className="section-title text-center">Why Top Companies Choose Our Collective</h2>
+                    <p className="mb-4 text-muted text-center" style={{ maxWidth: '600px', margin: '0 auto 2rem auto' }}>We bridge the gap between expensive agencies and unreliable freelancers.</p>
 
-                    <div className="benefits-list-text">
+                    <div className="benefits-list-text" style={{ maxWidth: '800px', margin: '0 auto' }}>
                         <div className="benefit-item-text mb-4">
                             <strong>1. What sets us apart?</strong> While many agencies just plan, we execute. Our expert team doesn't just create strategies for SEO, Meta Ads, and Google Ads—we implement them, monitor results, and drive real growth for your business. With us, your success isn't just a promise—it's our priority.
                         </div>
@@ -29,22 +29,6 @@ const WhyChooseUs = () => {
                         </div>
                         <div className="benefit-item-text mb-4">
                             <strong>3. Every strategy we implement</strong> is backed by real data. We continuously analyze performance, optimize campaigns, and make informed decisions to ensure your business gets the highest impact from every marketing effort.
-                        </div>
-                    </div>
-                </div>
-
-                <div className="why-visual">
-                    <div className="visual-box">
-                        {/* Simple comparison visual */}
-                        <div className="comparison-card">
-                            <div className="comp-header">Traditional Agency</div>
-                            <div className="comp-bar agency"></div>
-                            <div className="comp-price">$$$$</div>
-                        </div>
-                        <div className="comparison-card highlight">
-                            <div className="comp-header">Our Collective</div>
-                            <div className="comp-bar collective"></div>
-                            <div className="comp-price">$</div>
                         </div>
                     </div>
                 </div>
