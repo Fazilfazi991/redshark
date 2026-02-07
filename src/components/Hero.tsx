@@ -15,7 +15,7 @@ const Hero = () => {
                     </div>
 
                     <h1 className="hero-headline">
-                        Want to grow your business? <span className="text-gradient">You're in the right place.</span>
+                        We know why you are here- <span className="text-gradient">more leads, more sale and more growth.</span>
                     </h1>
 
                     <p className="hero-subheadline">
