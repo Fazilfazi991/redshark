@@ -1,8 +1,26 @@
-import React from 'react';
-import { ArrowRight, Search, BarChart, Mail, Globe, Award, TrendingUp, DollarSign, Star, AppWindow, Lightbulb, FileEdit, Gem, Video, MapPin, Megaphone, Image } from 'lucide-react';
+import React, { useEffect } from 'react';
+import {
+    ArrowRight,
+    BarChart,
+    Mail,
+    Globe,
+    Award,
+    TrendingUp,
+    DollarSign,
+    Star,
+    Zap,
+    Target,
+    Users,
+    Smartphone,
+    MonitorPlay,
+    Linkedin,
+    MapPin,
+    ShoppingCart,
+    MousePointerClick,
+    Search
+} from 'lucide-react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import USP from '../components/USP';
 import SocialProof from '../components/SocialProof';
 import FAQ from '../components/FAQ';
 import ScrollReveal from '../components/UI/ScrollReveal';
@@ -12,91 +30,144 @@ import element2 from '../assets/element-2.png';
 import founder from '../assets/founder.jpg';
 
 const LandingPage = () => {
+
+    // Smooth scroll for anchor links
+    useEffect(() => {
+        const handleAnchorClick = (e: MouseEvent) => {
+            const target = e.target as HTMLElement;
+            const link = target.closest('a');
+            if (link && link.hash && link.hash.startsWith('#') && link.origin === window.location.origin) {
+                e.preventDefault();
+                const element = document.querySelector(link.hash);
+                if (element) {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                }
+            }
+        };
+        document.addEventListener('click', handleAnchorClick);
+        return () => document.removeEventListener('click', handleAnchorClick);
+    }, []);
+
     return (
         <div className="landing-page">
             <Header />
 
-            {/* Hero Section */}
+            {/* --- HERO SECTION --- */}
             <section className="landing-hero">
-                {/* Floating Elements */}
+                {/* Floating Elements (Background) */}
                 <div className="floating-element float-1">
-                    <div style={{ background: 'white', padding: '12px', borderRadius: '16px', boxShadow: '0 10px 25px rgba(0,0,0,0.1)', border: '1px solid #e2e8f0' }}>
-                        <img src={element2} alt="Element" style={{ width: '48px', height: 'auto' }} />
+                    <div className="float-icon-box">
+                        <TrendingUp size={24} color="#10b981" />
                     </div>
                 </div>
                 <div className="floating-element float-2">
-                    <div style={{ background: 'white', padding: '12px', borderRadius: '50%', boxShadow: '0 10px 25px rgba(0,0,0,0.1)', border: '1px solid #e2e8f0' }}>
-                        <img src={element1} alt="Element" style={{ width: '48px', height: 'auto' }} />
-                    </div>
-                </div>
-                <div className="floating-element float-3">
-                    <div style={{ width: '64px', height: '64px', borderRadius: '50%', overflow: 'hidden', border: '3px solid #3b82f6', boxShadow: '0 4px 15px rgba(59, 130, 246, 0.4)' }}>
-                        <img src={founder} alt="Reviewer" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-                    </div>
-                </div>
-                <div className="floating-element float-4">
-                    <div style={{ width: '64px', height: '64px', borderRadius: '50%', overflow: 'hidden', border: '3px solid #ff4d6d', boxShadow: '0 4px 15px rgba(255, 77, 109, 0.4)' }}>
-                        <img src={founder} alt="Reviewer" style={{ width: '100%', height: '100%', objectFit: 'cover', filter: 'hue-rotate(45deg) brightness(1.1)' }} />
+                    <div className="float-icon-box">
+                        <DollarSign size={24} color="#f59e0b" />
                     </div>
                 </div>
 
                 <div className="container">
                     <div className="landing-hero-content">
+                        <div className="hero-badge">
+                            <span className="pulse-dot"></span>
+                            Performance Marketing Agency
+                        </div>
                         <h1>
-                            <span className="highlight-red-box">More Customers</span> For Your Business.
+                            Stop Guessing.<br />
+                            Start <span className="highlight-red-box">Scaling.</span>
                         </h1>
                         <p>
-                            Plug into our digital marketing agency and watch your sales pipeline fill. It’s the growth fuel you’ve been looking for.
+                            We don't just "do marketing". We build <strong>predictable revenue engines</strong>.
+                            From Google Ads to TikTok, we turn ad spend into profit with laser-focused performance strategies.
                         </p>
 
                         <div className="landing-cta-group">
-                            <a href="#contact" className="btn-landing-primary">Free Growth Plan</a>
-                            <a href="#results" className="btn-landing-secondary">See Client Results</a>
+                            <a href="#contact" className="btn-landing-primary">Get Your Free Growth Strategy</a>
+                            <a href="#growth-engine" className="btn-landing-secondary">How We Do It</a>
                         </div>
 
                         <div className="hero-rating">
-                            <span>Rated 4.8 stars from 100+ reviews 🎉</span>
-                            <div className="stars" style={{ display: 'flex', gap: '4px', marginTop: '8px' }}>
+                            <div className="stars">
                                 {[1, 2, 3, 4, 5].map((i) => (
-                                    <Star key={i} size={24} fill="#f59e0b" stroke="#f59e0b" />
+                                    <Star key={i} size={20} fill="#f59e0b" stroke="#f59e0b" />
                                 ))}
                             </div>
+                            <span>Trusted by 50+ Growth-Focused Brands</span>
                         </div>
                     </div>
                 </div>
             </section>
 
-            {/* Growth as a Service Section */}
-            <section className="growth-service-section">
+            {/* --- SOCIAL PROOF --- */}
+            <div className="section-divider-proof">
+                <SocialProof />
+            </div>
+
+            {/* --- THE PROBLEM (AGITATION) --- */}
+            <section className="problem-section">
+                <div className="container">
+                    <ScrollReveal animation="fade-up">
+                        <h2 className="section-title-dark">Most Marketing Agencies <br /><span className="text-red">Burn Your Money.</span></h2>
+                        <p className="section-subtitle-dark">Does this sound familiar?</p>
+                    </ScrollReveal>
+
+                    <div className="problem-grid">
+                        <ScrollReveal animation="fade-up" delay={100}>
+                            <div className="problem-card">
+                                <div className="problem-icon"><Target size={32} /></div>
+                                <h3>Vanity Metrics</h3>
+                                <p>Agencies reporting on "clicks" and "impressions" but never talking about <strong>Revenue</strong> or <strong>ROAS</strong>.</p>
+                            </div>
+                        </ScrollReveal>
+                        <ScrollReveal animation="fade-up" delay={200}>
+                            <div className="problem-card">
+                                <div className="problem-icon"><Users size={32} /></div>
+                                <h3>The "Set & Forget" Trap</h3>
+                                <p>Campaigns that launch with hype but get neglected after month one, causing performance to tank.</p>
+                            </div>
+                        </ScrollReveal>
+                        <ScrollReveal animation="fade-up" delay={300}>
+                            <div className="problem-card">
+                                <div className="problem-icon"><Zap size={32} /></div>
+                                <h3>Cookie-Cutter Strategies</h3>
+                                <p>Applying the same generic template to every business regardless of your unique unit economics.</p>
+                            </div>
+                        </ScrollReveal>
+                    </div>
+                </div>
+            </section>
+
+            {/* --- THE SOLUTION (GROWTH ENGINE) --- */}
+            <section id="growth-engine" className="growth-service-section">
                 <div className="container">
                     <div className="growth-service-grid">
                         <ScrollReveal animation="slide-left" delay={100}>
                             <div className="growth-service-left">
                                 <h2>
-                                    This is <span className="highlight-red-box">Growth as a Service</span>
+                                    Enter The <span className="highlight-red-box">RedShark Growth Engine</span>
                                 </h2>
 
                                 <div className="visual-orbit-container">
                                     <div className="orbit-system">
                                         <div className="orbit-center-circle">
-                                            <span className="brand-text">YOUR<br />BUSINESS</span>
+                                            <span className="brand-text">REVENUE<br />FOCUS</span>
                                         </div>
 
                                         {/* Inner Ring */}
                                         <div className="orbit-ring ring-1">
                                             <div className="orbit-item item-mail"><Mail size={18} /></div>
-                                            <div className="orbit-item item-edit"><FileEdit size={18} /></div>
-                                            <div className="orbit-item item-gem"><Gem size={18} /></div>
+                                            <div className="orbit-item item-edit"><Target size={18} /></div>
+                                            <div className="orbit-item item-gem"><DollarSign size={18} /></div>
                                         </div>
 
                                         {/* Outer Ring */}
                                         <div className="orbit-ring ring-2">
-                                            <div className="orbit-item item-video"><Video size={20} /></div>
+                                            <div className="orbit-item item-video"><MonitorPlay size={20} /></div>
                                             <div className="orbit-item item-search"><Search size={20} /></div>
                                             <div className="orbit-item item-map"><MapPin size={20} /></div>
-                                            <div className="orbit-item item-mega"><Megaphone size={20} /></div>
+                                            <div className="orbit-item item-mega"><ShoppingCart size={20} /></div>
                                             <div className="orbit-item item-chart"><BarChart size={20} /></div>
-                                            <div className="orbit-item item-image"><Image size={20} /></div>
+                                            <div className="orbit-item item-image"><Users size={20} /></div>
                                         </div>
                                     </div>
                                 </div>
@@ -106,108 +177,130 @@ const LandingPage = () => {
                         <ScrollReveal animation="slide-right" delay={200}>
                             <div className="growth-service-right">
                                 <p className="growth-intro">
-                                    Like a genie for your growth, our digital marketing agency helps attract more customers
-                                    and build a predictable sales pipeline. Plug into our team and watch your leads start flowing.
+                                    We don't guess. We engineer growth. Our ecosystem covers every touchpoint of your customer's journey.
                                 </p>
 
-                                <p className="growth-detail">
-                                    It starts with a custom growth plan to identify the best digital advertising channels & sales
-                                    tactics to generate high quality leads.
-                                </p>
+                                <ul className="growth-checklist">
+                                    <li>
+                                        <span className="check-icon">✓</span>
+                                        <div>
+                                            <strong>Full-Funnel Acquisition</strong>
+                                            <p>Capturing demand where it exists and generating it where it doesn't.</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span className="check-icon">✓</span>
+                                        <div>
+                                            <strong>Conversion Rate Optimization (CRO)</strong>
+                                            <p>Turning more of your current traffic into paying customers.</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span className="check-icon">✓</span>
+                                        <div>
+                                            <strong>Data-Driven Iteration</strong>
+                                            <p>Constant A/B testing to lower CPA and increase LTV.</p>
+                                        </div>
+                                    </li>
+                                </ul>
 
-                                <p className="growth-detail">
-                                    Then, our team of digital marketing specialists chase the most profitable outcomes via multi-channel
-                                    digital marketing across Google, Facebook and SEO.
-                                </p>
-
-                                <p className="growth-conclusion">
-                                    In short? You handle the sales, we'll generate you the pipeline.
-                                </p>
+                                <a href="#contact" className="link-arrow">
+                                    See How It Works For You <ArrowRight size={18} />
+                                </a>
                             </div>
                         </ScrollReveal>
                     </div>
                 </div>
             </section>
 
-            <SocialProof />
-
-            {/* Services Grid */}
-            <section className="landing-services">
+            {/* --- PERFORMANCE MARKETING AREAS (NEW GRID) --- */}
+            <section className="marketing-areas-section">
                 <div className="container">
-                    <div className="landing-section-header">
-                        <h2>Our Core Services</h2>
-                        <p className="text-muted">Everything you need to dominate your market</p>
+                    <div className="section-header-center">
+                        <h2>Performance Marketing Capabilities</h2>
+                        <p>We cover every channel that matters to your bottom line.</p>
                     </div>
 
-                    <div className="landing-services-grid">
+                    <div className="areas-grid">
                         <ScrollReveal animation="fade-up" delay={100}>
-                            <div className="landing-service-card">
-                                <div className="l-service-icon"><Search size={32} /></div>
-                                <h3>SEO</h3>
-                                <p>Rank higher, drive traffic, and dominate search results with our data-driven SEO strategies.</p>
-                                <a href="/seo" className="landing-link">Learn More <ArrowRight size={16} /></a>
+                            <div className="area-card">
+                                <ShoppingCart className="area-icon" />
+                                <h3>E-commerce Sales</h3>
+                                <p>Scaling Shopify & WooCommerce stores with high-ROAS Meta & Google Shopping campaigns.</p>
+                            </div>
+                        </ScrollReveal>
+
+                        <ScrollReveal animation="fade-up" delay={150}>
+                            <div className="area-card">
+                                <MousePointerClick className="area-icon" />
+                                <h3>CRO</h3>
+                                <p>Optimizing landing pages and user flows to squeeze every drop of revenue from your traffic.</p>
                             </div>
                         </ScrollReveal>
 
                         <ScrollReveal animation="fade-up" delay={200}>
-                            <div className="landing-service-card">
-                                <div className="l-service-icon"><BarChart size={32} /></div>
+                            <div className="area-card">
+                                <Search className="area-icon" />
                                 <h3>Google Ads</h3>
-                                <p>High-converting PPC campaigns that maximize your ROI and put you in front of ready-to-buy customers.</p>
-                                <a href="/sem" className="landing-link">Learn More <ArrowRight size={16} /></a>
+                                <p>Dominate search intent. We manage Search, Shopping, and PMax campaigns that convert.</p>
+                            </div>
+                        </ScrollReveal>
+
+                        <ScrollReveal animation="fade-up" delay={250}>
+                            <div className="area-card">
+                                <Users className="area-icon" />
+                                <h3>B2B & B2C Lead Gen</h3>
+                                <p>Filling your CRM with qualified leads using targeted funnels and lead magnets.</p>
                             </div>
                         </ScrollReveal>
 
                         <ScrollReveal animation="fade-up" delay={300}>
-                            <div className="landing-service-card">
-                                <div className="l-service-icon"><Globe size={32} /></div>
-                                <h3>Facebook Ads</h3>
-                                <p>Scale your brand with targeted social media advertising that turns scrolling into sales.</p>
-                                <a href="/smm" className="landing-link">Learn More <ArrowRight size={16} /></a>
+                            <div className="area-card">
+                                <Smartphone className="area-icon" />
+                                <h3>Social Media Marketing</h3>
+                                <p>Creative-first campaigns on Instagram, Facebook, and TikTok that stop the scroll.</p>
+                            </div>
+                        </ScrollReveal>
+
+                        <ScrollReveal animation="fade-up" delay={350}>
+                            <div className="area-card">
+                                <MonitorPlay className="area-icon" />
+                                <h3>Display & Video Ads</h3>
+                                <p>Brand awareness and retargeting via YouTube and programmatic display networks.</p>
                             </div>
                         </ScrollReveal>
 
                         <ScrollReveal animation="fade-up" delay={400}>
-                            <div className="landing-service-card">
-                                <div className="l-service-icon"><Mail size={32} /></div>
-                                <h3>Email & Automation</h3>
-                                <p>Nurture leads and retain customers with personalized email flows and automated marketing.</p>
-                                <a href="/services" className="landing-link">Learn More <ArrowRight size={16} /></a>
+                            <div className="area-card">
+                                <Linkedin className="area-icon" />
+                                <h3>LinkedIn Targeted Ads</h3>
+                                <p>Precision B2B targeting to reach decision-makers and high-value accounts.</p>
+                            </div>
+                        </ScrollReveal>
+
+                        <ScrollReveal animation="fade-up" delay={450}>
+                            <div className="area-card">
+                                <MapPin className="area-icon" />
+                                <h3>Local Business Campaigns</h3>
+                                <p>Dominate your local area with Google Maps and geo-targeted offers.</p>
                             </div>
                         </ScrollReveal>
                     </div>
                 </div>
             </section>
 
-            {/* Why Choose Local/RedShark */}
-            <section className="landing-trust">
+            {/* --- FINAL CTA --- */}
+            <section className="final-cta-section">
                 <div className="container">
-                    <h2>A Customer Generating approach so good, even our trophies have trophies.</h2>
-
-                    <div className="awards-grid">
-                        <ScrollReveal animation="zoom-in" delay={100}>
-                            <div className="award-item">
-                                <Award size={48} className="award-icon" />
-                                <span className="award-text">Winner 2024</span>
-                            </div>
-                        </ScrollReveal>
-                        <ScrollReveal animation="zoom-in" delay={200}>
-                            <div className="award-item">
-                                <TrendingUp size={48} className="award-icon" />
-                                <span className="award-text">Top 1% Growth</span>
-                            </div>
-                        </ScrollReveal>
-                        <ScrollReveal animation="zoom-in" delay={300}>
-                            <div className="award-item">
-                                <DollarSign size={48} className="award-icon" />
-                                <span className="award-text">ROI Focused</span>
-                            </div>
-                        </ScrollReveal>
+                    <div className="cta-box">
+                        <h2>Ready to scale your revenue?</h2>
+                        <p>No fluff. No vanity metrics. Just a clear path to growth.</p>
+                        <div className="cta-buttons">
+                            <a href="#contact" className="btn-landing-primary">Get Your Proposal</a>
+                        </div>
                     </div>
                 </div>
             </section>
-
-            <USP />
 
             <section className="landing-faq">
                 <div className="container">
