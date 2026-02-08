@@ -6,7 +6,6 @@ import About from '../components/About';
 import Services from '../components/Services';
 import WhyChooseUs from '../components/WhyChooseUs';
 import HowItWorks from '../components/HowItWorks';
-import Founder from '../components/Founder';
 import Tools from '../components/Tools';
 import Industries from '../components/Industries';
 import Blog from '../components/Blog';
@@ -30,7 +29,7 @@ function Home() {
                 <ScrollReveal animation="fade-up"><Services /></ScrollReveal>
                 <ScrollReveal animation="fade-up"><WhyChooseUs /></ScrollReveal>
                 <ScrollReveal animation="slide-left"><HowItWorks /></ScrollReveal>
-                <ScrollReveal animation="fade-in" delay={200}><Founder /></ScrollReveal>
+
                 <ScrollReveal animation="fade-up"><Tools /></ScrollReveal>
                 <ScrollReveal animation="fade-up"><Industries /></ScrollReveal>
                 <ScrollReveal animation="fade-up"><Blog /></ScrollReveal>
