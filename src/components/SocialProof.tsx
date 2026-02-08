@@ -7,7 +7,15 @@ const SocialProof = () => {
         { name: "Cap", file: "cap.png" },
         { name: "Simble", file: "simble.png" },
         { name: "99 Studioz", file: "99studioz.png" },
-        { name: "Partner", file: "new-logo.png" }
+        { name: "Partner", file: "new-logo.png" }, // Kept previous addition
+        { name: "25 Year", file: "brand-25year.jpg" },
+        { name: "Brand 1", file: "brand-img1.jpg" },
+        { name: "AI Tech", file: "brand-chatgpt.png" },
+        { name: "Drive", file: "brand-drive.png" },
+        { name: "Client 1", file: "brand-wa1.jpg" },
+        { name: "Client 2", file: "brand-wa2.jpg" },
+        { name: "Client 3", file: "brand-wa3.jpg" },
+        { name: "Red", file: "brand-red.png" }
     ];
 
     return (
