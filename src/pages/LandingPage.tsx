@@ -65,6 +65,36 @@ const LandingPage = () => {
                         <DollarSign size={24} color="#f59e0b" />
                     </div>
                 </div>
+                <div className="floating-element float-3">
+                    <div className="float-icon-box">
+                        <Zap size={24} color="#ef4444" />
+                    </div>
+                </div>
+                <div className="floating-element float-4">
+                    <div className="float-icon-box">
+                        <Target size={24} color="#3b82f6" />
+                    </div>
+                </div>
+                <div className="floating-element float-5">
+                    <div className="float-icon-box">
+                        <BarChart size={24} color="#8b5cf6" />
+                    </div>
+                </div>
+                <div className="floating-element float-6">
+                    <div className="float-icon-box">
+                        <Mail size={24} color="#ec4899" />
+                    </div>
+                </div>
+                <div className="floating-element float-7">
+                    <div className="float-icon-box">
+                        <Search size={24} color="#f97316" />
+                    </div>
+                </div>
+                <div className="floating-element float-8">
+                    <div className="float-icon-box">
+                        <Users size={24} color="#06b6d4" />
+                    </div>
+                </div>
 
                 <div className="container">
                     <div className="landing-hero-content">

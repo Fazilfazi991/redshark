@@ -183,6 +183,60 @@
     transform: rotate(10deg);
 }
 
+.float-3 {
+    top: 15%;
+    right: 10%;
+    animation-delay: 0.5s;
+    transform: rotate(5deg);
+}
+
+.float-4 {
+    bottom: 25%;
+    left: 8%;
+    animation-delay: 2s;
+    transform: rotate(-5deg);
+}
+
+.float-5 {
+    top: 40%;
+    left: -2%;
+    animation-delay: 1s;
+    transform: rotate(15deg);
+}
+
+.float-6 {
+    top: 35%;
+    right: -1%;
+    animation-delay: 2.5s;
+    transform: rotate(-8deg);
+}
+
+.float-7 {
+    bottom: 10%;
+    left: 20%;
+    animation-delay: 3s;
+    transform: rotate(12deg);
+}
+
+.float-8 {
+    top: 10%;
+    left: 30%;
+    animation-delay: 1.2s;
+    transform: rotate(-15deg);
+    opacity: 0.6;
+}
+
+@media (max-width: 1200px) {
+
+    /* Hide some elements on smaller screens to prevent overlap/clutter */
+    .float-5,
+    .float-6,
+    .float-7,
+    .float-8 {
+        display: none;
+    }
+}
+
 @keyframes float {
 
     0%,
