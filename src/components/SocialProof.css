@@ -25,7 +25,8 @@
     display: flex;
     gap: 4rem;
     width: max-content;
-    animation: scroll 30s linear infinite;
+    animation: scroll 40s linear infinite;
+    /* Slowed down slightly for more logos */
     padding: 1rem 0;
 }
 
