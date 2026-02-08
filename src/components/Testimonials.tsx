@@ -1,7 +1,7 @@
 import React from 'react';
 import { Star } from 'lucide-react';
 import './Testimonials.css';
-import loomelleImg from '../assets/loomelle-craft.png';
+import loomelleImg from '../assets/loomelle-craft-logo.jpg';
 
 const testimonials = [
     {
