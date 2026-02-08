@@ -170,57 +170,57 @@
 }
 
 .float-1 {
-    top: 20%;
-    left: 8%;
+    top: 18%;
+    left: 12%;
     animation-delay: 0s;
     transform: rotate(-10deg);
 }
 
 .float-2 {
-    bottom: 25%;
-    right: 8%;
+    bottom: 28%;
+    right: 12%;
     animation-delay: 1.5s;
     transform: rotate(10deg);
 }
 
 .float-3 {
-    top: 15%;
-    right: 10%;
+    top: 18%;
+    right: 15%;
     animation-delay: 0.5s;
     transform: rotate(5deg);
 }
 
 .float-4 {
-    bottom: 25%;
-    left: 8%;
+    bottom: 30%;
+    left: 15%;
     animation-delay: 2s;
     transform: rotate(-5deg);
 }
 
 .float-5 {
-    top: 40%;
-    left: -2%;
+    top: 45%;
+    left: 5%;
     animation-delay: 1s;
     transform: rotate(15deg);
 }
 
 .float-6 {
-    top: 35%;
-    right: -1%;
+    top: 40%;
+    right: 5%;
     animation-delay: 2.5s;
     transform: rotate(-8deg);
 }
 
 .float-7 {
-    bottom: 10%;
-    left: 20%;
+    bottom: 15%;
+    left: 25%;
     animation-delay: 3s;
     transform: rotate(12deg);
 }
 
 .float-8 {
-    top: 10%;
-    left: 30%;
+    top: 12%;
+    left: 28%;
     animation-delay: 1.2s;
     transform: rotate(-15deg);
     opacity: 0.6;
