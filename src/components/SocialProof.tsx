@@ -6,7 +6,8 @@ const SocialProof = () => {
         { name: "Vihara", file: "vihara.png" },
         { name: "Cap", file: "cap.png" },
         { name: "Simble", file: "simble.png" },
-        { name: "99 Studioz", file: "99studioz.png" }
+        { name: "99 Studioz", file: "99studioz.png" },
+        { name: "Partner", file: "new-logo.png" }
     ];
 
     return (
