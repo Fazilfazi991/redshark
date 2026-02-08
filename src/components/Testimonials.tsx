@@ -4,9 +4,9 @@ import './Testimonials.css';
 
 const testimonials = [
     {
-        name: "Loomlee Craft",
+        name: "Loomelle Craft",
         role: "Client",
-        text: "Loomlee Craft struggled with lead generation in the initial stage. After partnering with Sreyas and the team, we saw a clear improvement in business growth. Finding a reliable digital marketing agency in Kerala is tough, but this team truly delivers results.",
+        text: "Loomelle Craft struggled with lead generation in the initial stage. After partnering with Sreyas and the team, we saw a clear improvement in business growth. Finding a reliable digital marketing agency in Kerala is tough, but this team truly delivers results.",
         image: ""
     },
     {
