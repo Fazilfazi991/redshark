@@ -69,8 +69,7 @@ const AboutPage = () => {
                     </div>
                 </div>
                 <Founder />
-        </div>
-            </main >
+            </main>
             <Footer />
             <WhatsAppButton />
         </div >
