@@ -34,6 +34,15 @@ const ChatBot = () => {
         scrollToBottom();
     }, [messages]);
 
+    // Auto-open chatbot after 10 seconds
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setIsOpen(true);
+        }, 10000);
+
+        return () => clearTimeout(timer);
+    }, []);
+
     const handleOptionClick = (option: string) => {
         // Add user selection
         const userMsg: Message = { id: Date.now(), text: option, sender: 'user' };
