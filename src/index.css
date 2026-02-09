@@ -1,12 +1,12 @@
 :root {
-  --primary: #dc2626;
-  /* Red 600 */
-  --primary-hover: #b91c1c;
-  /* Red 700 */
+  --primary: #ce1111;
+  /* Official Red */
+  --primary-hover: #000000;
+  /* Black Hover */
   --secondary: #000000;
   /* Black */
-  --accent: #fee2e2;
-  /* Red 100 */
+  --accent: #ffffff;
+  /* White */
 
   --bg-dark: #ffffff;
   /* White */
