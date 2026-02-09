@@ -23,6 +23,7 @@ const Industries = () => {
                     <div className="industry-card"><h3>Clinics</h3></div>
                     <div className="industry-card"><h3>Study Abroad</h3></div>
                     <div className="industry-card"><h3>Nursing Migration</h3></div>
+                    <div className="industry-card"><h3>SAAS</h3></div>
                 </div>
             </div>
         </section>
