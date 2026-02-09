@@ -12,6 +12,7 @@ import ThankYouPage from './pages/ThankYouPage';
 import LandingPage from './pages/LandingPage';
 import ScrollToHash from './utils/ScrollToHash';
 import './components/UI/ScrollReveal'; // Import global styles if needed or ensuring context
+import ChatBot from './components/ChatBot';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
         <Route path="/thank-you" element={<ThankYouPage />} />
         <Route path="/landing" element={<LandingPage />} />
       </Routes>
+      <ChatBot />
     </Router>
   )
 }
