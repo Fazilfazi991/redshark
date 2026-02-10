@@ -57,12 +57,12 @@ const LandingPage = () => {
                 {/* Floating Elements (Background) */}
                 <div className="floating-element float-1">
                     <div className="float-icon-box">
-                        <TrendingUp size={24} color="#10b981" />
+                        <TrendingUp size={24} color="#ce1111" />
                     </div>
                 </div>
                 <div className="floating-element float-2">
                     <div className="float-icon-box">
-                        <DollarSign size={24} color="#f59e0b" />
+                        <DollarSign size={24} color="#ce1111" />
                     </div>
                 </div>
                 <div className="floating-element float-3">
@@ -72,27 +72,27 @@ const LandingPage = () => {
                 </div>
                 <div className="floating-element float-4">
                     <div className="float-icon-box">
-                        <Target size={24} color="#3b82f6" />
+                        <Target size={24} color="#64748b" />
                     </div>
                 </div>
                 <div className="floating-element float-5">
                     <div className="float-icon-box">
-                        <BarChart size={24} color="#8b5cf6" />
+                        <BarChart size={24} color="#000000" />
                     </div>
                 </div>
                 <div className="floating-element float-6">
                     <div className="float-icon-box">
-                        <Mail size={24} color="#ec4899" />
+                        <Mail size={24} color="#ce1111" />
                     </div>
                 </div>
                 <div className="floating-element float-7">
                     <div className="float-icon-box">
-                        <Search size={24} color="#f97316" />
+                        <Search size={24} color="#64748b" />
                     </div>
                 </div>
                 <div className="floating-element float-8">
                     <div className="float-icon-box">
-                        <Users size={24} color="#06b6d4" />
+                        <Users size={24} color="#000000" />
                     </div>
                 </div>
 
