@@ -58,7 +58,6 @@ const Header = () => {
 
                     <Link to="/blog" onClick={() => setMobileMenuOpen(false)}>Blog</Link>
                     <Link to="/about" onClick={() => setMobileMenuOpen(false)}>About</Link>
-                    <Link to="/#portfolio" onClick={() => setMobileMenuOpen(false)}>Work</Link>
                     <Link to="/#contact" onClick={() => setMobileMenuOpen(false)}>Contact</Link>
                     <button className="btn btn-primary mobile-only" onClick={() => setMobileMenuOpen(false)}>Get Started</button>
                 </nav>
