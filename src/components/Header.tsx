@@ -49,10 +49,10 @@ const Header = () => {
                             Services <ChevronDown size={14} className={`chevron ${dropdownOpen ? 'rotate' : ''}`} />
                         </Link>
                         <div className={`dropdown-menu ${dropdownOpen ? 'show' : ''}`}>
-                            <Link to="/services/seo" onClick={() => setMobileMenuOpen(false)}>SEO & Organic Growth</Link>
-                            <Link to="/services/sem" onClick={() => setMobileMenuOpen(false)}>Paid Advertising (SEM)</Link>
-                            <Link to="/services/smm" onClick={() => setMobileMenuOpen(false)}>Social Media (SMM)</Link>
-                            <Link to="/services/web-development" onClick={() => setMobileMenuOpen(false)}>Web Development</Link>
+                            <Link to="/search-engine-optimization" onClick={() => setMobileMenuOpen(false)}>Search Engine Optimization</Link>
+                            <Link to="/google-ads" onClick={() => setMobileMenuOpen(false)}>Google Ads</Link>
+                            <Link to="/social-media-marketing" onClick={() => setMobileMenuOpen(false)}>Social Media Marketing</Link>
+                            <Link to="/web-development" onClick={() => setMobileMenuOpen(false)}>Web Development</Link>
                         </div>
                     </div>
 
