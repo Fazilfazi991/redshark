@@ -169,7 +169,7 @@ const SEMPage = () => {
                             ].map((industry, i) => (
                                 <ScrollReveal key={i} animation="fade-up" delay={i * 100}>
                                     <div className="card-base" style={{ background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)' }}>
-                                        <h3 className="heading-md" style={{ marginBottom: '10px', color: '#38bdf8' }}>{industry.title}</h3>
+                                        <h3 className="heading-md" style={{ marginBottom: '10px', color: '#ce1111' }}>{industry.title}</h3>
                                         <p style={{ color: '#94a3b8', lineHeight: '1.6' }}>{industry.desc}</p>
                                     </div>
                                 </ScrollReveal>
@@ -211,8 +211,8 @@ const SEMPage = () => {
                                 <ScrollReveal key={i} animation="fade-up" delay={i * 100}>
                                     <div className="card-base" style={{ background: '#fff', boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.05)', border: '1px solid #f1f5f9' }}>
                                         <div style={{ display: 'flex', alignItems: 'center', gap: '15px', marginBottom: '20px' }}>
-                                            <div style={{ background: '#eff6ff', padding: '10px', borderRadius: '8px' }}>
-                                                <service.icon size={24} color="#2563eb" />
+                                            <div style={{ background: 'rgba(206, 17, 17, 0.1)', padding: '10px', borderRadius: '8px' }}>
+                                                <service.icon size={24} color="#ce1111" />
                                             </div>
                                             <h3 className="heading-md" style={{ color: '#0f172a' }}>{service.title}</h3>
                                         </div>
@@ -312,7 +312,7 @@ const SEMPage = () => {
                                     </div>
                                     <div>
                                         <h4 style={{ color: '#94a3b8', fontSize: '0.9rem', marginBottom: '8px' }}>RESULT</h4>
-                                        <p style={{ fontSize: '1.1rem', color: '#4ade80', fontWeight: 'bold' }}>6.5x ROAS and -42% in acquisition costs.</p>
+                                        <p style={{ fontSize: '1.1rem', color: '#ce1111', fontWeight: 'bold' }}>6.5x ROAS and -42% in acquisition costs.</p>
                                     </div>
                                 </div>
                             </div>
