@@ -46,7 +46,28 @@
     height: 48px;
     border-radius: 50%;
     background: #334155;
-    /* Placeholder */
+    /* Placeholder color */
+    flex-shrink: 0;
+}
+
+.author-avatar-wrapper {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+    border: 2px solid var(--border);
+}
+
+.author-avatar-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    /* Changed to contain for logo */
+    object-position: center;
+    /* Centered */
+    background-color: #fff;
+    /* White bg for logo visibility if transparent */
 }
 
 .author-name {

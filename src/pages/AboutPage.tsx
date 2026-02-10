@@ -3,6 +3,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import WhatsAppButton from '../components/WhatsAppButton';
 import { Target, Users, Zap, Award } from 'lucide-react';
+import Founder from '../components/Founder';
 
 const AboutPage = () => {
     return (
@@ -67,10 +68,11 @@ const AboutPage = () => {
                         </div>
                     </div>
                 </div>
+                <Founder />
             </main>
             <Footer />
             <WhatsAppButton />
-        </div>
+        </div >
     );
 };
 

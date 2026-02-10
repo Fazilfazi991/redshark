@@ -1,12 +1,12 @@
 :root {
-  --primary: #dc2626;
-  /* Red 600 */
-  --primary-hover: #b91c1c;
-  /* Red 700 */
+  --primary: #ce1111;
+  /* Official Red */
+  --primary-hover: #000000;
+  /* Black Hover */
   --secondary: #000000;
   /* Black */
-  --accent: #fee2e2;
-  /* Red 100 */
+  --accent: #ffffff;
+  /* White */
 
   --bg-dark: #ffffff;
   /* White */
@@ -47,7 +47,9 @@ body {
   background-color: var(--bg-dark);
   color: var(--text-main);
   line-height: 1.6;
-  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  zoom: 0.8;
   overflow-x: hidden;
   /* Prevent horizontal scroll */
   width: 100%;

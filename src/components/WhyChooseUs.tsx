@@ -32,6 +32,9 @@ const WhyChooseUs = () => {
                         </div>
                     </div>
                 </div>
+                <div className="why-visual">
+                    <img src="/why-us-visual.png" alt="Why Choose Us" className="img-fluid rounded-lg shadow-lg" style={{ maxWidth: '100%', height: 'auto', borderRadius: '1rem' }} />
+                </div>
             </div>
         </section>
     );

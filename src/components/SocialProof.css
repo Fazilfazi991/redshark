@@ -25,7 +25,8 @@
     display: flex;
     gap: 4rem;
     width: max-content;
-    animation: scroll 30s linear infinite;
+    animation: scroll 40s linear infinite;
+    /* Slowed down slightly for more logos */
     padding: 1rem 0;
 }
 
@@ -42,6 +43,7 @@
     object-fit: contain;
     /* Ensure original colors are kept, no filters */
     filter: none;
+    mix-blend-mode: multiply;
     opacity: 1;
     transition: transform 0.3s ease;
 }

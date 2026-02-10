@@ -1,13 +1,14 @@
 import React from 'react';
 import { Star } from 'lucide-react';
 import './Testimonials.css';
+import loomelleImg from '../assets/loomelle-craft-logo.jpg';
 
 const testimonials = [
     {
-        name: "Loomlee Craft",
+        name: "Loomelle Craft",
         role: "Client",
-        text: "Loomlee Craft struggled with lead generation in the initial stage. After partnering with Sreyas and the team, we saw a clear improvement in business growth. Finding a reliable digital marketing agency in Kerala is tough, but this team truly delivers results.",
-        image: ""
+        text: "Loomelle Craft struggled with lead generation in the initial stage. After partnering with Sreyas and the team, we saw a clear improvement in business growth. Finding a reliable digital marketing agency in Kerala is tough, but this team truly delivers results.",
+        image: loomelleImg
     },
     {
         name: "Michael Chen",
@@ -37,7 +38,13 @@ const Testimonials = () => {
                             </div>
                             <p className="testimonial-text">"{t.text}"</p>
                             <div className="testimonial-author">
-                                <div className="author-avatar"></div>
+                                {t.image ? (
+                                    <div className="author-avatar-wrapper">
+                                        <img src={t.image} alt={t.name} className="author-avatar-img" />
+                                    </div>
+                                ) : (
+                                    <div className="author-avatar"></div>
+                                )}
                                 <div>
                                     <div className="author-name">{t.name}</div>
                                     <div className="author-role">{t.role}</div>

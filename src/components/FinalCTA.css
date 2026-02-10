@@ -4,14 +4,14 @@
 }
 
 .cta-box {
-    background: linear-gradient(135deg, #b91c1c, #000000);
-    /* Red 700 to Black */
+    background: linear-gradient(135deg, #ce1111, #000000);
+    /* Official Red to Black */
     padding: 4rem 2rem;
     border-radius: 2rem;
     text-align: center;
     position: relative;
     overflow: hidden;
-    border: 1px solid #7f1d1d;
+    border: 1px solid #ce1111;
 }
 
 .cta-headline {
