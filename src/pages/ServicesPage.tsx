@@ -188,7 +188,7 @@ const ServicesPage = () => {
                         <h2 style={{ fontSize: '2.5rem', fontWeight: 'bold', textAlign: 'center', marginBottom: '60px' }}>Don't Just Take Our Word For It</h2>
                         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '30px' }}>
                             <div style={{ background: '#fff', padding: '40px', borderRadius: '16px', boxShadow: '0 4px 6px -1px rgba(0,0,0,0.05)' }}>
-                                <p style={{ fontSize: '1.1rem', fontStyle: 'italic', marginBottom: '20px', color: 'var(--text-main)' }}>"RedShark completely transformed our lead gen. We went from struggling to get 10 demos a month to booking 50+ consistently. The ROI is undeniable."</p>
+                                <p style={{ fontSize: '1.1rem', fontStyle: 'italic', marginBottom: '20px', color: 'var(--text-main)' }}>"Redsharc completely transformed our lead gen. We went from struggling to get 10 demos a month to booking 50+ consistently. The ROI is undeniable."</p>
                                 <div style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
                                     <div style={{ width: '50px', height: '50px', background: '#ddd', borderRadius: '50%' }}></div>
                                     <div>

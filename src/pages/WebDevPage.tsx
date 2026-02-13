@@ -127,7 +127,7 @@ const WebDevPage = () => {
                     <div className="container-responsive">
                         <ScrollReveal animation="fade-up">
                             <div className="text-center" style={{ marginBottom: '60px' }}>
-                                <h2 className="heading-lg" style={{ color: '#0f172a', marginBottom: '16px' }}>Why Businesses Choose Red Shark</h2>
+                                <h2 className="heading-lg" style={{ color: '#0f172a', marginBottom: '16px' }}>Why Businesses Choose Redsharc</h2>
                                 <p style={{ color: '#64748b', maxWidth: '700px', margin: '0 auto' }}>
                                     We don't just write code; we build digital assets that grow your business.
                                 </p>
@@ -234,7 +234,7 @@ const WebDevPage = () => {
                     <div className="container-responsive">
                         <ScrollReveal>
                             <div className="text-center" style={{ marginBottom: '60px' }}>
-                                <h2 className="heading-lg" style={{ color: '#0f172a', marginBottom: '16px' }}>The RedShark Digital Stack</h2>
+                                <h2 className="heading-lg" style={{ color: '#0f172a', marginBottom: '16px' }}>The Redsharc Digital Stack</h2>
                                 <p style={{ color: '#64748b' }}>From idea to launch, our process ensures excellence.</p>
                             </div>
                         </ScrollReveal>
@@ -395,7 +395,7 @@ const WebDevPage = () => {
                 <section style={{ padding: '60px 20px', background: '#f1f5f9', fontSize: '0.9rem', color: '#64748b', textAlign: 'center' }}>
                     <div className="container-responsive" style={{ maxWidth: '800px' }}>
                         <p>
-                            Red Shark builds high-performance websites and applications. From custom React apps to scalable e-commerce stores, we engineer digital experiences that convert.
+                            Redsharc builds high-performance websites and applications. From custom React apps to scalable e-commerce stores, we engineer digital experiences that convert.
                         </p>
                     </div>
                 </section>

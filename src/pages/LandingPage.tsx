@@ -174,7 +174,7 @@ const LandingPage = () => {
                         <ScrollReveal animation="slide-left" delay={100}>
                             <div className="growth-service-left">
                                 <h2>
-                                    Enter The <span className="highlight-red-box">RedShark Growth Engine</span>
+                                    Enter The <span className="highlight-red-box">Redsharc Growth Engine</span>
                                 </h2>
 
                                 <div className="visual-orbit-container">

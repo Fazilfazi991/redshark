@@ -135,7 +135,7 @@ const SEOPage = () => {
                                         Most SEO agencies focus on rankings and traffic, but over 70% of website visits never convert because the strategy targets the wrong audience.
                                     </p>
                                     <p className="text-body" style={{ color: '#64748b', marginBottom: '20px' }}>
-                                        Red Shark approaches SEO differently by building strategies around <strong>search intent, data, and conversion behavior</strong>. With nearly 80% of buying journeys starting on search engines, every SEO decision is designed to attract high-intent users rather than vanity traffic.
+                                        Redsharc approaches SEO differently by building strategies around <strong>search intent, data, and conversion behavior</strong>. With nearly 80% of buying journeys starting on search engines, every SEO decision is designed to attract high-intent users rather than vanity traffic.
                                     </p>
                                     <p className="text-body" style={{ color: '#64748b' }}>
                                         The result is higher-quality traffic, better engagement, and consistent lead generation that compounds month after month.
@@ -176,7 +176,7 @@ const SEOPage = () => {
                     <div className="container-responsive">
                         <ScrollReveal animation="fade-up">
                             <div className="text-center" style={{ marginBottom: '60px' }}>
-                                <h2 className="heading-lg" style={{ color: '#0f172a', marginBottom: '16px' }}>Why Businesses Choose Red Shark</h2>
+                                <h2 className="heading-lg" style={{ color: '#0f172a', marginBottom: '16px' }}>Why Businesses Choose Redsharc</h2>
                                 <p style={{ color: '#64748b', maxWidth: '700px', margin: '0 auto' }}>
                                     We don’t just optimize for Google — we optimize for business growth.
                                 </p>
@@ -432,7 +432,7 @@ const SEOPage = () => {
                 <section style={{ padding: '60px 20px', background: '#f1f5f9', fontSize: '0.9rem', color: '#64748b', textAlign: 'center' }}>
                     <div className="container-responsive" style={{ maxWidth: '800px' }}>
                         <p>
-                            Red Shark is a results-driven digital marketing agency offering SEO, social media marketing, paid advertising, and content marketing services. We help businesses grow through ethical, data-driven strategies.
+                            Redsharc is a results-driven digital marketing agency offering SEO, social media marketing, paid advertising, and content marketing services. We help businesses grow through ethical, data-driven strategies.
                         </p>
                     </div>
                 </section>

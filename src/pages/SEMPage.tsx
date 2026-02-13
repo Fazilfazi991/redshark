@@ -24,7 +24,7 @@ const SEMPage = () => {
         },
         {
             question: "Do I pay you or Google?",
-            answer: "You pay Google directly for the ad spend, and you pay RedShark a management fee for the strategy, setup, and optimization. You always own your ad account and data."
+            answer: "You pay Google directly for the ad spend, and you pay Redsharc a management fee for the strategy, setup, and optimization. You always own your ad account and data."
         },
         {
             question: "How fast will I get leads?",
@@ -88,7 +88,7 @@ const SEMPage = () => {
                                         PPC looks easy, but 90% of accounts bleed money due to poor structure, broad targeting, and weak intent matching.
                                     </p>
                                     <p className="text-body" style={{ color: '#64748b', marginBottom: '20px' }}>
-                                        Red Shark approaches SEM differently. We don't just "run ads"—we build <strong>profit engines</strong>. By focusing on conversion data and profit margins rather than just clicks, we ensure every dollar spent contributes to your bottom line.
+                                        Redsharc approaches SEM differently. We don't just "run ads"—we build <strong>profit engines</strong>. By focusing on conversion data and profit margins rather than just clicks, we ensure every dollar spent contributes to your bottom line.
                                     </p>
                                 </div>
                             </ScrollReveal>
@@ -126,7 +126,7 @@ const SEMPage = () => {
                     <div className="container-responsive">
                         <ScrollReveal animation="fade-up">
                             <div className="text-center" style={{ marginBottom: '60px' }}>
-                                <h2 className="heading-lg" style={{ color: '#0f172a', marginBottom: '16px' }}>Why Businesses Choose Red Shark</h2>
+                                <h2 className="heading-lg" style={{ color: '#0f172a', marginBottom: '16px' }}>Why Businesses Choose Redsharc</h2>
                                 <p style={{ color: '#64748b', maxWidth: '700px', margin: '0 auto' }}>
                                     We manage your ad spend like it's our own money.
                                 </p>
@@ -394,7 +394,7 @@ const SEMPage = () => {
                 <section style={{ padding: '60px 20px', background: '#f1f5f9', fontSize: '0.9rem', color: '#64748b', textAlign: 'center' }}>
                     <div className="container-responsive" style={{ maxWidth: '800px' }}>
                         <p>
-                            Red Shark maximizes your ad spend through precision targeting on Google and Social Media. We are your partner for scalable, high-ROI performance marketing.
+                            Redsharc maximizes your ad spend through precision targeting on Google and Social Media. We are your partner for scalable, high-ROI performance marketing.
                         </p>
                     </div>
                 </section>

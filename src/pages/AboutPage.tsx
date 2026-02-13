@@ -13,7 +13,7 @@ const AboutPage = () => {
                 <div className="container" style={{ padding: '80px 20px' }}>
                     <div style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'center', marginBottom: '80px' }}>
                         <h1 style={{ fontSize: '3.5rem', fontWeight: 'bold', marginBottom: '20px', color: '#000' }}>
-                            We Are <span style={{ color: 'var(--primary)' }}>RedShark</span>
+                            We Are <span style={{ color: 'var(--primary)' }}>Redsharc</span>
                         </h1>
                         <p style={{ fontSize: '1.25rem', color: 'var(--text-muted)', lineHeight: '1.6' }}>
                             A collective of digital natives, creative strategists, and technical wizards. We don't just build websites; we build engines for growth.
@@ -34,7 +34,7 @@ const AboutPage = () => {
 
                             <h2 style={{ fontSize: '2.5rem', marginBottom: '20px', color: '#000', marginTop: '40px' }}>Our Story</h2>
                             <p style={{ color: 'var(--text-muted)', lineHeight: '1.8', fontSize: '1.1rem', marginBottom: '20px' }}>
-                                RedShark began in 2024 with a clear purpose: to disrupt the traditional agency model. We saw a gap between technical execution and creative strategy, and we set out to bridge it. What started as a small team of passionate experts has grown into a full-service digital powerhouse, driven by the success of our partners.
+                                Redsharc began in 2024 with a clear purpose: to disrupt the traditional agency model. We saw a gap between technical execution and creative strategy, and we set out to bridge it. What started as a small team of passionate experts has grown into a full-service digital powerhouse, driven by the success of our partners.
                             </p>
                         </div>
                         <div style={{ background: '#f8fafc', padding: '40px', borderRadius: '20px', border: '1px solid var(--border)' }}>

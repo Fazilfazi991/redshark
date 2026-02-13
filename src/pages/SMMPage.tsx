@@ -65,7 +65,7 @@ const SMMPage = () => {
                                 We Prove Conversions Through <span style={{ color: '#db2777' }}>Strategic Marketing</span>
                             </h1>
                             <p className="text-body-lg" style={{ color: '#64748b', maxWidth: '800px', margin: '0 auto 40px' }}>
-                                Red Shark delivers professional social media marketing services built on clear strategy, data intelligence, and performance insights. We don’t just claim results; we prove them.
+                                Redsharc delivers professional social media marketing services built on clear strategy, data intelligence, and performance insights. We don’t just claim results; we prove them.
                             </p>
                             <div className="flex-mobile-col" style={{ display: 'flex', gap: '20px', justifyContent: 'center', flexWrap: 'wrap' }}>
                                 <button className="btn btn-primary btn-responsive" style={{ background: '#db2777', borderColor: '#db2777' }}>
@@ -133,7 +133,7 @@ const SMMPage = () => {
                                 <div style={{ background: 'rgba(255,255,255,0.05)', padding: '40px', borderRadius: '24px', border: '1px solid rgba(255,255,255,0.1)' }}>
                                     <h3 className="heading-md" style={{ marginBottom: '20px', color: '#fbcfe8' }}>Our Strategy-First Approach</h3>
                                     <p style={{ color: '#cbd5e1', lineHeight: '1.7', marginBottom: '20px' }}>
-                                        At Red Shark, every campaign begins with understanding business goals, audience intent, and platform relevance.
+                                        At Redsharc, every campaign begins with understanding business goals, audience intent, and platform relevance.
                                     </p>
                                     <p style={{ color: '#cbd5e1', lineHeight: '1.7' }}>
                                         We don’t rely on assumptions. Content planning, publishing, and engagement are all aligned to ensure clarity and consistency. Every decision is guided by data and refined through performance insights.
@@ -278,7 +278,7 @@ const SMMPage = () => {
                                 Our focus is not on vanity metrics. We track reach quality, engagement behavior, audience growth, and campaign performance to support data-driven decisions and long-term brand growth.
                             </p>
                             <div style={{ fontStyle: 'italic', marginBottom: '60px', opacity: '0.8' }}>
-                                "Businesses choose Red Shark for our structured approach, transparent communication, and performance-focused strategies."
+                                "Businesses choose Redsharc for our structured approach, transparent communication, and performance-focused strategies."
                             </div>
                         </ScrollReveal>
 
