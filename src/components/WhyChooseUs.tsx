@@ -1,6 +1,6 @@
-import React from 'react';
 import { Check } from 'lucide-react';
 import './WhyChooseUs.css';
+import MarketingVisual from './MarketingVisual';
 
 const benefits = [
     "Access to pre-vetted top 3% experts",
@@ -33,7 +33,7 @@ const WhyChooseUs = () => {
                     </div>
                 </div>
                 <div className="why-visual">
-                    <img src="/why-us-visual.png" alt="Why Choose Us" className="img-fluid rounded-lg shadow-lg" style={{ maxWidth: '100%', height: 'auto', borderRadius: '1rem' }} />
+                    <MarketingVisual />
                 </div>
             </div>
         </section>
