@@ -19,7 +19,7 @@ const Hero = () => {
                     </h1>
 
                     <p className="hero-subheadline">
-                        Want to grow your business? You're in the right place. We don't make big promises — we deliver real results. Through strategic SEO, Google Ads, and Meta Ads, we help businesses generate more leads, sales, and long-term growth.
+                        Want to grow your business? You're in the right place. We don't make big promises — we deliver real results. Through strategic SEO, Google Ads, and Meta Ads, we help businesses improve online visibility, generate quality leads, boost sales, and long-term growth.
                     </p>
 
                     <div className="hero-cta-group">
