@@ -1,5 +1,5 @@
 import React from 'react';
-import { Facebook, Twitter, Instagram, Linkedin, Mail, MapPin } from 'lucide-react';
+import { Facebook, Twitter, Instagram, Linkedin, Mail, MapPin, Phone } from 'lucide-react';
 import './Footer.css';
 
 const Footer = () => {
@@ -58,7 +58,11 @@ const Footer = () => {
                             </li>
                             <li>
                                 <MapPin size={16} className="contact-icon" />
-                                <span>San Francisco, CA</span>
+                                <span>Kerala, India</span>
+                            </li>
+                            <li>
+                                <Phone size={16} className="contact-icon" />
+                                <span>+91 75102 05123</span>
                             </li>
                         </ul>
                     </div>

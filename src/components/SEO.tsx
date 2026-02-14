@@ -1,6 +1,8 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 
+// ... (previous imports)
+
 interface SEOProps {
     title: string;
     description: string;
@@ -8,9 +10,11 @@ interface SEOProps {
     canonical?: string;
     name?: string;
     type?: string;
+    image?: string;
+    schema?: object;
 }
 
-const SEO: React.FC<SEOProps> = ({ title, description, keywords, canonical, name = 'Redsharc', type = 'website' }) => {
+const SEO: React.FC<SEOProps> = ({ title, description, keywords, canonical, name = 'Redsharc', type = 'website', image, schema }) => {
     return (
         <Helmet>
             {/* Standard metadata tags */}
@@ -19,24 +23,30 @@ const SEO: React.FC<SEOProps> = ({ title, description, keywords, canonical, name
             {keywords && <meta name='keywords' content={keywords} />}
             {canonical && <link rel="canonical" href={canonical} />}
 
-            {/* End standard metadata tags */}
-
             {/* Facebook tags */}
             <meta property="og:type" content={type} />
             <meta property="og:title" content={title} />
             <meta property="og:description" content={description} />
-            {/* <meta property="og:image" content={image} /> */}
-            {/* End Facebook tags */}
+            {image && <meta property="og:image" content={image} />}
+            {canonical && <meta property="og:url" content={canonical} />}
 
             {/* Twitter tags */}
             <meta name="twitter:creator" content={name} />
-            <meta name="twitter:card" content={type} />
+            <meta name="twitter:card" content="summary_large_image" />
             <meta name="twitter:title" content={title} />
             <meta name="twitter:description" content={description} />
-            {/* <meta name="twitter:image" content={image} /> */}
-            {/* End Twitter tags */}
+            {image && <meta name="twitter:image" content={image} />}
+
+            {/* Schema.org JSON-LD */}
+            {schema && (
+                <script type="application/ld+json">
+                    {JSON.stringify(schema)}
+                </script>
+            )}
         </Helmet>
     );
 }
+
+export default SEO;
 
 export default SEO;

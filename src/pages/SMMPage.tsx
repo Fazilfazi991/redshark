@@ -49,6 +49,16 @@ const SMMPage = () => {
                 description="Boost your brand presence with Redsharc's social media marketing services. We manage Instagram, Facebook, LinkedIn, and TikTok campaigns for growth."
                 keywords="Social Media Marketing Agency, SMM Services, Instagram Ads, Facebook Ads, LinkedIn Marketing"
                 canonical="https://redsharc.com/social-media-marketing"
+                schema={{
+                    "@context": "https://schema.org",
+                    "@type": "Service",
+                    "serviceType": "Social Media Marketing",
+                    "provider": {
+                        "@type": "Organization",
+                        "name": "Redsharc"
+                    },
+                    "description": "Social media marketing services for Instagram, Facebook, LinkedIn, and TikTok."
+                }}
             />
             <Header />
 

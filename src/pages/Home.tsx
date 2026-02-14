@@ -26,6 +26,23 @@ function Home() {
                 description="Redsharc is a top-rated performance marketing agency in Kerala specializing in SEO, Google Ads, and Social Media Marketing to drive measurable growth."
                 keywords="SEO Agency Kerala, Digital Marketing Kerala, Performance Marketing, Google Ads Agency, Social Media Marketing"
                 canonical="https://redsharc.com/"
+                schema={{
+                    "@context": "https://schema.org",
+                    "@type": "Organization",
+                    "name": "Redsharc",
+                    "url": "https://redsharc.com",
+                    "logo": "https://redsharc.com/logo.png",
+                    "contactPoint": {
+                        "@type": "ContactPoint",
+                        "telephone": "+91-7510205123",
+                        "contactType": "customer service"
+                    },
+                    "sameAs": [
+                        "https://www.facebook.com/redsharc",
+                        "https://www.instagram.com/redsharc",
+                        "https://www.linkedin.com/company/redsharc"
+                    ]
+                }}
             />
             <Header />
             <main>

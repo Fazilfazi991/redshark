@@ -81,6 +81,17 @@ const SEOPage = () => {
                 description="Looking for the best SEO company in Kerala? Redsharc offers data-driven SEO services to improve rankings, drive traffic, and increase revenue."
                 keywords="SEO Agency Kerala, Best SEO Company in Kerala, SEO Services Kerala, Local SEO Kerala, Search Engine Optimization"
                 canonical="https://redsharc.com/search-engine-optimization"
+                schema={{
+                    "@context": "https://schema.org",
+                    "@type": "Service",
+                    "serviceType": "SEO Services",
+                    "provider": {
+                        "@type": "Organization",
+                        "name": "Redsharc"
+                    },
+                    "areaServed": "Kerala",
+                    "description": "Data-driven SEO services to improve rankings, drive traffic, and increase revenue."
+                }}
             />
             <Header />
 

@@ -17,6 +17,17 @@ const BlogPage = () => {
                 description="Read the latest insights on SEO, PPC, Social Media, and Web Development from Redsharc's team of experts."
                 keywords="Digital Marketing Blog, SEO Tips, PPC Strategies, Web Development Insights, Marketing Trends"
                 canonical="https://redsharc.com/blog"
+                schema={{
+                    "@context": "https://schema.org",
+                    "@type": "Blog",
+                    "name": "Redsharc Insights",
+                    "url": "https://redsharc.com/blog",
+                    "description": "Insights on SEO, PPC, Social Media, and Web Development.",
+                    "publisher": {
+                        "@type": "Organization",
+                        "name": "Redsharc"
+                    }
+                }}
             />
             <Header />
 

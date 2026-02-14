@@ -41,6 +41,16 @@ const WebDevPage = () => {
                 description="Redsharc builds high-performance, mobile-responsive websites and web applications using React, Next.js, and modern technologies."
                 keywords="Web Development Company, Custom Website Design, React Development, Next.js Developers, E-commerce Website Development"
                 canonical="https://redsharc.com/web-development"
+                schema={{
+                    "@context": "https://schema.org",
+                    "@type": "Service",
+                    "serviceType": "Web Development",
+                    "provider": {
+                        "@type": "Organization",
+                        "name": "Redsharc"
+                    },
+                    "description": "Custom web development using React, Next.js, and modern technologies."
+                }}
             />
             <Header />
 

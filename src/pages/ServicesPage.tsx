@@ -18,6 +18,20 @@ const ServicesPage = () => {
                 description="Comprehensive digital marketing services including SEO, Google Ads, Social Media Marketing, and Web Development to grow your business."
                 keywords="Digital Marketing Services, SEO Services, PPC Management, Social Media Marketing, Web Development Agency"
                 canonical="https://redsharc.com/services"
+                schema={{
+                    "@context": "https://schema.org",
+                    "@type": "Service",
+                    "serviceType": "Digital Marketing",
+                    "provider": {
+                        "@type": "Organization",
+                        "name": "Redsharc"
+                    },
+                    "areaServed": {
+                        "@type": "State",
+                        "name": "Kerala"
+                    },
+                    "description": "Comprehensive digital marketing services including SEO, Google Ads, Social Media Marketing, and Web Development."
+                }}
             />
             <Header />
             <main style={{ paddingTop: '80px', backgroundColor: '#fff', color: 'var(--text-main)', minHeight: '100vh' }}>

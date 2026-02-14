@@ -15,6 +15,16 @@ const AboutPage = () => {
                 description="Redsharc is a team of digital natives, creative strategists, and technical experts dedicated to growing businesses through performance marketing."
                 keywords="About Redsharc, Digital Marketing Agency, Performance Marketing Team, Marketing Strategy"
                 canonical="https://redsharc.com/about"
+                schema={{
+                    "@context": "https://schema.org",
+                    "@type": "AboutPage",
+                    "mainEntity": {
+                        "@type": "Organization",
+                        "name": "Redsharc",
+                        "description": "Redsharc is a team of digital natives, creative strategists, and technical experts dedicated to growing businesses through performance marketing.",
+                        "url": "https://redsharc.com/about"
+                    }
+                }}
             />
             <Header />
             <main style={{ paddingTop: '80px', backgroundColor: '#fff', color: 'var(--text-main)', minHeight: '100vh' }}>

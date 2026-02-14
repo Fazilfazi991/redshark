@@ -27,6 +27,30 @@ const BlogPostPage = () => {
         );
     }
 
+    // Prepare Schema
+    const schema = {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": post.title,
+        "image": post.image ? `https://redsharc.com${post.image}` : undefined,
+        "author": {
+            "@type": "Organization",
+            "name": "Redsharc"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Redsharc",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://redsharc.com/logo.png"
+            }
+        },
+        "datePublished": post.publishedDate, // Ensure format is ISO 8601 if possible, or simple date string
+        "description": post.summary
+    };
+
+    import SEO from '../components/SEO'; // Import SEO here or at top if not present
+
     // Extract headings for Table of Contents
     const headings = post.content
         .filter(item => item.type === 'heading')
@@ -62,6 +86,14 @@ const BlogPostPage = () => {
 
     return (
         <div className="page-wrapper post-page">
+            <SEO
+                title={`${post.title} - Redsharc Blog`}
+                description={post.summary}
+                canonical={`https://redsharc.com/blog/${post.slug}`}
+                type="article"
+                image={post.image}
+                schema={schema}
+            />
             <Header />
 
             <main style={{ paddingTop: '80px', background: '#fff', color: '#334155' }}>
