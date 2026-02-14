@@ -11,6 +11,18 @@
     perspective: 1000px;
 }
 
+@media (max-width: 480px) {
+    .marketing-visual-container {
+        transform: scale(0.7);
+        height: 300px;
+        /* Adjust height to match scale */
+        margin-left: -15%;
+        /* Center it back due to scale origin */
+        width: 130%;
+        /* Expand width to compensate */
+    }
+}
+
 .iso-scene {
     position: relative;
     width: 300px;

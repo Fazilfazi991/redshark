@@ -31,6 +31,19 @@
     /* Ensure link doesn't have underline */
 }
 
+.logo-img {
+    height: 80px;
+    width: auto;
+    object-fit: contain;
+    transition: height 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .logo-img {
+        height: 50px;
+    }
+}
+
 .desktop-nav {
     display: flex;
     gap: 2rem;
