@@ -9,6 +9,7 @@ import {
     ThumbsUp, Globe, BarChart2, Zap, Target, Layers, Smartphone
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import SEO from '../components/SEO';
 
 const SMMPage = () => {
     const [openFaq, setOpenFaq] = useState<number | null>(null);
@@ -40,7 +41,7 @@ const SMMPage = () => {
         { name: "X (Twitter)", desc: "Real-time updates, brand conversations, and industry presence", icon: MessageCircle }
     ];
 
-    import SEO from '../components/SEO';
+
 
     return (
         <div className="page-wrapper" style={{ backgroundColor: '#fff', color: '#0f172a' }}>

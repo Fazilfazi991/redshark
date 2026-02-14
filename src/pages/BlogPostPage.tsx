@@ -7,6 +7,7 @@ import ScrollReveal from '../components/UI/ScrollReveal';
 import { ArrowLeft, Clock, Calendar, Share2, Facebook, Twitter, Linkedin } from 'lucide-react';
 import { blogPosts } from '../data/blogData';
 import './BlogPostPage.css';
+import SEO from '../components/SEO';
 
 const BlogPostPage = () => {
     const { slug } = useParams<{ slug: string }>();
@@ -49,7 +50,7 @@ const BlogPostPage = () => {
         "description": post.summary
     };
 
-    import SEO from '../components/SEO'; // Import SEO here or at top if not present
+
 
     // Extract headings for Table of Contents
     const headings = post.content

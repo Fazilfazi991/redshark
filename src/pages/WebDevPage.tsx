@@ -5,6 +5,7 @@ import WhatsAppButton from '../components/WhatsAppButton';
 import ScrollReveal from '../components/UI/ScrollReveal';
 import { Code, Smartphone, Zap, Lock, AlertTriangle, CheckCircle, ChevronDown, ChevronUp, ArrowRight, ShieldCheck, Layout, Database, Server, ShoppingCart } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import SEO from '../components/SEO';
 
 const WebDevPage = () => {
     const [openFaq, setOpenFaq] = useState<number | null>(null);
@@ -32,7 +33,7 @@ const WebDevPage = () => {
         }
     ];
 
-    import SEO from '../components/SEO';
+
 
     return (
         <div className="page-wrapper" style={{ backgroundColor: '#fff', color: '#334155' }}>

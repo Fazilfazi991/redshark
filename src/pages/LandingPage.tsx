@@ -28,6 +28,7 @@ import './LandingPage.css';
 import element1 from '../assets/element-1.png';
 import element2 from '../assets/element-2.png';
 import founder from '../assets/founder.jpg';
+import SEO from '../components/SEO';
 
 const LandingPage = () => {
 
@@ -48,7 +49,7 @@ const LandingPage = () => {
         return () => document.removeEventListener('click', handleAnchorClick);
     }, []);
 
-    import SEO from '../components/SEO';
+
 
     return (
         <div className="landing-page">

@@ -8,6 +8,7 @@ import {
     ChevronDown, ChevronUp, ArrowRight, ShieldCheck, MapPin,
     FileText, Zap, Target, Settings, Layers
 } from 'lucide-react';
+import SEO from '../components/SEO';
 
 const SEOPage = () => {
     const [openFaq, setOpenFaq] = useState<number | null>(null);
@@ -72,7 +73,7 @@ const SEOPage = () => {
         }
     ];
 
-    import SEO from '../components/SEO';
+
 
     return (
         <div className="page-wrapper" style={{ backgroundColor: '#fff', color: '#334155' }}>

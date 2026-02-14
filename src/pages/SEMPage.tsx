@@ -5,6 +5,7 @@ import WhatsAppButton from '../components/WhatsAppButton';
 import ScrollReveal from '../components/UI/ScrollReveal';
 import { Target, DollarSign, MousePointer, PieChart, AlertTriangle, CheckCircle, ChevronDown, ChevronUp, ArrowRight, ShieldCheck, Zap, Crosshair, Users } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import SEO from '../components/SEO';
 
 const SEMPage = () => {
     const [openFaq, setOpenFaq] = useState<number | null>(null);
@@ -32,7 +33,7 @@ const SEMPage = () => {
         }
     ];
 
-    import SEO from '../components/SEO';
+
 
     return (
         <div className="page-wrapper" style={{ backgroundColor: '#fff', color: '#334155' }}>

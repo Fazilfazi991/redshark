@@ -49,4 +49,4 @@ const SEO: React.FC<SEOProps> = ({ title, description, keywords, canonical, name
 
 export default SEO;
 
-export default SEO;
+
