@@ -195,10 +195,13 @@
         box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
         overflow-x: hidden;
         /* Prevent internal horizontal scroll */
+        visibility: hidden;
+        transition: transform 0.3s ease-in-out, visibility 0.3s;
     }
 
     .desktop-nav.open {
         transform: translateX(0);
+        visibility: visible;
     }
 
     /* Fix white text on white background */
