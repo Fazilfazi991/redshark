@@ -24,14 +24,14 @@
 
   --radius: 0.5rem;
   --container-width: 1280px;
-  --header-height: 180px;
+  --header-height: 162px;
 
   --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
 }
 
 @media (max-width: 768px) {
   :root {
-    --header-height: 120px;
+    --header-height: 108px;
   }
 }
 

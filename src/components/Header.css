@@ -37,7 +37,7 @@
 }
 
 .logo-img {
-    height: 160px;
+    height: 144px;
     width: auto;
     object-fit: contain;
     transition: height 0.3s ease;
@@ -45,7 +45,7 @@
 
 @media (max-width: 768px) {
     .logo-img {
-        height: 100px;
+        height: 90px;
     }
 }
 
