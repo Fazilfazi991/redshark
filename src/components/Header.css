@@ -183,20 +183,23 @@
         /* Full height minus header */
         background-color: white;
         flex-direction: column;
-        align-items: center;
+        background-color: white;
+        flex-direction: column;
+        align-items: stretch;
+        /* improved alignment */
         justify-content: flex-start;
-        padding-top: 2rem;
-        padding-bottom: 4rem;
-        /* Extra padding for bottom items */
+        padding: 0;
+        /* Reset padding */
         transform: translateX(100%);
-        transition: transform 0.3s ease-in-out;
+        transition: transform 0.3s ease-in-out, visibility 0.3s;
         overflow-y: auto;
         /* Enable scrolling */
         box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
         overflow-x: hidden;
         /* Prevent internal horizontal scroll */
         visibility: hidden;
-        transition: transform 0.3s ease-in-out, visibility 0.3s;
+        border-top: 1px solid #e2e8f0;
+        /* Connection line */
     }
 
     .desktop-nav.open {
@@ -207,18 +210,23 @@
     /* Fix white text on white background */
     .desktop-nav a {
         color: var(--text-main, #0f172a);
-        font-size: 1.25rem;
-        margin-bottom: 1.5rem;
-        /* Increased spacing */
+        font-size: 1.1rem;
+        padding: 1.25rem 2rem;
+        /* Bigger touch target */
+        margin-bottom: 0;
         font-weight: 600;
         width: 100%;
-        text-align: center;
+        text-align: left;
         display: block;
+        border-bottom: 1px solid #f1f5f9;
+        /* Divider */
     }
 
     .desktop-nav a:hover {
         color: var(--primary);
         background-color: #f8fafc;
+        padding-left: 2.5rem;
+        /* Slide effect on hover */
     }
 
     .desktop-only {
@@ -227,10 +235,11 @@
 
     .mobile-only {
         display: inline-flex;
-        margin-top: 1rem;
-        width: 80%;
+        margin: 2rem;
+        width: calc(100% - 4rem);
+        /* Full width minus margin */
         justify-content: center;
-        padding: 14px;
+        padding: 16px;
         font-size: 1.1rem;
     }
 
@@ -242,10 +251,11 @@
     .nav-item-dropdown {
         flex-direction: column;
         width: 100%;
-        align-items: center;
+        align-items: stretch;
         height: auto;
         padding: 0;
-        margin-bottom: 10px;
+        margin-bottom: 0;
+        border-bottom: 1px solid #f1f5f9;
     }
 
     .dropdown-menu {
@@ -254,21 +264,17 @@
         background: #f8fafc;
         border: none;
         box-shadow: none;
-        padding: 5px 0;
+        padding: 0;
         visibility: visible;
         opacity: 1;
         display: none;
-        text-align: center;
+        text-align: left;
         width: 100%;
         min-width: 0;
-        /* Reset desktop min-width */
         border-radius: 0;
         left: 0;
-        /* Reset desktop left */
         margin: 0;
-        /* Reset any margins */
         box-sizing: border-box;
-        /* Ensure padding doesn't overflow width */
     }
 
     /* Override standard dropdown behavior for mobile */
@@ -277,31 +283,30 @@
         visibility: visible;
         opacity: 1;
         transform: none !important;
-        /* CRITICAL FIX: Prevent desktop translate(-50%) from applying */
     }
 
     .dropdown-menu a {
         font-size: 1rem;
         color: #64748b;
-        padding: 12px 10px;
-        /* Reduced horizontal padding slightly */
+        padding: 1rem 3rem;
+        /* Indented more */
         margin-bottom: 0;
         font-weight: 500;
         white-space: normal;
         line-height: 1.4;
         width: 100%;
-        /* Ensure full width */
         display: block;
         box-sizing: border-box;
+        border-bottom: 1px solid #e2e8f0;
     }
 
     .dropdown-trigger {
         width: 100%;
-        justify-content: center;
-        padding: 10px 0;
-        font-weight: 700;
-        font-size: 1.25rem;
-        /* Match other links */
+        justify-content: space-between;
+        /* Space between text and chevron */
+        padding: 1.25rem 2rem;
+        font-weight: 600;
+        font-size: 1.1rem;
         color: var(--text-main, #0f172a) !important;
     }
 }
