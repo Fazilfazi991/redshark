@@ -32,8 +32,16 @@ const WebDevPage = () => {
         }
     ];
 
+    import SEO from '../components/SEO';
+
     return (
         <div className="page-wrapper" style={{ backgroundColor: '#fff', color: '#334155' }}>
+            <SEO
+                title="Custom Web Development & Design Services - Redsharc"
+                description="Redsharc builds high-performance, mobile-responsive websites and web applications using React, Next.js, and modern technologies."
+                keywords="Web Development Company, Custom Website Design, React Development, Next.js Developers, E-commerce Website Development"
+                canonical="https://redsharc.com/web-development"
+            />
             <Header />
 
             <main style={{ paddingTop: '80px' }}>

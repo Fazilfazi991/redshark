@@ -7,9 +7,17 @@ import { Link } from 'react-router-dom';
 import { blogPosts } from '../data/blogData';
 import '../components/Blog.css'; // Reuse existing blog styles
 
+import SEO from '../components/SEO';
+
 const BlogPage = () => {
     return (
         <div className="page-wrapper">
+            <SEO
+                title="Redsharc Insights | Digital Marketing & Tech Trends"
+                description="Read the latest insights on SEO, PPC, Social Media, and Web Development from Redsharc's team of experts."
+                keywords="Digital Marketing Blog, SEO Tips, PPC Strategies, Web Development Insights, Marketing Trends"
+                canonical="https://redsharc.com/blog"
+            />
             <Header />
 
             <main style={{ paddingTop: '80px', background: '#fff', color: '#334155' }}>

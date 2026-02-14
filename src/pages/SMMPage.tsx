@@ -40,8 +40,16 @@ const SMMPage = () => {
         { name: "X (Twitter)", desc: "Real-time updates, brand conversations, and industry presence", icon: MessageCircle }
     ];
 
+    import SEO from '../components/SEO';
+
     return (
         <div className="page-wrapper" style={{ backgroundColor: '#fff', color: '#0f172a' }}>
+            <SEO
+                title="Social Media Marketing Agency | Meta & TikTok Ads - Redsharc"
+                description="Boost your brand presence with Redsharc's social media marketing services. We manage Instagram, Facebook, LinkedIn, and TikTok campaigns for growth."
+                keywords="Social Media Marketing Agency, SMM Services, Instagram Ads, Facebook Ads, LinkedIn Marketing"
+                canonical="https://redsharc.com/social-media-marketing"
+            />
             <Header />
 
             <main style={{ paddingTop: '80px' }}>

@@ -32,8 +32,16 @@ const SEMPage = () => {
         }
     ];
 
+    import SEO from '../components/SEO';
+
     return (
         <div className="page-wrapper" style={{ backgroundColor: '#fff', color: '#334155' }}>
+            <SEO
+                title="Google Ads Management Services | PPC Agency - Redsharc"
+                description="Maximize your ROI with Redsharc's expert Google Ads management. We build high-performance PPC campaigns that drive instant leads and sales."
+                keywords="Google Ads Agency, PPC Management, Search Engine Marketing, SEM Services, Google Ads Expert"
+                canonical="https://redsharc.com/google-ads"
+            />
             <Header />
 
             <main style={{ paddingTop: '80px' }}>

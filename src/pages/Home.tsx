@@ -16,10 +16,17 @@ import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 import WhatsAppButton from '../components/WhatsAppButton';
 import ScrollReveal from '../components/UI/ScrollReveal';
+import SEO from '../components/SEO';
 
 function Home() {
     return (
         <div className="home-page">
+            <SEO
+                title="Redsharc | Performance Marketing & SEO Agency in Kerala"
+                description="Redsharc is a top-rated performance marketing agency in Kerala specializing in SEO, Google Ads, and Social Media Marketing to drive measurable growth."
+                keywords="SEO Agency Kerala, Digital Marketing Kerala, Performance Marketing, Google Ads Agency, Social Media Marketing"
+                canonical="https://redsharc.com/"
+            />
             <Header />
             <main>
                 <Hero />

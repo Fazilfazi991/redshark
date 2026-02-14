@@ -5,9 +5,17 @@ import WhatsAppButton from '../components/WhatsAppButton';
 import { Target, Users, Zap, Award } from 'lucide-react';
 import Founder from '../components/Founder';
 
+import SEO from '../components/SEO';
+
 const AboutPage = () => {
     return (
         <div className="page-wrapper">
+            <SEO
+                title="About Redsharc | The Performance Marketing Collective"
+                description="Redsharc is a team of digital natives, creative strategists, and technical experts dedicated to growing businesses through performance marketing."
+                keywords="About Redsharc, Digital Marketing Agency, Performance Marketing Team, Marketing Strategy"
+                canonical="https://redsharc.com/about"
+            />
             <Header />
             <main style={{ paddingTop: '80px', backgroundColor: '#fff', color: 'var(--text-main)', minHeight: '100vh' }}>
                 <div className="container" style={{ padding: '80px 20px' }}>

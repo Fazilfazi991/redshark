@@ -48,8 +48,16 @@ const LandingPage = () => {
         return () => document.removeEventListener('click', handleAnchorClick);
     }, []);
 
+    import SEO from '../components/SEO';
+
     return (
         <div className="landing-page">
+            <SEO
+                title="Growth Strategy & Performance Marketing | Redsharc"
+                description="Stop guessing and start scaling with Redsharc's data-driven growth strategies. We turn ad spend into profit."
+                keywords="Growth Marketing, Performance Marketing, Revenue Growth, Digital Strategy"
+                canonical="https://redsharc.com/growth"
+            />
             <Header />
 
             {/* --- HERO SECTION --- */}

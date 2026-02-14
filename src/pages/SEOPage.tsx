@@ -72,8 +72,16 @@ const SEOPage = () => {
         }
     ];
 
+    import SEO from '../components/SEO';
+
     return (
         <div className="page-wrapper" style={{ backgroundColor: '#fff', color: '#334155' }}>
+            <SEO
+                title="Best SEO Agency in Kerala | Rank #1 on Google - Redsharc"
+                description="Looking for the best SEO company in Kerala? Redsharc offers data-driven SEO services to improve rankings, drive traffic, and increase revenue."
+                keywords="SEO Agency Kerala, Best SEO Company in Kerala, SEO Services Kerala, Local SEO Kerala, Search Engine Optimization"
+                canonical="https://redsharc.com/search-engine-optimization"
+            />
             <Header />
 
             <main style={{ paddingTop: '80px' }}>

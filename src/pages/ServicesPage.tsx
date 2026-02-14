@@ -8,9 +8,17 @@ import { ArrowRight, CheckCircle, TrendingUp, Search, MousePointer, BarChart, Sh
 // Reusing existing logic/styles where appropriate, but customizing for the specific flow
 // We can import specific components if they match exactly, or build inline for specific content requirements.
 
+import SEO from '../components/SEO';
+
 const ServicesPage = () => {
     return (
         <div className="page-wrapper">
+            <SEO
+                title="Digital Marketing Services | SEO, PPC, Social Media - Redsharc"
+                description="Comprehensive digital marketing services including SEO, Google Ads, Social Media Marketing, and Web Development to grow your business."
+                keywords="Digital Marketing Services, SEO Services, PPC Management, Social Media Marketing, Web Development Agency"
+                canonical="https://redsharc.com/services"
+            />
             <Header />
             <main style={{ paddingTop: '80px', backgroundColor: '#fff', color: 'var(--text-main)', minHeight: '100vh' }}>
 
