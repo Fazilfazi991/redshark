@@ -1,8 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 
-// ... (previous imports)
-
 interface SEOProps {
     title: string;
     description: string;
@@ -48,5 +46,3 @@ const SEO: React.FC<SEOProps> = ({ title, description, keywords, canonical, name
 }
 
 export default SEO;
-
-
