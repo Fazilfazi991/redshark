@@ -86,7 +86,7 @@ const ChatBot = () => {
                 nextStep = 'requirements';
             } else if (step === 'requirements') {
                 setUserData(prev => ({ ...prev, requirements: currentInput }));
-                botText = "Perfect. We've received your details. Our team will review them and contact you shortly!\n\nYou can also reach us directly at +971 50 123 4567 or hello@redsharc.ae.";
+                botText = "Perfect. We've received your details. Our team will review them and contact you shortly!\n\nYou can also reach us directly at +971 50 123 4567 or info@redsharc.com.";
                 nextStep = 'end';
             }
 

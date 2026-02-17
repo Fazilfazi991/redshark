@@ -19,7 +19,7 @@ const Footer = () => {
                         <div className="social-icons">
                             <a href="#" className="social-link"><Twitter size={20} /></a>
                             <a href="#" className="social-link"><Linkedin size={20} /></a>
-                            <a href="#" className="social-link"><Instagram size={20} /></a>
+                            <a href="https://www.instagram.com/redshark.studio" target="_blank" rel="noopener noreferrer" className="social-link"><Instagram size={20} /></a>
                             <a href="#" className="social-link"><Facebook size={20} /></a>
                         </div>
                     </div>
@@ -54,7 +54,7 @@ const Footer = () => {
                         <ul className="contact-list">
                             <li>
                                 <Mail size={16} className="contact-icon" />
-                                <span>hello@redsharc.com</span>
+                                <span>info@redsharc.com</span>
                             </li>
                             <li>
                                 <MapPin size={16} className="contact-icon" />

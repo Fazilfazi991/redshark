@@ -39,7 +39,7 @@ function Home() {
                     },
                     "sameAs": [
                         "https://www.facebook.com/redsharc",
-                        "https://www.instagram.com/redsharc",
+                        "https://www.instagram.com/redshark.studio",
                         "https://www.linkedin.com/company/redsharc"
                     ]
                 }}

@@ -59,7 +59,7 @@ const Founder = () => {
                         <div className="founder-links">
                             <a href="#" className="founder-link"><Linkedin size={18} /> LinkedIn</a>
                             <span className="separator">•</span>
-                            <a href="mailto:hello@redsharc.com" className="founder-link"><Mail size={18} /> Email</a>
+                            <a href="mailto:info@redsharc.com" className="founder-link"><Mail size={18} /> Email</a>
                             <span className="separator">•</span>
                             <a href="#contact" className="founder-link highlight">Book a call <ArrowRight size={16} /></a>
                         </div>
