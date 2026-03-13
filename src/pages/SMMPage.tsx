@@ -71,9 +71,9 @@ const SMMPage = () => {
                             <div style={{
                                 display: 'inline-block',
                                 padding: '8px 16px',
-                                background: '#fdf2f8',
+                                background: '#fef2f2',
                                 borderRadius: '50px',
-                                color: '#db2777',
+                                color: '#ce1111',
                                 fontSize: '0.9rem',
                                 fontWeight: '600',
                                 marginBottom: '24px'
@@ -81,15 +81,15 @@ const SMMPage = () => {
                                 Social Media Marketing Services
                             </div>
                             <h1 className="heading-xl" style={{ marginBottom: '24px', color: '#0f172a' }}>
-                                We Prove Conversions Through <span style={{ color: '#db2777' }}>Strategic Marketing</span>
+                                We Prove Conversions Through <span style={{ color: '#ce1111' }}>Strategic Marketing</span>
                             </h1>
                             <p className="text-body-lg" style={{ color: '#64748b', maxWidth: '800px', margin: '0 auto 40px' }}>
                                 Redsharc delivers professional social media marketing services built on clear strategy, data intelligence, and performance insights. We don’t just claim results; we prove them.
                             </p>
                             <div className="flex-mobile-col" style={{ display: 'flex', gap: '20px', justifyContent: 'center', flexWrap: 'wrap' }}>
-                                <button className="btn btn-primary btn-responsive" style={{ background: '#db2777', borderColor: '#db2777' }}>
+                                <Link to="/contact" className="btn btn-primary btn-responsive" style={{ background: '#ce1111', borderColor: '#ce1111' }}>
                                     Get a Free Strategy Call
-                                </button>
+                                </Link>
                                 <Link to="/case-studies" className="btn btn-secondary btn-responsive" style={{
                                     background: '#fff',
                                     color: '#0f172a',
@@ -141,7 +141,7 @@ const SMMPage = () => {
                                             "Time-consuming management without results"
                                         ].map((item, i) => (
                                             <li key={i} style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '16px', fontSize: '1.05rem' }}>
-                                                <AlertTriangle size={20} color="#f472b6" style={{ flexShrink: 0 }} />
+                                                <AlertTriangle size={20} color="#ef4444" style={{ flexShrink: 0 }} />
                                                 <span>{item}</span>
                                             </li>
                                         ))}
@@ -150,7 +150,7 @@ const SMMPage = () => {
                             </ScrollReveal>
                             <ScrollReveal animation="slide-left" delay={200}>
                                 <div style={{ background: 'rgba(255,255,255,0.05)', padding: '40px', borderRadius: '24px', border: '1px solid rgba(255,255,255,0.1)' }}>
-                                    <h3 className="heading-md" style={{ marginBottom: '20px', color: '#fbcfe8' }}>Our Strategy-First Approach</h3>
+                                    <h3 className="heading-md" style={{ marginBottom: '20px', color: '#fecaca' }}>Our Strategy-First Approach</h3>
                                     <p style={{ color: '#cbd5e1', lineHeight: '1.7', marginBottom: '20px' }}>
                                         At Redsharc, every campaign begins with understanding business goals, audience intent, and platform relevance.
                                     </p>
@@ -173,8 +173,8 @@ const SMMPage = () => {
                             {platforms.map((platform, i) => (
                                 <ScrollReveal key={i} animation="fade-up" delay={i * 100}>
                                     <div className="card-base" style={{ background: '#f8fafc', border: '1px solid #e2e8f0' }}>
-                                        <div style={{ background: '#fce7f3', width: 'fit-content', padding: '10px', borderRadius: '10px', marginBottom: '16px' }}>
-                                            <platform.icon size={24} color="#db2777" />
+                                        <div style={{ background: '#fef2f2', width: 'fit-content', padding: '10px', borderRadius: '10px', marginBottom: '16px' }}>
+                                            <platform.icon size={24} color="#ce1111" />
                                         </div>
                                         <h3 className="heading-md" style={{ marginBottom: '12px', color: '#0f172a' }}>{platform.name}</h3>
                                         <p style={{ color: '#64748b', lineHeight: '1.6' }}>{platform.desc}</p>
@@ -223,7 +223,7 @@ const SMMPage = () => {
                                 <ScrollReveal key={i} animation="fade-up" delay={i * 100}>
                                     <div style={{
                                         padding: '16px 24px',
-                                        background: '#db2777',
+                                        background: '#ce1111',
                                         color: '#fff',
                                         borderRadius: '50px',
                                         fontWeight: 'bold',
@@ -254,7 +254,7 @@ const SMMPage = () => {
                                             "Healthcare & Wellness Businesses"
                                         ].map((ind, i) => (
                                             <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-                                                <div style={{ width: '8px', height: '8px', borderRadius: '50%', background: '#db2777', flexShrink: 0 }}></div>
+                                                <div style={{ width: '8px', height: '8px', borderRadius: '50%', background: '#ce1111', flexShrink: 0 }}></div>
                                                 <span style={{ fontSize: '1.1rem', color: '#475569' }}>{ind}</span>
                                             </div>
                                         ))}
@@ -330,23 +330,25 @@ const SMMPage = () => {
                         </div>
 
                         <ScrollReveal animation="zoom-in">
-                            <div style={{ background: '#db2777', padding: '60px 40px', borderRadius: '32px' }}>
+                            <div style={{ background: '#ce1111', padding: '60px 40px', borderRadius: '32px' }}>
                                 <h2 className="heading-lg" style={{ marginBottom: '24px' }}>
                                     Ready to Strengthen Your Social Media Presence?
                                 </h2>
                                 <p className="text-body-lg" style={{ marginBottom: '30px', opacity: '0.9' }}>
                                     Let’s build a social media strategy that aligns with your brand and business objectives.
                                 </p>
-                                <button className="btn-responsive" style={{
+                                <Link to="/contact" className="btn btn-responsive" style={{
                                     background: '#fff',
-                                    color: '#db2777',
+                                    color: '#ce1111',
                                     border: 'none',
                                     padding: '16px 40px',
                                     fontWeight: 'bold',
-                                    cursor: 'pointer'
+                                    cursor: 'pointer',
+                                    textDecoration: 'none',
+                                    display: 'inline-block'
                                 }}>
                                     Get a Free Social Media Strategy Call
-                                </button>
+                                </Link>
                             </div>
                         </ScrollReveal>
                     </div>

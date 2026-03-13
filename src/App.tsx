@@ -13,6 +13,7 @@ import LandingPage from './pages/LandingPage';
 import ScrollToHash from './utils/ScrollToHash';
 import './components/UI/ScrollReveal'; // Import global styles if needed or ensuring context
 import ChatBot from './components/ChatBot';
+import ContactPage from './pages/ContactPage';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
         <Route path="/blog/:slug" element={<BlogPostPage />} />
         <Route path="/thank-you" element={<ThankYouPage />} />
         <Route path="/growth" element={<LandingPage />} />
+        <Route path="/contact" element={<ContactPage />} />
       </Routes>
       <ChatBot />
     </Router>
