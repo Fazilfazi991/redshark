@@ -1,34 +1,8 @@
 {
-    "cleanUrls": true,
-    "trailingSlash": false,
-    "redirects": [
-        {
-            "source": "/(.*)",
-            "has": [
-                {
-                    "type": "host",
-                    "value": "www.redcharc.com"
-                }
-            ],
-            "destination": "https://redsharc.com/$1",
-            "permanent": true
-        },
-        {
-            "source": "/(.*)",
-            "has": [
-                {
-                    "type": "host",
-                    "value": "redcharc.com"
-                }
-            ],
-            "destination": "https://redsharc.com/$1",
-            "permanent": true
-        }
-    ],
-    "rewrites": [
-        {
-            "source": "/((?!api|static|.*\\..*).*)",
-            "destination": "/index.html"
-        }
-    ]
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
 }
