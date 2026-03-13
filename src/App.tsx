@@ -29,7 +29,7 @@ function App() {
         <Route path="/blog" element={<BlogPage />} />
         <Route path="/blog/:slug" element={<BlogPostPage />} />
         <Route path="/thank-you" element={<ThankYouPage />} />
-        <Route path="/landing" element={<LandingPage />} />
+        <Route path="/growth" element={<LandingPage />} />
       </Routes>
       <ChatBot />
     </Router>
