@@ -41,7 +41,7 @@ const SEMPage = () => {
                 title="Google Ads Management Services | PPC Agency - Redsharc"
                 description="Maximize your ROI with Redsharc's expert Google Ads management. We build high-performance PPC campaigns that drive instant leads and sales."
                 keywords="Google Ads Agency, PPC Management, Search Engine Marketing, SEM Services, Google Ads Expert"
-                canonical="https://redsharc.com/google-ads"
+                canonical="https://www.redsharc.com/google-ads"
                 schema={{
                     "@context": "https://schema.org",
                     "@type": "Service",

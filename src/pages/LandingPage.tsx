@@ -57,7 +57,7 @@ const LandingPage = () => {
                 title="Growth Strategy & Performance Marketing | Redsharc"
                 description="Stop guessing and start scaling with Redsharc's data-driven growth strategies. We turn ad spend into profit."
                 keywords="Growth Marketing, Performance Marketing, Revenue Growth, Digital Strategy"
-                canonical="https://redsharc.com/growth"
+                canonical="https://www.redsharc.com/growth"
             />
             <Header />
 

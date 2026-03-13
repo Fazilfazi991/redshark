@@ -17,7 +17,7 @@ const ServicesPage = () => {
                 title="Digital Marketing Services | SEO, PPC, Social Media - Redsharc"
                 description="Comprehensive digital marketing services including SEO, Google Ads, Social Media Marketing, and Web Development to grow your business."
                 keywords="Digital Marketing Services, SEO Services, PPC Management, Social Media Marketing, Web Development Agency"
-                canonical="https://redsharc.com/services"
+                canonical="https://www.redsharc.com/services"
                 schema={{
                     "@context": "https://schema.org",
                     "@type": "Service",

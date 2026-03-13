@@ -90,7 +90,7 @@ const BlogPostPage = () => {
             <SEO
                 title={`${post.title} - Redsharc Blog`}
                 description={post.summary}
-                canonical={`https://redsharc.com/blog/${post.slug}`}
+                canonical={`https://www.redsharc.com/blog/${post.slug}`}
                 type="article"
                 image={post.image}
                 schema={schema}

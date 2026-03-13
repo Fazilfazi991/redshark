@@ -49,7 +49,7 @@ const SMMPage = () => {
                 title="Social Media Marketing Agency | Meta & TikTok Ads - Redsharc"
                 description="Boost your brand presence with Redsharc's social media marketing services. We manage Instagram, Facebook, LinkedIn, and TikTok campaigns for growth."
                 keywords="Social Media Marketing Agency, SMM Services, Instagram Ads, Facebook Ads, LinkedIn Marketing"
-                canonical="https://redsharc.com/social-media-marketing"
+                canonical="https://www.redsharc.com/social-media-marketing"
                 schema={{
                     "@context": "https://schema.org",
                     "@type": "Service",
