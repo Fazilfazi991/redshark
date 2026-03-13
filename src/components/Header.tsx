@@ -58,12 +58,12 @@ const Header = () => {
 
                     <Link to="/blog" onClick={() => setMobileMenuOpen(false)}>Blog</Link>
                     <Link to="/about" onClick={() => setMobileMenuOpen(false)}>About</Link>
-                    <Link to="/#contact" onClick={() => setMobileMenuOpen(false)}>Contact</Link>
-                    <button className="btn btn-primary mobile-only" onClick={() => setMobileMenuOpen(false)}>Get Started</button>
+                    <Link to="/contact" onClick={() => setMobileMenuOpen(false)}>Contact</Link>
+                    <Link to="/contact" className="btn btn-primary mobile-only" onClick={() => setMobileMenuOpen(false)}>Get Started</Link>
                 </nav>
 
                 <div className="header-actions">
-                    <button className="btn btn-primary desktop-only">Get Started</button>
+                    <Link to="/contact" className="btn btn-primary desktop-only">Get Started</Link>
                     <button
                         className={`mobile-toggle ${isHomePage && !isScrolled ? 'text-white' : 'text-dark'}`}
                         onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
