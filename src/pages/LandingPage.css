@@ -384,21 +384,24 @@
     transform: translate(-50%, -50%);
     width: 120px;
     height: 120px;
-    width: 120px;
-    height: 120px;
-    background-color: #000000;
+    background-color: #ffffff;
+    /* White background for logo */
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 10;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    border: 3px solid var(--primary);
+    /* Red border */
+    overflow: hidden;
+    padding: 15px;
 }
 
-.brand-text {
-    color: white;
-    font-weight: 800;
-    text-align: center;
+.center-logo {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
 }
 
 .orbit-ring {

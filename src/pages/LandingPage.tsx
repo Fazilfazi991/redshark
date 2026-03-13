@@ -189,7 +189,7 @@ const LandingPage = () => {
                                 <div className="visual-orbit-container">
                                     <div className="orbit-system">
                                         <div className="orbit-center-circle">
-                                            <span className="brand-text">REVENUE<br />FOCUS</span>
+                                            <img src="/logo-02.png" alt="Redsharc" className="center-logo" />
                                         </div>
 
                                         {/* Inner Ring */}
