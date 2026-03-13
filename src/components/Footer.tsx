@@ -1,5 +1,5 @@
 import React from 'react';
-import { Facebook, Twitter, Instagram, Linkedin, Mail, MapPin, Phone } from 'lucide-react';
+import { Mail, MapPin, Phone } from 'lucide-react';
 import './Footer.css';
 
 const Footer = () => {
@@ -16,12 +16,6 @@ const Footer = () => {
                         <p className="footer-desc">
                             Access the world's top digital marketing talent without the agency markup.
                         </p>
-                        <div className="social-icons">
-                            <a href="#" className="social-link"><Twitter size={20} /></a>
-                            <a href="#" className="social-link"><Linkedin size={20} /></a>
-                            <a href="https://www.instagram.com/redshark.studio" target="_blank" rel="noopener noreferrer" className="social-link"><Instagram size={20} /></a>
-                            <a href="#" className="social-link"><Facebook size={20} /></a>
-                        </div>
                     </div>
 
                     {/* Col 2 */}

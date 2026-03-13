@@ -184,10 +184,7 @@
 }
 
 .text-gradient {
-    background: linear-gradient(to right, #ce1111, #aa0e0e);
-    /* Brighter red for dark bg */
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #ff0000;
 }
 
 
