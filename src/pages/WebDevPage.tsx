@@ -69,12 +69,8 @@ const WebDevPage = () => {
                                 fontSize: '0.9rem',
                                 fontWeight: '600',
                                 marginBottom: '24px'
-                            }}>
-                                Future-Proof Web Development
-                            </div>
                             <h1 className="heading-xl" style={{ marginBottom: '24px', color: '#0f172a' }}>
-                                Websites that Wow.<br />
-                                <span style={{ color: '#dc2626' }}>Engineered to Convert.</span>
+                                Website Development in Kerala
                             </h1>
                             <p className="text-body-lg" style={{ color: '#64748b', maxWidth: '800px', margin: '0 auto 40px' }}>
                                 Pretty isn't enough. We build lightning-fast, secure, and user-centric websites that turn visitors into loyal customers.

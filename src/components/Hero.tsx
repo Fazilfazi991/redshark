@@ -1,4 +1,4 @@
-import React from 'react';
+import { Link } from 'react-router-dom';
 import { ArrowRight, CheckCircle, Mail, FileEdit, Gem, Video, Search, MapPin, Megaphone, BarChart, Image } from 'lucide-react';
 import LeadForm from './LeadForm';
 import './Hero.css';
@@ -15,11 +15,11 @@ const Hero = () => {
                     </div>
 
                     <h1 className="hero-headline">
-                        We know why you are here- <span className="text-gradient">more leads, more sale and more growth.</span>
+                        Best Digital Marketing Agency in Kerala
                     </h1>
 
                     <p className="hero-subheadline">
-                        Want to grow your business? You're in the right place. We don't make big promises — we deliver real results. Through strategic SEO, Google Ads, and Meta Ads, we help businesses improve online visibility, generate quality leads, boost sales, and long-term growth.
+                        Want to grow your business? You're in the right place. We provide expert <Link to="/services">Digital Marketing Services Kerala</Link> to help you dominate your market. As a leading <Link to="/search-engine-optimization">SEO agency in Kerala</Link>, we deliver real results. Our expertise includes <Link to="/social-media-marketing">social media marketing in Kerala</Link>, <Link to="/google-ads">Google Ads agency services in Kerala</Link>, and professional <Link to="/web-development">website development in Kerala</Link> to boost your online visibility and growth.
                     </p>
 
                     <div className="hero-cta-group">

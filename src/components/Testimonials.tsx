@@ -11,15 +11,33 @@ const testimonials = [
         image: loomelleImg
     },
     {
-        name: "Michael Chen",
-        role: "Founder, StartUp X",
-        text: "I was hesitant about 'freelancers' but these aren't random gig workers. They are true experts. They rebuilt our entire funnel and doubled our conversion rate.",
+        name: "Lilly Berry Online",
+        role: "E-commerce Brand",
+        text: "We approached Redsharc for our brand Lilly Berry Online and our business Charutha. Since it was our first time starting an e-commerce business, we had many doubts about how things would work. But the team guided us very well, and we started seeing good results within the first week itself. In my experience, they are one of the best digital marketing agencies in Kerala. Highly recommended!",
         image: ""
     },
     {
-        name: "Elena Rodriguez",
-        role: "Director of Marketing",
-        text: "Best decision we made this year. We saved $45k compared to our previous agency and got better results. The transparency is refreshing.",
+        name: "Vihara Interiors",
+        role: "Interior Design Company",
+        text: "We are Vihara Interiors, located in Mavelikara, Kerala. We tried another agency before reaching out to this team but were not satisfied. For the past one and a half years, we have been collaborating with this team and the experience has been very good. They provide proper leads, handle our social media professionally, and we have also seen organic conversions. This is one of the best digital marketing teams in Kerala.",
+        image: ""
+    },
+    {
+        name: "Reji",
+        role: "Business Owner",
+        text: "Hi, I'm Reji. Earlier I had worked with three digital marketing agencies in Kerala, but I didn't receive any proper results. They mainly focused on posting content and running ads, but there were no real conversions. When I reached out to the Redsharc team, I noticed a clear change. They provided proper guidance in every meeting and explained what steps we should take next. It's really a good and supportive digital marketing agency in Kerala. Highly recommended!",
+        image: ""
+    },
+    {
+        name: "Dwarakayil Builders",
+        role: "Construction & Real Estate",
+        text: "Before we reached out to Redsharc, we worked with another team in Kerala, but they were very expensive and did not provide proper service. The Redsharc team is amazing! They did a great job, and we got better results and support throughout our digital marketing journey. Their social media marketing also helped us achieve more conversions. Highly recommended!",
+        image: ""
+    },
+    {
+        name: "Amaravathy Construction",
+        role: "Construction Company",
+        text: "We were looking for an agency for proper social media handling and social media marketing, and this team is doing a great job. This is not my first agency, so I can compare their work with others, and this team stands out. Thank you, and keep going, team!",
         image: ""
     }
 ];

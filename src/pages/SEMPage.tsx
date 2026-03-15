@@ -71,10 +71,8 @@ const SEMPage = () => {
                                 fontWeight: '600',
                                 marginBottom: '24px'
                             }}>
-                                Performance Marketing Experts
-                            </div>
                             <h1 className="heading-xl" style={{ marginBottom: '24px', color: '#0f172a' }}>
-                                Instant Visibility. <span style={{ color: '#dc2626' }}>Measurable ROI.</span>
+                                Google Ads Agency in Kerala
                             </h1>
                             <p className="text-body-lg" style={{ color: '#64748b', maxWidth: '800px', margin: '0 auto 40px' }}>
                                 Stop burning budget on clicks that don't convert. We build high-performance ad campaigns that turn strangers into customers from Day 1.

@@ -10,9 +10,10 @@ interface SEOProps {
     type?: string;
     image?: string;
     schema?: object;
+    children?: React.ReactNode;
 }
 
-const SEO: React.FC<SEOProps> = ({ title, description, keywords, canonical, name = 'Redsharc', type = 'website', image, schema }) => {
+const SEO: React.FC<SEOProps> = ({ title, description, keywords, canonical, name = 'Redsharc', type = 'website', image, schema, children }) => {
     return (
         <Helmet>
             {/* Standard metadata tags */}
@@ -41,6 +42,9 @@ const SEO: React.FC<SEOProps> = ({ title, description, keywords, canonical, name
                     {JSON.stringify(schema)}
                 </script>
             )}
+            
+            {/* Extra tags */}
+            {children}
         </Helmet>
     );
 }

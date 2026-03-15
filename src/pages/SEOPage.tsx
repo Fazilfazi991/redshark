@@ -1,8 +1,5 @@
-import React, { useState } from 'react';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
-import WhatsAppButton from '../components/WhatsAppButton';
-import ScrollReveal from '../components/UI/ScrollReveal';
+import { Link } from 'react-router-dom';
+import FAQ from '../components/FAQ';
 import {
     Search, BarChart2, Globe, TrendingUp, AlertTriangle, CheckCircle,
     ChevronDown, ChevronUp, ArrowRight, ShieldCheck, MapPin,
@@ -11,32 +8,18 @@ import {
 import SEO from '../components/SEO';
 
 const SEOPage = () => {
-    const [openFaq, setOpenFaq] = useState<number | null>(null);
-
-    const toggleFaq = (index: number) => {
-        setOpenFaq(openFaq === index ? null : index);
-    };
-
-    const faqs = [
+    const faqItems = [
+        {
+            question: "What is SEO, and why is it important for businesses in Kerala?",
+            answer: "SEO (Search Engine Optimization) is the process of improving your website's visibility on search engines like Google. For businesses in Kerala, SEO is crucial because it helps you reach local customers who are actively searching for your products or services online."
+        },
         {
             question: "How long does it take to see results from SEO services in Kerala?",
-            answer: "SEO is a long-term strategy. Most businesses start seeing visible improvements within 3 to 4 months, while strong and stable results build over time depending on competition and industry."
+            answer: "SEO is a long-term strategy. Most businesses start seeing visible improvements in rankings and traffic within 3 to 6 months, depending on the competition and the current state of their website."
         },
         {
-            question: "Why should I choose Redsharc as the best SEO company in Kerala?",
-            answer: "Unlike many agencies that focus only on reports, we focus on execution and measurable growth. Our strategies are customized, transparent, and aligned with your business goals."
-        },
-        {
-            question: "Do you provide local SEO services in Kerala?",
-            answer: "Yes. Our SEO services include complete local SEO optimization for businesses targeting customers in Kerala, including Google Business Profile optimization and location-based keyword strategies."
-        },
-        {
-            question: "Is SEO better than paid ads?",
-            answer: "SEO delivers long-term organic growth, while paid ads provide faster visibility. As a full-service digital marketing agency, we often recommend combining both for maximum results."
-        },
-        {
-            question: "Which businesses can benefit from your SEO agency in Kerala?",
-            answer: "Our SEO services are ideal for startups, local businesses, SMEs, and established brands looking for sustainable online growth."
+            question: "Why should I hire an SEO agency in Kerala?",
+            answer: "Hiring a professional SEO agency in Kerala ensures you have experts handling your keyword research, technical SEO, and content strategy, leading to higher ROI and sustainable online growth."
         }
     ];
 
@@ -111,13 +94,11 @@ const SEOPage = () => {
                                 fontWeight: '600',
                                 marginBottom: '24px'
                             }}>
-                                Best SEO Company in Kerala
-                            </div>
                             <h1 className="heading-xl" style={{ marginBottom: '24px', color: '#0f172a' }}>
-                                Best SEO Company in <span style={{ color: '#dc2626' }}>Kerala</span>
+                                SEO Agency in Kerala
                             </h1>
                             <p className="text-body-lg" style={{ color: '#64748b', maxWidth: '900px', margin: '0 auto 40px' }}>
-                                Looking for the best SEO company in Kerala to grow your online visibility and generate consistent leads? You're in the right place. At Redsharc, we provide result-driven SEO services in Kerala that help businesses rank higher on Google, attract quality traffic, and convert visitors into customers.
+                                Looking for the <Link to="/">best digital marketing agency in Kerala</Link> to grow your online visibility and generate consistent leads? You're in the right place. At Redsharc, we provide result-driven SEO services in Kerala that help businesses rank higher on Google, attract quality traffic, and convert visitors into customers.
                             </p>
                             <p className="text-body" style={{ color: '#64748b', maxWidth: '800px', margin: '0 auto 40px' }}>
                                 We don't believe in shortcuts or generic SEO packages. Our approach is strategic, data-backed, and focused on real business growth.
@@ -458,37 +439,12 @@ const SEOPage = () => {
                     </div>
                 </section>
 
-                {/* 11. FAQ */}
-                <section className="section-responsive" style={{ background: '#fff' }}>
-                    <div className="container-responsive" style={{ maxWidth: '800px' }}>
-                        <ScrollReveal>
-                            <h2 className="heading-lg text-center" style={{ color: '#0f172a', marginBottom: '60px' }}>Frequently Asked Questions – SEO Services in Kerala</h2>
-                        </ScrollReveal>
-                        <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
-                            {faqs.map((faq, index) => (
-                                <ScrollReveal key={index} animation="fade-up" delay={index * 50}>
-                                    <div style={{ background: '#f8fafc', borderRadius: '16px', border: '1px solid #e2e8f0', overflow: 'hidden' }}>
-                                        <button
-                                            onClick={() => toggleFaq(index)}
-                                            style={{
-                                                width: '100%', textAlign: 'left', padding: '24px', background: 'none', border: 'none',
-                                                display: 'flex', justifyContent: 'space-between', alignItems: 'center', cursor: 'pointer'
-                                            }}
-                                        >
-                                            <span style={{ fontSize: '1.1rem', fontWeight: '600', color: '#0f172a' }}>{faq.question}</span>
-                                            {openFaq === index ? <ChevronUp size={20} color="#64748b" /> : <ChevronDown size={20} color="#64748b" />}
-                                        </button>
-                                        {openFaq === index && (
-                                            <div style={{ padding: '0 24px 24px', color: '#64748b', lineHeight: '1.6' }}>
-                                                {faq.answer}
-                                            </div>
-                                        )}
-                                    </div>
-                                </ScrollReveal>
-                            ))}
-                        </div>
-                    </div>
-                </section>
+                <ScrollReveal animation="fade-up">
+                    <FAQ 
+                        title="Frequently Asked Questions about SEO in Kerala"
+                        items={faqItems}
+                    />
+                </ScrollReveal>
 
                 {/* 12. CTA */}
                 <section style={{ padding: '80px 20px', background: '#fff' }}>

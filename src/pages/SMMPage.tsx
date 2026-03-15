@@ -78,10 +78,8 @@ const SMMPage = () => {
                                 fontWeight: '600',
                                 marginBottom: '24px'
                             }}>
-                                Social Media Marketing Services
-                            </div>
                             <h1 className="heading-xl" style={{ marginBottom: '24px', color: '#0f172a' }}>
-                                We Prove Conversions Through <span style={{ color: '#ce1111' }}>Strategic Marketing</span>
+                                Social Media Marketing Agency Kerala
                             </h1>
                             <p className="text-body-lg" style={{ color: '#64748b', maxWidth: '800px', margin: '0 auto 40px' }}>
                                 Redsharc delivers professional social media marketing services built on clear strategy, data intelligence, and performance insights. We don’t just claim results; we prove them.

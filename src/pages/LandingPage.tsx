@@ -112,17 +112,15 @@ const LandingPage = () => {
                             Performance Marketing Agency
                         </div>
                         <h1>
-                            Stop Guessing.<br />
-                            Start <span className="highlight-red-box">Scaling.</span>
+                            One Online Store. <span className="highlight-red-box">$25,000</span> In 7 Days. Built From Nothing.
                         </h1>
                         <p>
-                            We don't just "do marketing". We build <strong>predictable revenue engines</strong>.
-                            From Google Ads to TikTok, we turn ad spend into profit with laser-focused performance strategies.
+                            No ads. No data. No history. Not a single campaign running. LillyBerry came to us with an online store and a 30-day revenue target. We built their entire performance system from scratch. By day 7 — their full first month target was done. That's not luck. That's a system.
                         </p>
 
                         <div className="landing-cta-group">
-                            <a href="#contact" className="btn-landing-primary">Get Your Free Growth Strategy</a>
-                            <a href="#growth-engine" className="btn-landing-secondary">How We Do It</a>
+                            <a href="#contact" className="btn-landing-primary">Show Me How You Did It</a>
+                            <a href="#contact" className="btn-landing-secondary">Get Your Free Growth Strategy</a>
                         </div>
 
                         <div className="hero-rating">
@@ -154,22 +152,22 @@ const LandingPage = () => {
                         <ScrollReveal animation="fade-up" delay={100}>
                             <div className="problem-card">
                                 <div className="problem-icon"><Target size={32} /></div>
-                                <h3>Vanity Metrics</h3>
-                                <p>Agencies reporting on "clicks" and "impressions" but never talking about <strong>Revenue</strong> or <strong>ROAS</strong>.</p>
+                                <h3>We Test Everything. We Scale Only What Wins.</h3>
+                                <p>We run every creative variation until one proves itself. Highest CTR found — then we engineer that exact creative to sell. No guessing. No gut feeling. Just the data telling us what your customer actually stops for.</p>
                             </div>
                         </ScrollReveal>
                         <ScrollReveal animation="fade-up" delay={200}>
                             <div className="problem-card">
                                 <div className="problem-icon"><Users size={32} /></div>
-                                <h3>The "Set & Forget" Trap</h3>
-                                <p>Campaigns that launch with hype but get neglected after month one, causing performance to tank.</p>
+                                <h3>Your Failed Campaigns Are Our Starting Point.</h3>
+                                <p>Most clients come to us after campaigns that went nowhere. We don't start over blindly — we dig into what failed, find out exactly why, and build the system that should have been there from day one.</p>
                             </div>
                         </ScrollReveal>
                         <ScrollReveal animation="fade-up" delay={300}>
                             <div className="problem-card">
                                 <div className="problem-icon"><Zap size={32} /></div>
-                                <h3>Cookie-Cutter Strategies</h3>
-                                <p>Applying the same generic template to every business regardless of your unique unit economics.</p>
+                                <h3>They Clicked The Ad. They Opened The Page. They Left.</h3>
+                                <p>You're paying for traffic that lands and leaves. Abandoned carts. Dead checkout pages. Weak landing pages that lose buyers in the final 10 seconds. We fix the leak before we scale the traffic — because sending more people to a broken funnel just burns more money faster.</p>
                             </div>
                         </ScrollReveal>
                     </div>
@@ -183,7 +181,7 @@ const LandingPage = () => {
                         <ScrollReveal animation="slide-left" delay={100}>
                             <div className="growth-service-left">
                                 <h2>
-                                    Enter The <span className="highlight-red-box">Redsharc Growth Engine</span>
+                                    From Zero To Revenue Machine In 4 Steps
                                 </h2>
 
                                 <div className="visual-orbit-container">
@@ -221,24 +219,31 @@ const LandingPage = () => {
 
                                 <ul className="growth-checklist">
                                     <li>
-                                        <span className="check-icon">✓</span>
+                                        <span className="check-icon">01</span>
                                         <div>
-                                            <strong>Full-Funnel Acquisition</strong>
-                                            <p>Capturing demand where it exists and generating it where it doesn't.</p>
+                                            <strong>Manufactured Authority</strong>
+                                            <p>We didn't just launch ads; we elevated the brand's perceived value. By aggressively targeting high-engagement platforms with hyper-premium video and image creatives, we instantly positioned Lillyberry as a top-tier brand in the eyes of the consumer.</p>
                                         </div>
                                     </li>
                                     <li>
-                                        <span className="check-icon">✓</span>
+                                        <span className="check-icon">02</span>
                                         <div>
-                                            <strong>Conversion Rate Optimization (CRO)</strong>
-                                            <p>Turning more of your current traffic into paying customers.</p>
+                                            <strong>Full-Funnel Ad Architecture</strong>
+                                            <p>Most agencies show the same ad to everyone. We built a dynamic ecosystem. We deployed distinct, hyper-targeted creatives for cold traffic (Top), nurturing (Middle), and aggressive direct-response (Bottom). We rapidly tested angles, killed the losers, and poured budget directly into the winning creatives to force scale.</p>
                                         </div>
                                     </li>
                                     <li>
-                                        <span className="check-icon">✓</span>
+                                        <span className="check-icon">03</span>
                                         <div>
-                                            <strong>Data-Driven Iteration</strong>
-                                            <p>Constant A/B testing to lower CPA and increase LTV.</p>
+                                            <strong>High-Friction Conversion Optimization</strong>
+                                            <p>Driving traffic is easy; getting prepaid orders is hard. Because Lillyberry did not offer Cash-on-Delivery, the landing page had to do the heavy lifting. We engineered a frictionless, highly-trusted landing page environment that eliminated buyer hesitation and convinced cold traffic to confidently pull out their credit cards.</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span className="check-icon">04</span>
+                                        <div>
+                                            <strong>The Post-Purchase Retention Loop</strong>
+                                            <p>Our job doesn't end at the checkout. We set up professional, automated outreach via messaging platforms to keep buyers updated and build a relationship. Exactly one week later, we triggered a strategic review-request sequence. This flooded the brand with powerful social proof, driving down ad costs for the next wave of buyers.</p>
                                         </div>
                                     </li>
                                 </ul>
@@ -260,7 +265,7 @@ const LandingPage = () => {
                         <p>We cover every channel that matters to your bottom line.</p>
                     </div>
 
-                    <div className="areas-grid">
+                    <div className="areas-grid-4">
                         <ScrollReveal animation="fade-up" delay={100}>
                             <div className="area-card">
                                 <ShoppingCart className="area-icon" />
@@ -292,36 +297,59 @@ const LandingPage = () => {
                                 <p>Filling your CRM with qualified leads using targeted funnels and lead magnets.</p>
                             </div>
                         </ScrollReveal>
+                    </div>
+                </div>
+            </section>
+
+            {/* --- TESTIMONIALS SECTION --- */}
+            <section className="landing-testimonials">
+                <div className="container">
+                    <ScrollReveal animation="fade-up">
+                        <div className="section-header-center">
+                            <h2>What Clients Say After Seeing Results</h2>
+                        </div>
+                    </ScrollReveal>
+
+                    <div className="testimonials-grid-3">
+                        <ScrollReveal animation="fade-up" delay={100}>
+                            <div className="testimonial-card-v2">
+                                <div className="stars">
+                                    {[1, 2, 3, 4, 5].map((i) => <Star key={i} size={16} fill="#f59e0b" stroke="#f59e0b" />)}
+                                </div>
+                                <div className="result-tag">$12K ROAS in Month 1</div>
+                                <p>"We'd been through two agencies before RedSharc. Both promised the world and delivered excuses. RedSharc built a system in the first month that finally made our ad spend feel like an investment, not a gamble."</p>
+                                <div className="testimonial-footer">
+                                    <strong>James H.</strong>
+                                    <span>Founder, E-commerce Brand</span>
+                                </div>
+                            </div>
+                        </ScrollReveal>
+
+                        <ScrollReveal animation="fade-up" delay={200}>
+                            <div className="testimonial-card-v2 featured">
+                                <div className="stars">
+                                    {[1, 2, 3, 4, 5].map((i) => <Star key={i} size={16} fill="#f59e0b" stroke="#f59e0b" />)}
+                                </div>
+                                <div className="result-tag">$25,000 Revenue — Week 1</div>
+                                <p>"Within the first 7 days, we had results that beat everything we'd done in the previous 3 months combined. The team is sharp, fast, and genuinely obsessed with performance. There's nobody else I'd trust with our ad budget."</p>
+                                <div className="testimonial-footer">
+                                    <strong>LillyBerry</strong>
+                                    <span>CEO, Brand Founder</span>
+                                </div>
+                            </div>
+                        </ScrollReveal>
 
                         <ScrollReveal animation="fade-up" delay={300}>
-                            <div className="area-card">
-                                <Smartphone className="area-icon" />
-                                <h3>Social Media Marketing</h3>
-                                <p>Creative-first campaigns on Instagram, Facebook, and TikTok that stop the scroll.</p>
-                            </div>
-                        </ScrollReveal>
-
-                        <ScrollReveal animation="fade-up" delay={350}>
-                            <div className="area-card">
-                                <MonitorPlay className="area-icon" />
-                                <h3>Display & Video Ads</h3>
-                                <p>Brand awareness and retargeting via YouTube and programmatic display networks.</p>
-                            </div>
-                        </ScrollReveal>
-
-                        <ScrollReveal animation="fade-up" delay={400}>
-                            <div className="area-card">
-                                <Linkedin className="area-icon" />
-                                <h3>LinkedIn Targeted Ads</h3>
-                                <p>Precision B2B targeting to reach decision-makers and high-value accounts.</p>
-                            </div>
-                        </ScrollReveal>
-
-                        <ScrollReveal animation="fade-up" delay={450}>
-                            <div className="area-card">
-                                <MapPin className="area-icon" />
-                                <h3>Local Business Campaigns</h3>
-                                <p>Dominate your local area with Google Maps and geo-targeted offers.</p>
+                            <div className="testimonial-card-v2">
+                                <div className="stars">
+                                    {[1, 2, 3, 4, 5].map((i) => <Star key={i} size={16} fill="#f59e0b" stroke="#f59e0b" />)}
+                                </div>
+                                <div className="result-tag">CPA Reduced to 50%</div>
+                                <p>"What sets RedSharc apart is that they think in revenue, not impressions. Every conversation starts with 'what does this need to generate?' That mindset change alone was worth more than what we paid."</p>
+                                <div className="testimonial-footer">
+                                    <strong>Sarah K.</strong>
+                                    <span>CEO, SaaS Company</span>
+                                </div>
                             </div>
                         </ScrollReveal>
                     </div>
@@ -332,10 +360,31 @@ const LandingPage = () => {
             <section className="final-cta-section">
                 <div className="container">
                     <div className="cta-box">
-                        <h2>Ready to scale your revenue?</h2>
-                        <p>No fluff. No vanity metrics. Just a clear path to growth.</p>
+                        <h2>We're Not An Agency. We're Your Revenue Partner.</h2>
+                        <p className="cta-intro">There are thousands of agencies. Most of them sell you retainers, traffic, and reports. RedSharc sells you one thing: results. Here's what makes us different.</p>
+                        
+                        <div className="diff-grid">
+                            <div className="diff-item">
+                                <h3>We Only Win When You Win</h3>
+                                <p>Our model is built around your growth. We don't hide behind vanity metrics — every strategy we run is tied to measurable revenue outcomes.</p>
+                            </div>
+                            <div className="diff-item">
+                                <h3>Speed Is A Strategy</h3>
+                                <p>Most agencies take 90 days to show results. We move in 7. LillyBerry's $25K in week one wasn't an accident — it was a system built for speed.</p>
+                            </div>
+                            <div className="diff-item">
+                                <h3>Full-Funnel, Not Just Ads</h3>
+                                <p>We fix the leak before we scale the traffic. From landing pages to post-purchase retention, we own the entire funnel.</p>
+                            </div>
+                        </div>
+
+                        <div className="stat-callout">
+                            <div className="stat-main">$0 Wasted On Vanity Metrics</div>
+                            <p>Every campaign we run has one job: make you more money than you spent. If we're not delivering measurable ROI, we don't rest until we do. That's not a tagline — it's how we operate every single day.</p>
+                        </div>
+
                         <div className="cta-buttons">
-                            <a href="#contact" className="btn-landing-primary">Get Your Proposal</a>
+                            <a href="#contact" className="btn-landing-primary">Claim Your Free Strategy Call</a>
                         </div>
                     </div>
                 </div>

@@ -1,8 +1,5 @@
-import React from 'react';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
-import WhatsAppButton from '../components/WhatsAppButton';
-import { Target, Users, Zap, Award } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import FAQ from '../components/FAQ';
 import Founder from '../components/Founder';
 
 import SEO from '../components/SEO';
@@ -42,7 +39,7 @@ const AboutPage = () => {
                         <div>
                             <h2 style={{ fontSize: '2.5rem', marginBottom: '20px', color: '#000' }}>Our Mission</h2>
                             <p style={{ color: 'var(--text-muted)', lineHeight: '1.8', fontSize: '1.1rem', marginBottom: '20px' }}>
-                                To empower ambitious businesses with the digital tools and strategies they need to dominate their market. We believe in transparency, speed, and results that you can measure.
+                                To empower ambitious businesses with the digital tools and strategies they need to dominate their market. As the <Link to="/">Best digital marketing agency in Kerala</Link>, we believe in transparency, speed, and results that you can measure.
                             </p>
 
                             <h2 style={{ fontSize: '2.5rem', marginBottom: '20px', color: '#000', marginTop: '40px' }}>Our Vision</h2>
@@ -52,7 +49,7 @@ const AboutPage = () => {
 
                             <h2 style={{ fontSize: '2.5rem', marginBottom: '20px', color: '#000', marginTop: '40px' }}>Our Story</h2>
                             <p style={{ color: 'var(--text-muted)', lineHeight: '1.8', fontSize: '1.1rem', marginBottom: '20px' }}>
-                                Redsharc began in 2024 with a clear purpose: to disrupt the traditional agency model. We saw a gap between technical execution and creative strategy, and we set out to bridge it. What started as a small team of passionate experts has grown into a full-service digital powerhouse, driven by the success of our partners.
+                                Redsharc began in 2024 with a clear purpose: to disrupt the traditional agency model. We saw a gap between technical execution and creative strategy, and we set out to bridge it. From being a top <Link to="/search-engine-optimization">SEO agency in Kerala</Link> to handling complex <Link to="/web-development">website development in Kerala</Link> and data-driven <Link to="/google-ads">Google Ads campaigns in Kerala</Link>, what started as a small team of passionate experts has grown into a full-service digital powerhouse, driven by the success of our partners.
                             </p>
                         </div>
                         <div style={{ background: '#f8fafc', padding: '40px', borderRadius: '20px', border: '1px solid var(--border)' }}>
@@ -87,6 +84,28 @@ const AboutPage = () => {
                     </div>
                 </div>
                 <Founder />
+                
+                <FAQ 
+                    title="FAQ – About Our Digital Marketing Agency in Kerala"
+                    items={[
+                        {
+                            question: "Why is Redsharc considered the best digital marketing agency in Kerala?",
+                            answer: "Redsharc stands out due to its performance-driven approach, expert team, and commitment to delivering measurable results for businesses of all sizes."
+                        },
+                        {
+                            question: "What makes your SEO agency in Kerala different from others?",
+                            answer: "We focus on data-backed strategies, white-hat SEO techniques, and a deep understanding of the local and global market trends to ensure your business ranks higher and stays there."
+                        },
+                        {
+                            question: "Do you offer customized website development in Kerala?",
+                            answer: "Yes, we specialize in building fast, responsive, and SEO-friendly websites tailored to your specific business requirements."
+                        },
+                        {
+                            question: "How can Redsharc help with Google Ads campaigns in Kerala?",
+                            answer: "Our certified experts create and manage high-converting Google Ads campaigns that maximize ROI and drive instant, qualified leads to your business."
+                        }
+                    ]}
+                />
             </main>
             <Footer />
             <WhatsAppButton />

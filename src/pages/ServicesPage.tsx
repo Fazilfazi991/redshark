@@ -39,7 +39,7 @@ const ServicesPage = () => {
                 {/* 1. The Hero Section (The Hook) */}
                 <section className="service-hero" style={{ padding: '100px 20px 60px', textAlign: 'center', maxWidth: '1000px', margin: '0 auto' }}>
                     <h1 style={{ fontSize: '3.5rem', fontWeight: '800', lineHeight: '1.2', marginBottom: '24px', letterSpacing: '-0.02em', color: '#000' }}>
-                        Scale Your Monthly Revenue by 35% with <span style={{ color: 'var(--primary)' }}>Data-Driven Performance Marketing</span>
+                        Digital Marketing Services Kerala
                     </h1>
                     <p style={{ fontSize: '1.25rem', color: 'var(--text-muted)', marginBottom: '40px', maxWidth: '700px', margin: '0 auto 40px' }}>
                         We help B2B SaaS and E-commerce brands acquire high-intent leads through specialized SEO, PPC, and Conversion frameworks.
