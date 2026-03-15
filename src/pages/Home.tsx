@@ -1,3 +1,5 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
 import Header from '../components/Header';
 import Hero from '../components/Hero';
 import USP from '../components/USP';
@@ -22,8 +24,10 @@ function Home() {
     return (
         <div className="home-page">
             <SEO
-                title="Redsharc | Performance Marketing & SEO Agency in Kerala"
-                description="Redsharc is a top-rated performance marketing agency in Kerala specializing in SEO, Google Ads, and Social Media Marketing to drive measurable growth."
+                title="Best Digital Marketing Agency in Kerala | ROI-Driven Digital Marketing Agency in Kochi"
+                description="Looking for the best digital marketing agency in Kerala? Our ROI-driven digital marketing agency in Kochi offers SEO, social media marketing, PPC, and web development to grow your business."
+                ogTitle="ROI-Driven Digital Marketing Agency in Kochi | Grow Your Business Online"
+                ogDescription="We help businesses grow with ROI-focused SEO, social media marketing, PPC, and web development services in Kerala."
                 keywords="SEO Agency Kerala, Digital Marketing Kerala, Performance Marketing, Google Ads Agency, Social Media Marketing"
                 canonical="https://www.redsharc.com/"
                 schema={{

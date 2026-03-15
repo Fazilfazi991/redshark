@@ -38,8 +38,10 @@ const WebDevPage = () => {
     return (
         <div className="page-wrapper" style={{ backgroundColor: '#fff', color: '#334155' }}>
             <SEO
-                title="Custom Web Development & Design Services - Redsharc"
-                description="Redsharc builds high-performance, mobile-responsive websites and web applications using React, Next.js, and modern technologies."
+                title="Best Website Development in Kerala | Professional Web Design Services Kochi, Kerala"
+                description="Looking for website development in Kerala? Our expert team provides custom web design and development services in Kochi, Kerala to create responsive, user-friendly websites that grow your business."
+                ogTitle="Professional Website Development & Web Design Services in Kerala"
+                ogDescription="Boost your online presence with expert website development and web design in Kerala. We create responsive, SEO-friendly websites that drive traffic, leads, and conversions."
                 keywords="Web Development Company, Custom Website Design, React Development, Next.js Developers, E-commerce Website Development"
                 canonical="https://www.redsharc.com/web-development"
                 schema={{
@@ -60,15 +62,6 @@ const WebDevPage = () => {
                 <section className="section-responsive text-center" style={{ position: 'relative' }}>
                     <div className="container-responsive">
                         <ScrollReveal animation="fade-up">
-                            <div style={{
-                                display: 'inline-block',
-                                padding: '8px 16px',
-                                background: 'rgba(206, 17, 17, 0.1)',
-                                borderRadius: '50px',
-                                color: '#ce1111',
-                                fontSize: '0.9rem',
-                                fontWeight: '600',
-                                marginBottom: '24px'
                             <h1 className="heading-xl" style={{ marginBottom: '24px', color: '#0f172a' }}>
                                 Website Development in Kerala
                             </h1>

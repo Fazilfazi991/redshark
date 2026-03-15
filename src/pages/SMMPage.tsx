@@ -46,8 +46,10 @@ const SMMPage = () => {
     return (
         <div className="page-wrapper" style={{ backgroundColor: '#fff', color: '#0f172a' }}>
             <SEO
-                title="Social Media Marketing Agency | Meta & TikTok Ads - Redsharc"
-                description="Boost your brand presence with Redsharc's social media marketing services. We manage Instagram, Facebook, LinkedIn, and TikTok campaigns for growth."
+                title="Best Social Media Marketing Agency in Kerala | SMM Services in Kochi"
+                description="Best social media marketing agency in Kerala providing expert social media marketing services in Kochi to boost brand visibility, engagement, and sales."
+                ogTitle="Top Social Media Marketing Agency in Kerala | SMM Experts in Kochi"
+                ogDescription="Boost your business with a leading social media marketing agency in Kerala. Our Kochi-based SMM experts create targeted campaigns to grow your audience, engagement, and leads."
                 keywords="Social Media Marketing Agency, SMM Services, Instagram Ads, Facebook Ads, LinkedIn Marketing"
                 canonical="https://www.redsharc.com/social-media-marketing"
                 schema={{
@@ -68,16 +70,6 @@ const SMMPage = () => {
                 <section className="section-responsive text-center" style={{ position: 'relative' }}>
                     <div className="container-responsive">
                         <ScrollReveal animation="fade-up">
-                            <div style={{
-                                display: 'inline-block',
-                                padding: '8px 16px',
-                                background: '#fef2f2',
-                                borderRadius: '50px',
-                                color: '#ce1111',
-                                fontSize: '0.9rem',
-                                fontWeight: '600',
-                                marginBottom: '24px'
-                            }}>
                             <h1 className="heading-xl" style={{ marginBottom: '24px', color: '#0f172a' }}>
                                 Social Media Marketing Agency Kerala
                             </h1>

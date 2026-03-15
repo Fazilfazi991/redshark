@@ -9,11 +9,25 @@ interface SEOProps {
     name?: string;
     type?: string;
     image?: string;
+    ogTitle?: string;
+    ogDescription?: string;
     schema?: object;
     children?: React.ReactNode;
 }
 
-const SEO: React.FC<SEOProps> = ({ title, description, keywords, canonical, name = 'Redsharc', type = 'website', image, schema, children }) => {
+const SEO: React.FC<SEOProps> = ({ 
+    title, 
+    description, 
+    keywords, 
+    canonical, 
+    name = 'Redsharc', 
+    type = 'website', 
+    image, 
+    ogTitle,
+    ogDescription,
+    schema, 
+    children 
+}) => {
     return (
         <Helmet>
             {/* Standard metadata tags */}
@@ -24,16 +38,16 @@ const SEO: React.FC<SEOProps> = ({ title, description, keywords, canonical, name
 
             {/* Facebook tags */}
             <meta property="og:type" content={type} />
-            <meta property="og:title" content={title} />
-            <meta property="og:description" content={description} />
+            <meta property="og:title" content={ogTitle || title} />
+            <meta property="og:description" content={ogDescription || description} />
             {image && <meta property="og:image" content={image} />}
             {canonical && <meta property="og:url" content={canonical} />}
 
             {/* Twitter tags */}
             <meta name="twitter:creator" content={name} />
             <meta name="twitter:card" content="summary_large_image" />
-            <meta name="twitter:title" content={title} />
-            <meta name="twitter:description" content={description} />
+            <meta name="twitter:title" content={ogTitle || title} />
+            <meta name="twitter:description" content={ogDescription || description} />
             {image && <meta name="twitter:image" content={image} />}
 
             {/* Schema.org JSON-LD */}

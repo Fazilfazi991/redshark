@@ -1,4 +1,9 @@
+import React from 'react';
 import { Link } from 'react-router-dom';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+import WhatsAppButton from '../components/WhatsAppButton';
+import ScrollReveal from '../components/UI/ScrollReveal';
 import FAQ from '../components/FAQ';
 import {
     Search, BarChart2, Globe, TrendingUp, AlertTriangle, CheckCircle,
@@ -61,8 +66,10 @@ const SEOPage = () => {
     return (
         <div className="page-wrapper" style={{ backgroundColor: '#fff', color: '#334155' }}>
             <SEO
-                title="Best SEO Agency in Kerala | Rank #1 on Google - Redsharc"
-                description="Looking for the best SEO company in Kerala? Redsharc offers data-driven SEO services to improve rankings, drive traffic, and increase revenue."
+                title="SEO Agency in Kerala | Best SEO Company in Kochi, Kerala for Organic Growth"
+                description="Looking for the best SEO agency in Kerala? Our SEO company in Kochi helps businesses boost Google rankings, drive organic traffic, and generate high-quality leads with proven SEO strategies."
+                ogTitle="Best SEO Company in Kerala | Professional SEO Agency in Kochi"
+                ogDescription="Boost your website rankings with a trusted SEO agency in Kerala. We provide technical SEO, on-page optimization, and link building to increase organic traffic and business growth."
                 keywords="SEO Agency Kerala, Best SEO Company in Kerala, SEO Services Kerala, Local SEO Kerala, Search Engine Optimization"
                 canonical="https://www.redsharc.com/search-engine-optimization"
                 schema={{
@@ -84,16 +91,6 @@ const SEOPage = () => {
                 <section className="section-responsive text-center" style={{ position: 'relative' }}>
                     <div className="container-responsive">
                         <ScrollReveal animation="fade-up">
-                            <div style={{
-                                display: 'inline-block',
-                                padding: '8px 16px',
-                                background: 'rgba(206, 17, 17, 0.1)',
-                                borderRadius: '50px',
-                                color: '#ce1111',
-                                fontSize: '0.9rem',
-                                fontWeight: '600',
-                                marginBottom: '24px'
-                            }}>
                             <h1 className="heading-xl" style={{ marginBottom: '24px', color: '#0f172a' }}>
                                 SEO Agency in Kerala
                             </h1>

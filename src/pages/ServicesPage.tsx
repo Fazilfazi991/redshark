@@ -14,8 +14,10 @@ const ServicesPage = () => {
     return (
         <div className="page-wrapper">
             <SEO
-                title="Digital Marketing Services | SEO, PPC, Social Media - Redsharc"
-                description="Comprehensive digital marketing services including SEO, Google Ads, Social Media Marketing, and Web Development to grow your business."
+                title="Best Digital Marketing Services Kerala | Contact Top Online Marketing Services Kochi"
+                description="Get the best digital marketing services in Kerala. We provide SEO, social media marketing, PPC, and complete online marketing services in Kochi to grow your business."
+                ogTitle="Top Digital Marketing Services in Kerala | Online Marketing Experts"
+                ogDescription="Grow your business with professional digital marketing services in Kerala. Our experts provide SEO, social media marketing, PPC, and result-driven online marketing solutions."
                 keywords="Digital Marketing Services, SEO Services, PPC Management, Social Media Marketing, Web Development Agency"
                 canonical="https://www.redsharc.com/services"
                 schema={{

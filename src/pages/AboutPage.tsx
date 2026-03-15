@@ -1,7 +1,11 @@
+import React from 'react';
 import { Link } from 'react-router-dom';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+import WhatsAppButton from '../components/WhatsAppButton';
+import { Target, Users, Zap } from 'lucide-react';
 import FAQ from '../components/FAQ';
 import Founder from '../components/Founder';
-
 import SEO from '../components/SEO';
 
 const AboutPage = () => {
@@ -86,23 +90,35 @@ const AboutPage = () => {
                 <Founder />
                 
                 <FAQ 
-                    title="FAQ – About Our Digital Marketing Agency in Kerala"
+                    title="Frequently Asked Questions"
                     items={[
                         {
-                            question: "Why is Redsharc considered the best digital marketing agency in Kerala?",
-                            answer: "Redsharc stands out due to its performance-driven approach, expert team, and commitment to delivering measurable results for businesses of all sizes."
+                            question: "Who are we?",
+                            answer: "We are a best digital marketing agency in Kerala specializing in SEO, social media marketing, Google Ads, and website development. Our mission is to help businesses grow online with measurable results."
                         },
                         {
-                            question: "What makes your SEO agency in Kerala different from others?",
-                            answer: "We focus on data-backed strategies, white-hat SEO techniques, and a deep understanding of the local and global market trends to ensure your business ranks higher and stays there."
+                            question: "Where are we located?",
+                            answer: "Our headquarters are in Kochi, Kerala, and we serve clients across the state and beyond with tailored digital marketing solutions."
                         },
                         {
-                            question: "Do you offer customized website development in Kerala?",
-                            answer: "Yes, we specialize in building fast, responsive, and SEO-friendly websites tailored to your specific business requirements."
+                            question: "What makes our agency different from others?",
+                            answer: "We focus on ROI-driven strategies, transparent reporting, and personalized solutions. As a trusted SEO agency in Kerala, we combine creativity with data to deliver the best results for our clients."
                         },
                         {
-                            question: "How can Redsharc help with Google Ads campaigns in Kerala?",
-                            answer: "Our certified experts create and manage high-converting Google Ads campaigns that maximize ROI and drive instant, qualified leads to your business."
+                            question: "Do we offer website development services in Kerala?",
+                            answer: "Yes! We provide professional website development in Kerala, including responsive web design, e-commerce websites, and custom web solutions that enhance your brand and drive conversions."
+                        },
+                        {
+                            question: "What services do we specialize in?",
+                            answer: "Our expertise includes SEO services in Kerala, social media marketing in Kerala, Google Ads campaigns in Kerala, website development and web design, and content marketing and online branding."
+                        },
+                        {
+                            question: "Who can benefit from our services?",
+                            answer: "We work with small, medium, and large businesses in Kerala across various industries. Whether you need SEO, social media marketing, Google Ads, or website development, we have solutions tailored to your goals."
+                        },
+                        {
+                            question: "How can I get in touch with your team?",
+                            answer: "You can contact us via our website form, email, or phone. Our experts will schedule a consultation to understand your needs and create a customized digital marketing plan."
                         }
                     ]}
                 />

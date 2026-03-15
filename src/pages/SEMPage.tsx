@@ -38,8 +38,10 @@ const SEMPage = () => {
     return (
         <div className="page-wrapper" style={{ backgroundColor: '#fff', color: '#334155' }}>
             <SEO
-                title="Google Ads Management Services | PPC Agency - Redsharc"
-                description="Maximize your ROI with Redsharc's expert Google Ads management. We build high-performance PPC campaigns that drive instant leads and sales."
+                title="No.1 Google Ads Agency in Kerala | Expert Google PPC Agency in Kerala"
+                description="Looking for a No.1 Google Ads agency in Kerala? Our Google PPC experts create high-performing campaigns that drive targeted traffic, increase conversions, and maximize ROI."
+                ogTitle="Top Google Ads Agency in Kerala | Professional PPC Management"
+                ogDescription="Grow your business with a trusted Google PPC agency in Kerala. We manage Google Ads campaigns that generate qualified leads, targeted traffic, and measurable results."
                 keywords="Google Ads Agency, PPC Management, Search Engine Marketing, SEM Services, Google Ads Expert"
                 canonical="https://www.redsharc.com/google-ads"
                 schema={{
@@ -61,16 +63,6 @@ const SEMPage = () => {
                 <section className="section-responsive text-center" style={{ position: 'relative' }}>
                     <div className="container-responsive">
                         <ScrollReveal animation="fade-up">
-                            <div style={{
-                                display: 'inline-block',
-                                padding: '8px 16px',
-                                background: '#f0fdf4',
-                                borderRadius: '50px',
-                                color: '#16a34a',
-                                fontSize: '0.9rem',
-                                fontWeight: '600',
-                                marginBottom: '24px'
-                            }}>
                             <h1 className="heading-xl" style={{ marginBottom: '24px', color: '#0f172a' }}>
                                 Google Ads Agency in Kerala
                             </h1>
