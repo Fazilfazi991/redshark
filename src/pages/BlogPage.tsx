@@ -61,7 +61,15 @@ const BlogPage = () => {
                                 <ScrollReveal key={post.id} animation="fade-up" delay={i * 50}>
                                     <div className="blog-card" style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
                                         <div className="blog-image" style={{ height: '240px' }}>
-                                            <img src={post.image} alt={post.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                                            <picture>
+                                                <source srcSet={post.image.replace(/\.(png|jpg|jpeg)$/, '.webp')} type="image/webp" />
+                                                <img 
+                                                    src={post.image} 
+                                                    alt={post.title} 
+                                                    style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
+                                                    loading="lazy"
+                                                />
+                                            </picture>
                                         </div>
                                         <div className="blog-content" style={{ flex: '1', display: 'flex', flexDirection: 'column' }}>
                                             <span className="blog-tag" style={{ marginBottom: '12px' }}>{post.category}</span>

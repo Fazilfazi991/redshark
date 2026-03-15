@@ -129,7 +129,15 @@ const BlogPostPage = () => {
 
                     {/* Featured Image - Moved out of grid for better alignment */}
                     <div className="post-image-container" style={{ marginBottom: '60px' }}>
-                        <img src={post.image} alt={post.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                        <picture>
+                            <source srcSet={post.image.replace(/\.(png|jpg|jpeg)$/, '.webp')} type="image/webp" />
+                            <img 
+                                src={post.image} 
+                                alt={post.title} 
+                                style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
+                                loading="eager"
+                            />
+                        </picture>
                     </div>
 
                     <div className="blog-layout">
@@ -220,7 +228,10 @@ const BlogPostPage = () => {
                                     } else if (block.type === 'image') {
                                         return (
                                             <div key={index} className="post-inline-image">
-                                                <img src={block.src} alt="" />
+                                                <picture>
+                                                    <source srcSet={block.src?.replace(/\.(png|jpg|jpeg)$/, '.webp')} type="image/webp" />
+                                                    <img src={block.src} alt="" loading="lazy" />
+                                                </picture>
                                             </div>
                                         );
                                     } else if (block.type === 'callout') {

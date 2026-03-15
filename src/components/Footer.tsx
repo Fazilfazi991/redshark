@@ -9,7 +9,10 @@ const Footer = () => {
                 <div className="footer-grid">
                     {/* Col 1 */}
                     <div className="footer-col">
-                        <img src="/logo-02.png" alt="Redsharc" style={{ height: '96px', width: 'auto', marginBottom: '16px' }} />
+                        <picture>
+                            <source srcSet="/logo-02.webp" type="image/webp" />
+                            <img src="/logo-02.png" alt="Redsharc" style={{ height: '96px', width: 'auto', marginBottom: '16px' }} loading="lazy" />
+                        </picture>
                         <p className="footer-tagline" style={{ color: '#94a3b8', fontSize: '0.9rem', marginBottom: '16px', fontWeight: '500' }}>
                             Best Digital Marketing Agency in Kerala
                         </p>

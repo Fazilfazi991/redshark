@@ -27,41 +27,69 @@ const SocialProof = () => {
                         {/* First set of logos */}
                         {brands.map((brand, index) => (
                             <div key={`original-${index}`} className="brand-logo-wrapper">
-                                <img
-                                    src={`/brands/${brand.file}`}
-                                    alt={brand.name}
-                                    className="brand-logo-img"
-                                />
+                                <picture>
+                                    <source 
+                                        srcSet={`/brands/${brand.file.replace(/\.(png|jpg|jpeg)$/, '.webp')}`} 
+                                        type="image/webp" 
+                                    />
+                                    <img
+                                        src={`/brands/${brand.file}`}
+                                        alt={brand.name}
+                                        className="brand-logo-img"
+                                        loading="lazy"
+                                    />
+                                </picture>
                             </div>
                         ))}
                         {/* Duplicate set for seamless loop */}
                         {brands.map((brand, index) => (
                             <div key={`dup-1-${index}`} className="brand-logo-wrapper">
-                                <img
-                                    src={`/brands/${brand.file}`}
-                                    alt={brand.name}
-                                    className="brand-logo-img"
-                                />
+                                <picture>
+                                    <source 
+                                        srcSet={`/brands/${brand.file.replace(/\.(png|jpg|jpeg)$/, '.webp')}`} 
+                                        type="image/webp" 
+                                    />
+                                    <img
+                                        src={`/brands/${brand.file}`}
+                                        alt={brand.name}
+                                        className="brand-logo-img"
+                                        loading="lazy"
+                                    />
+                                </picture>
                             </div>
                         ))}
                         {/* Extra duplicate set for wide screens */}
                         {brands.map((brand, index) => (
                             <div key={`dup-2-${index}`} className="brand-logo-wrapper">
-                                <img
-                                    src={`/brands/${brand.file}`}
-                                    alt={brand.name}
-                                    className="brand-logo-img"
-                                />
+                                <picture>
+                                    <source 
+                                        srcSet={`/brands/${brand.file.replace(/\.(png|jpg|jpeg)$/, '.webp')}`} 
+                                        type="image/webp" 
+                                    />
+                                    <img
+                                        src={`/brands/${brand.file}`}
+                                        alt={brand.name}
+                                        className="brand-logo-img"
+                                        loading="lazy"
+                                    />
+                                </picture>
                             </div>
                         ))}
                         {/* Extra duplicate set for wide screens */}
                         {brands.map((brand, index) => (
                             <div key={`dup-3-${index}`} className="brand-logo-wrapper">
-                                <img
-                                    src={`/brands/${brand.file}`}
-                                    alt={brand.name}
-                                    className="brand-logo-img"
-                                />
+                                <picture>
+                                    <source 
+                                        srcSet={`/brands/${brand.file.replace(/\.(png|jpg|jpeg)$/, '.webp')}`} 
+                                        type="image/webp" 
+                                    />
+                                    <img
+                                        src={`/brands/${brand.file}`}
+                                        alt={brand.name}
+                                        className="brand-logo-img"
+                                        loading="lazy"
+                                    />
+                                </picture>
                             </div>
                         ))}
                     </div>
