@@ -174,6 +174,67 @@ const LandingPage = () => {
                 </div>
             </section>
 
+            {/* --- SOUND FAMILIAR SECTION --- */}
+            <section className="sound-familiar-section">
+                <div className="container">
+                    <div className="sound-familiar-grid">
+                        <div className="sound-familiar-left">
+                            <span className="section-label-red">— THE REAL PROBLEM</span>
+                            <h2 className="heading-bold-xl">
+                                SOUND <span className="text-red">FAMILIAR?</span>
+                            </h2>
+                            <p className="section-description">
+                                You've tried agencies before. Maybe you've even run ads yourself. Here's what's actually going wrong — and why most businesses keep bleeding money on ads that don't convert.
+                            </p>
+
+                            <ul className="problem-list-v2">
+                                <li>
+                                    <div className="x-icon-box"><Zap size={18} /></div>
+                                    <div className="problem-text">
+                                        <strong>YOUR AD SPEND DISAPPEARS WITH NOTHING TO SHOW</strong>
+                                        <p>Thousands gone every month. Vanity metrics on dashboards. Zero predictable revenue from your campaigns.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div className="x-icon-box"><Zap size={18} /></div>
+                                    <div className="problem-text">
+                                        <strong>YOUR AGENCY REPORTS IMPRESSIONS, NOT INCOME</strong>
+                                        <p>Fancy slides full of 'reach' and 'engagement' — but when you ask what it made you, they go quiet.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div className="x-icon-box"><Zap size={18} /></div>
+                                    <div className="problem-text">
+                                        <strong>YOU CAN'T SCALE BECAUSE NOTHING IS CONSISTENT</strong>
+                                        <p>One week up, two weeks down. You can't hire, can't forecast, can't grow because the revenue machine is broken.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div className="x-icon-box"><Zap size={18} /></div>
+                                    <div className="problem-text">
+                                        <strong>YOUR COMPETITORS ARE SCALING WHILE YOU'RE STUCK</strong>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div className="sound-familiar-right">
+                            <div className="quote-feature-card">
+                                <div className="quote-icon-large">"</div>
+                                <h3 className="quote-headline">
+                                    THE AVERAGE BUSINESS WASTES 60% OF ITS AD BUDGET ON STRATEGIES THAT AREN'T BUILT TO CONVERT.
+                                </h3>
+                                <div className="quote-footer">
+                                    <p>
+                                        This isn't a budget problem. It's a <span className="text-red-bold">strategy problem</span>. The businesses scaling fast in 2025 aren't spending more — they're spending <span className="text-red-bold">smarter</span>, with systems that turn every dollar into a measurable return. That's exactly what RedSharc builds.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             {/* --- THE SOLUTION (GROWTH ENGINE) --- */}
             <section id="growth-engine" className="growth-service-section">
                 <div className="container">
@@ -256,6 +317,56 @@ const LandingPage = () => {
                                 </a>
                             </div>
                         </ScrollReveal>
+                    </div>
+                </div>
+            </section>
+
+            {/* --- LILLYBERRY CASE STUDY SECTION --- */}
+            <section className="lillyberry-case-study-section">
+                <div className="container">
+                    <div className="case-study-red-grid">
+                        <div className="case-study-content-left">
+                            <span className="section-label-white">— REAL RESULT — NOT A PROJECTION</span>
+                            <h2 className="heading-bold-white">LILLYBERRY: $25,000 REVENUE IN 7 DAYS.</h2>
+                            <p className="case-study-subtext">
+                                When LillyBerry came to us, they had a great product and zero predictable growth. Within one week of launching our performance system, they crossed $25,000 in revenue — with a cost-per-acquisition that made it deeply profitable from day one.
+                            </p>
+
+                            <div className="stat-row">
+                                <div className="stat-item-white">
+                                    <strong>$25K</strong>
+                                    <span>REVENUE — WEEK 1</span>
+                                </div>
+                                <div className="stat-item-white">
+                                    <strong>4X</strong>
+                                    <span>RETURN ON SPEND</span>
+                                </div>
+                                <div className="stat-item-white">
+                                    <strong>7d</strong>
+                                    <span>TIME TO RESULT</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="case-study-card-right">
+                            <div className="transparency-card">
+                                <div className="card-top-text">
+                                    LillyBerry had tried running ads before — with another agency. After 3 months and $12,000 in spend, they had <strong>no scalable system, no clear ROAS, and no consistency.</strong>
+                                </div>
+                                <div className="card-divider"></div>
+                                <div className="card-body-text">
+                                    RedSharc came in, rebuilt the entire funnel from scratch, identified the highest-converting audience segment, and launched a multi-platform campaign with a precision offer sequence.
+                                </div>
+
+                                <ul className="case-study-checklist">
+                                    <li><span className="check-white">✓</span> Full funnel audit completed in 48 hours</li>
+                                    <li><span className="check-white">✓</span> New creative strategy and ad copy architecture</li>
+                                    <li><span className="check-white">✓</span> TikTok + Meta split-test campaign launched</li>
+                                    <li><span className="check-white">✓</span> $25,000 in trackable revenue by day 7</li>
+                                    <li><span className="check-white">✓</span> Retargeting flow built for compounding results</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
