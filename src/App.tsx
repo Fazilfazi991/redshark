@@ -1,38 +1,41 @@
+import { Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './pages/Home';
-import AboutPage from './pages/AboutPage';
-import ServicesPage from './pages/ServicesPage';
-import SEOPage from './pages/SEOPage';
-import SEMPage from './pages/SEMPage';
-import SMMPage from './pages/SMMPage';
-import WebDevPage from './pages/WebDevPage';
-import BlogPostPage from './pages/BlogPostPage';
-import BlogPage from './pages/BlogPage';
-import ThankYouPage from './pages/ThankYouPage';
-import LandingPage from './pages/LandingPage';
 import ScrollToHash from './utils/ScrollToHash';
-import './components/UI/ScrollReveal'; // Import global styles if needed or ensuring context
 import ChatBot from './components/ChatBot';
-import ContactPage from './pages/ContactPage';
+
+const Home = lazy(() => import('./pages/Home'));
+const AboutPage = lazy(() => import('./pages/AboutPage'));
+const ServicesPage = lazy(() => import('./pages/ServicesPage'));
+const SEOPage = lazy(() => import('./pages/SEOPage'));
+const SEMPage = lazy(() => import('./pages/SEMPage'));
+const SMMPage = lazy(() => import('./pages/SMMPage'));
+const WebDevPage = lazy(() => import('./pages/WebDevPage'));
+const BlogPage = lazy(() => import('./pages/BlogPage'));
+const BlogPostPage = lazy(() => import('./pages/BlogPostPage'));
+const ThankYouPage = lazy(() => import('./pages/ThankYouPage'));
+const LandingPage = lazy(() => import('./pages/LandingPage'));
+const ContactPage = lazy(() => import('./pages/ContactPage'));
 
 function App() {
   return (
     <Router>
       <ScrollToHash />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<AboutPage />} />
-        <Route path="/services" element={<ServicesPage />} />
-        <Route path="/search-engine-optimization" element={<SEOPage />} />
-        <Route path="/google-ads" element={<SEMPage />} />
-        <Route path="/social-media-marketing" element={<SMMPage />} />
-        <Route path="/web-development" element={<WebDevPage />} />
-        <Route path="/blog" element={<BlogPage />} />
-        <Route path="/blog/:slug" element={<BlogPostPage />} />
-        <Route path="/thank-you" element={<ThankYouPage />} />
-        <Route path="/growth" element={<LandingPage />} />
-        <Route path="/contact" element={<ContactPage />} />
-      </Routes>
+      <Suspense fallback={<div className="loading-fallback" style={{ height: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>Loading...</div>}>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/services" element={<ServicesPage />} />
+          <Route path="/search-engine-optimization" element={<SEOPage />} />
+          <Route path="/google-ads" element={<SEMPage />} />
+          <Route path="/social-media-marketing" element={<SMMPage />} />
+          <Route path="/web-development" element={<WebDevPage />} />
+          <Route path="/blog" element={<BlogPage />} />
+          <Route path="/blog/:slug" element={<BlogPostPage />} />
+          <Route path="/thank-you" element={<ThankYouPage />} />
+          <Route path="/growth" element={<LandingPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+        </Routes>
+      </Suspense>
       <ChatBot />
     </Router>
   )
