@@ -76,7 +76,8 @@ function Home() {
 
                 <ScrollReveal animation="fade-up">
                     <FAQ 
-                        title="Have questions about our digital marketing services in Kerala? Check out our FAQs."
+                        description="Have questions about our digital marketing services in Kerala?"
+                        title="Check out our FAQs."
                         items={[
                             {
                                 question: "What services does a digital marketing agency in Kerala provide?",

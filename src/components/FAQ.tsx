@@ -9,6 +9,7 @@ interface FAQItem {
 
 interface FAQProps {
     title?: string;
+    description?: string;
     items?: FAQItem[];
     className?: string;
 }
@@ -21,7 +22,7 @@ const defaultFaqs: FAQItem[] = [
     { question: "Can I scale my team up or down?", answer: "Absolutely. That's our main advantage. Add 5 devs for a sprint, then scale back down. No penalties." }
 ];
 
-const FAQ: React.FC<FAQProps> = ({ title = "Frequently Asked Questions", items = defaultFaqs, className = "" }) => {
+const FAQ: React.FC<FAQProps> = ({ title = "Frequently Asked Questions", description, items = defaultFaqs, className = "" }) => {
     const [openIndex, setOpenIndex] = useState<number | null>(null);
 
     const toggle = (index: number) => {
@@ -31,6 +32,7 @@ const FAQ: React.FC<FAQProps> = ({ title = "Frequently Asked Questions", items =
     return (
         <section className={`faq-section ${className}`}>
             <div className="container" style={{ maxWidth: '800px' }}>
+                {description && <p className="text-center mb-2" style={{ color: 'var(--text-muted)', fontSize: '1.2rem', fontWeight: 500 }}>{description}</p>}
                 <h2 className="section-title text-center mb-4">{title}</h2>
 
                 <div className="faq-list">
